@@ -16,12 +16,16 @@ const HeroSection = () => {
       <div className="absolute bottom-0 z-10 flex h-screen w-full items-center justify-between bg-linear-to-b from-80% from-transparent via-90% via-transparent to-100% to-black text-white" />
       <div
         ref={ref}
-        className={`absolute inset-0 z-20 flex flex-col items-center justify-center gap-8 text-white transition-opacity duration-1000 ${inView ? "opacity-100" : "opacity-0"}`}
+        className={`absolute inset-0 z-20 flex flex-col items-center justify-center gap-4 text-white transition-opacity duration-1000 md:gap-6 lg:gap-8 ${inView ? "opacity-100" : "opacity-0"}`}
       >
-        <h1 className="font-black text-7xl">{t("hero.title")}</h1>
-        <h2 className="font-extrabold text-4xl">{t("hero.subtitle")}</h2>
+        <h1 className="font-black text-2xl md:text-5xl lg:text-7xl">
+          {t("hero.title")}
+        </h1>
+        <h2 className="font-extrabold text-xs md:text-2xl lg:text-4xl">
+          {t("hero.subtitle")}
+        </h2>
       </div>
-      <div className="-translate-x-1/2 absolute bottom-8 left-1/2 z-20">
+      <div className="absolute bottom-8 left-1/2 z-20 -translate-x-1/2">
         <ScrollDown />
       </div>
       <video

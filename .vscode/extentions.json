@@ -2,8 +2,6 @@
   "recommendations": [
     "dsznajder.es7-react-js-snippets",
     "bradlc.vscode-tailwindcss",
-    "biomejs.biome",
-    "formulahendry.auto-close-tag",
-    "formulahendry.auto-rename-tag"
+    "biomejs.biome"
   ]
 }

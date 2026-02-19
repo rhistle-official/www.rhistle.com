@@ -22,7 +22,7 @@ const LocaleSwitcher = () => {
 
   return (
     <Select value={locale} onValueChange={handleChange}>
-      <SelectTrigger className="cursor-pointer focus-visible:ring-0 data-[size=default]:h-8 [&_svg]:opacity-100">
+      <SelectTrigger size="sm" className="cursor-pointer focus-visible:ring-0 [&_svg]:opacity-100">
         <SelectValue />
       </SelectTrigger>
       <SelectContent

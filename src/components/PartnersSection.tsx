@@ -23,23 +23,20 @@ const PartnersSection = () => {
     threshold: 0.5,
     triggerOnce: true,
   });
-  
+
   return (
-    <section
-      className="mx-auto min-h-screen max-w-400 py-30"
-      aria-labelledby="partners-heading"
-    >
-      <div className="flex flex-col gap-28">
+    <section aria-labelledby="partners-heading">
+      <div className="mx-auto flex min-h-screen max-w-400 flex-col gap-20 p-20">
         <h2
           id="partners-heading"
           ref={ref1}
-          className={`font-bold text-7xl ${inView1 ? "animate-fade-in-up opacity-100" : "opacity-0"}`}
+          className={`font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl ${inView1 ? "animate-fade-in-up opacity-100" : "opacity-0"}`}
         >
           Partners
         </h2>
         <ul
           ref={ref2}
-          className={`grid grid-cols-4 place-items-center gap-28 ${inView2 ? "animate-fade-in-up opacity-100" : "opacity-0"}`}
+          className={`grid grid-cols-2 place-items-center gap-28 md:grid-cols-4 lg:grid-cols-4 ${inView2 ? "animate-fade-in-up opacity-100" : "opacity-0"}`}
         >
           {partners.map((partner) => (
             <li key={partner}>

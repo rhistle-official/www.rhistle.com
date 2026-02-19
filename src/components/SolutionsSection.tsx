@@ -5,49 +5,75 @@ import { useInView } from "react-intersection-observer";
 
 const SolutionsSection = () => {
   const t = useTranslations("home");
+
+  // 요소가 화면에 20%만 들어와도 작동하도록 threshold 조정
   const { ref: ref1, inView: inView1 } = useInView({
-    threshold: 0.5,
+    threshold: 0.2,
     triggerOnce: true,
   });
   const { ref: ref2, inView: inView2 } = useInView({
-    threshold: 0.5,
+    threshold: 0.2,
     triggerOnce: true,
   });
 
   return (
-    <section aria-labelledby="solutions-heading" className="bg-[#1428A0]">
-      <div
-        className={`mx-auto flex min-h-screen max-w-400 flex-col gap-28 py-30`}
-      >
+    <section
+      aria-labelledby="solutions-heading"
+      className="overflow-hidden bg-[#1428A0]"
+    >
+      <div className="mx-auto flex min-h-screen max-w-400 flex-col gap-10 px-6 py-20 md:px-15 lg:px-20">
         <h2
           id="solutions-heading"
           ref={ref1}
-          className={`${inView1 ? "animate-fade-in-up opacity-100" : "opacity-0"} font-bold text-7xl text-white`}
+          className={`transition-all duration-1000 ${
+            inView1 ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          } font-bold text-4xl text-white sm:text-5xl md:text-6xl lg:text-7xl`}
         >
           Solutions
         </h2>
         <div
           ref={ref2}
-          className={`flex flex-1 gap-10 ${inView2 ? "animate-fade-in-up opacity-100" : "opacity-0"}`}
+          className={`grid grid-cols-1 gap-8 transition-all delay-300 duration-1000 md:gap-10 lg:grid-cols-2 ${
+            inView2 ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
         >
-          <article className="flex flex-col gap-8 overflow-hidden rounded-4xl bg-white p-8">
-            <div className="flex h-1/2 items-center justify-center rounded-4xl bg-[url(/corecode.jpg)] bg-center bg-cover font-bold text-5xl text-white">
-              <p aria-hidden>CoreCode</p>
+          <article className="flex flex-col gap-6 overflow-hidden rounded-3xl bg-white p-6 shadow-xl md:gap-8 md:rounded-4xl md:p-8">
+            <div className="group relative flex h-64 items-center justify-center overflow-hidden rounded-2xl bg-[url(/corecode.jpg)] bg-center bg-cover font-bold text-3xl text-white md:h-80 md:rounded-3xl md:text-5xl">
+              <div className="absolute inset-0 bg-black/20 transition-colors group-hover:bg-black/10" />
+              <p className="relative z-10" aria-hidden>
+                CoreCode
+              </p>
             </div>
-            <h3 className="font-black text-4xl text-slate-900">CoreCode</h3>
-            <p className="text-lg text-slate-600">{t("solutions.corecode")}</p>
+            <div className="flex flex-col gap-3">
+              <h3 className="font-black text-2xl text-slate-900 md:text-4xl">
+                CoreCode
+              </h3>
+              <p className="text-base text-slate-600 leading-relaxed md:text-lg">
+                {t("solutions.corecode")}
+              </p>
+            </div>
           </article>
-
-          <article className="flex flex-col gap-8 overflow-hidden rounded-4xl bg-white p-8">
-            <div className="flex h-1/2 items-center justify-center rounded-4xl bg-[url(/nexumm.jpg)] bg-center bg-cover font-bold text-5xl text-white">
-              <p aria-hidden>Nexumm</p>
+          
+          <article className="flex flex-col gap-6 overflow-hidden rounded-3xl bg-white p-6 shadow-xl md:gap-8 md:rounded-4xl md:p-8">
+            <div className="group relative flex h-64 items-center justify-center overflow-hidden rounded-2xl bg-[url(/nexumm.jpg)] bg-center bg-cover font-bold text-3xl text-white md:h-80 md:rounded-3xl md:text-5xl">
+              <div className="absolute inset-0 bg-black/20 transition-colors group-hover:bg-black/10" />
+              <p className="relative z-10" aria-hidden>
+                Nexumm
+              </p>
             </div>
-            <h3 className="font-black text-4xl text-slate-900">Nexumm</h3>
-            <p className="text-lg text-slate-600">{t("solutions.nexumm")}</p>
+            <div className="flex flex-col gap-3">
+              <h3 className="font-black text-2xl text-slate-900 md:text-4xl">
+                Nexumm
+              </h3>
+              <p className="text-base text-slate-600 leading-relaxed md:text-lg">
+                {t("solutions.nexumm")}
+              </p>
+            </div>
           </article>
         </div>
       </div>
     </section>
   );
 };
+
 export default SolutionsSection;
