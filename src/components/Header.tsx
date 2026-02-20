@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed z-40 w-full font-bold text-white md:text-lg lg:text-xl ${isScrolled && "border-gray-800 border-b bg-black"}`}
+      className={`fixed z-40 w-full font-bold text-white ${isScrolled && "border-gray-800 border-b bg-black"}`}
     >
       <div className="hidden md:block">
         <Navigation />

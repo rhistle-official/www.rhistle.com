@@ -8,7 +8,7 @@ const Navigation = () => {
   const t = useTranslations("header");
 
   return (
-    <nav className="mx-auto max-w-400 px-10 md:px-15 lg:px-20">
+    <nav className="mx-auto max-w-400 px-10 md:px-15 md:text-lg lg:px-20 lg:text-xl">
       <ul className="flex h-24 items-center justify-between">
         <li>
           <Link href="/" className="flex items-center gap-2">

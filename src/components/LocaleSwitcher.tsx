@@ -1,45 +1,72 @@
 "use client";
 
-import { useLocale } from "next-intl";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { Globe } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 import { usePathname, useRouter } from "@/i18n/navigation";
 
 const LocaleSwitcher = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null); // 외부 클릭 감지용
   const pathName = usePathname();
-  const locale = useLocale();
   const router = useRouter();
 
-  const handleChange = (value: string) => {
-    router.push(pathName, { locale: value });
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target;
+
+      if (
+        dropdownRef.current &&
+        target instanceof Node &&
+        !dropdownRef.current.contains(target)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      window.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const handleLocaleChange = (nextLocale: string) => {
+    router.replace(pathName, { locale: nextLocale });
+    setIsOpen(false);
   };
 
   return (
-    <Select value={locale} onValueChange={handleChange}>
-      <SelectTrigger size="sm" className="cursor-pointer focus-visible:ring-0 [&_svg]:opacity-100">
-        <SelectValue />
-      </SelectTrigger>
-      <SelectContent
-        position="popper"
-        align="start"
-        className="min-w-0 text-white"
+    <div ref={dropdownRef} className="relative">
+      <button
+        type="button"
+        onClick={() => setIsOpen(!isOpen)}
+        className="cursor-pointer"
       >
-        <SelectGroup>
-          <SelectItem value="ko" className="cursor-pointer">
-            KOR
-          </SelectItem>
-          <SelectItem value="en" className="cursor-pointer">
-            ENG
-          </SelectItem>
-        </SelectGroup>
-      </SelectContent>
-    </Select>
+        <Globe />
+      </button>
+      {isOpen && (
+        <ul className="absolute left-1/2 mt-2 flex -translate-x-1/2 flex-col gap-2 rounded border p-2">
+          <li>
+            <button
+              type="button"
+              onClick={() => handleLocaleChange("ko")}
+              className="cursor-pointer"
+            >
+              KOR
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              onClick={() => handleLocaleChange("en")}
+              className="cursor-pointer"
+            >
+              ENG
+            </button>
+          </li>
+        </ul>
+      )}
+    </div>
   );
 };
 export default LocaleSwitcher;
