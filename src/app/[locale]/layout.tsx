@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "../globals.css";
 import localFont from "next/font/local";
 import { notFound } from "next/navigation";
-import Script from "next/script";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -22,28 +21,47 @@ const pretendard = localFont({
   variable: "--font-pretendard",
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://www.rhistle.com"),
-  title: {
-    default: "RHISTLE",
-    template: "%s | RHISTLE",
-  },
-  description:
-    "이롭고 슬기로운 기술로 고객의 가치를 더하는 IT 전문 기업, 주식회사 리슬(RHISTLE)입니다.",
-  verification: {
-    google: "vOadKuv4Iy8NVHLs3BjK6riU62KNXEqdBAnEvubLGtI",
-  },
-  alternates: {
-    canonical: "https://www.rhistle.com/ko", // 기본 페이지 설정
-    languages: {
-      "ko-KR": "https://www.rhistle.com/ko",
-      "en-US": "https://www.rhistle.com/en",
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  const baseUrl = "https://rhistle.com";
+
+  return {
+    metadataBase: new URL(baseUrl),
+    title: {
+      default: "RHISTLE",
+      template: "%s | RHISTLE",
     },
-  },
-  openGraph: {
-    siteName: "RHISTLE",
-  },
-};
+    description:
+      "이롭고 슬기로운 기술로 고객의 가치를 더하는 IT 전문 기업, 주식회사 리슬(RHISTLE)입니다.",
+    openGraph: {
+      title: "RHISTLE",
+      url: `${baseUrl}/${locale}`,
+      siteName: "RHISTLE",
+      locale: locale === "ko" ? "ko_KR" : "en_US",
+      type: "website",
+      images: [
+        {
+          url: "/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "RHISTLE",
+        },
+      ],
+    },
+    alternates: {
+      canonical: `${baseUrl}/${locale}`,
+      languages: {
+        "ko-KR": "/ko",
+        "en-US": "/en",
+      },
+    },
+  };
+}
 
 export default async function RootLayout({
   children,
@@ -54,34 +72,9 @@ export default async function RootLayout({
     notFound();
   }
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        name: "RHISTLE",
-        alternateName: "리슬",
-        url: "https://www.rhistle.com",
-      },
-      {
-        "@type": "Organization",
-        name: "RHISTLE",
-        url: "https://www.rhistle.com",
-        logo: "https://www.rhistle.com/logo_white.webp",
-      },
-    ],
-  };
-
   return (
     <html lang={locale}>
       <body className={`${pretendard.variable}`}>
-        <Script
-          id="jsonld-schema"
-          type="application/ld+json"
-          strategy="afterInteractive"
-        >
-          {JSON.stringify(jsonLd)}
-        </Script>
         <NextIntlClientProvider>
           <Header />
           {children}

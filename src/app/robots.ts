@@ -8,7 +8,7 @@ const robots = (): MetadataRoute.Robots => {
         allow: "/", // 기본적으로 모든 페이지 허용
       },
     ],
-    sitemap: "https://www.rhistle.com/sitemap.xml", // 리슬 도메인으로 변경!
+    sitemap: "https://rhistle.com/sitemap.xml",
   };
 };
 export default robots;
