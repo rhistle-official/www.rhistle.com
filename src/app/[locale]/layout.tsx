@@ -3,6 +3,7 @@ import "../globals.css";
 import localFont from "next/font/local";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -21,43 +22,21 @@ const pretendard = localFont({
   variable: "--font-pretendard",
 });
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-
-  const baseUrl = "https://rhistle.com";
+  const t = await getTranslations({ locale, namespace: "metadata" });
 
   return {
-    metadataBase: new URL(baseUrl),
     title: {
       default: "RHISTLE",
       template: "%s | RHISTLE",
     },
-    description:
-      "이롭고 슬기로운 기술로 고객의 가치를 더하는 IT 전문 기업, 주식회사 리슬(RHISTLE)입니다.",
-    openGraph: {
-      title: "RHISTLE",
-      url: `${baseUrl}/${locale}`,
-      siteName: "RHISTLE",
-      locale: locale === "ko" ? "ko_KR" : "en_US",
-      type: "website",
-      images: [
-        {
-          url: "/og-image.png",
-          width: 1200,
-          height: 630,
-          alt: "RHISTLE",
-        },
-      ],
-    },
+    description: t("description"),
     alternates: {
-      canonical: `${baseUrl}/${locale}`,
+      canonical: `https://www.rhistle.com/${locale}`,
       languages: {
-        "ko-KR": "/ko",
-        "en-US": "/en",
+        ko: "https://www.rhistle.com/ko",
+        en: "https://www.rhistle.com/en",
       },
     },
   };
@@ -68,6 +47,7 @@ export default async function RootLayout({
   params,
 }: Readonly<Props>) {
   const { locale } = await params;
+  
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
