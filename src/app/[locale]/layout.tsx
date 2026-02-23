@@ -47,7 +47,7 @@ export default async function RootLayout({
   params,
 }: Readonly<Props>) {
   const { locale } = await params;
-  
+
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
