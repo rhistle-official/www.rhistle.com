@@ -2,26 +2,30 @@ import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import DrawerMenu from "./DrawerMenu";
 import LocaleSwitcher from "./LocaleSwitcher";
 
-const Navigation = () => {
+const Navigation = ({ isScrolled }: { isScrolled: boolean }) => {
   const t = useTranslations("header");
 
   return (
-    <nav className="mx-auto max-w-400 px-10 md:px-15 md:text-lg lg:px-20 lg:text-xl">
-      <ul className="flex h-24 items-center justify-between">
+    <nav>
+      <ul className="flex items-center justify-between">
         <li>
-          <Link href="/" className="flex items-center gap-2">
+          <Link
+            href="/"
+            className="flex w-30 items-center gap-2 md:w-35 lg:w-50"
+          >
             <Image
-              src={"/logo_white.webp"}
+              src={`${isScrolled ? "/rhistle_blue.png" : "/rhistle_white.png"}`}
               alt="RHISTLE 로고"
-              width={30}
-              height={30}
+              width={200}
+              height={58}
+              priority
+              className="h-auto w-full object-contain"
             />
-            <p>RHISTLE</p>
           </Link>
         </li>
-
         <li>
           <Link href="/solutions">{t("solutions")}</Link>
         </li>
@@ -35,7 +39,7 @@ const Navigation = () => {
           <Link
             href="https://tech.rhistle.com"
             target="_blank"
-            className="flex items-center justify-center"
+            className="flex items-center"
           >
             {t("blog")}
             <ArrowUpRight />

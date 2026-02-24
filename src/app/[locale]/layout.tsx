@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "../globals.css";
+import { Audiowide } from "next/font/google";
 import localFont from "next/font/local";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
@@ -20,6 +21,12 @@ const pretendard = localFont({
   weight: "45 920",
   preload: true,
   variable: "--font-pretendard",
+});
+
+const audiowide = Audiowide({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-audiowide",
 });
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -54,7 +61,9 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${pretendard.variable}`}>
+      <body
+        className={`${pretendard.variable} ${audiowide.variable} antialiased`}
+      >
         <NextIntlClientProvider>
           <Header />
           {children}

@@ -26,7 +26,7 @@ const PartnersSection = () => {
 
   return (
     <section aria-labelledby="partners-heading">
-      <div className="mx-auto flex min-h-screen max-w-400 flex-col gap-20 p-20">
+      <div className="flex min-h-screen flex-col justify-center gap-20 p-10 md:p-15 lg:p-20">
         <h2
           id="partners-heading"
           ref={ref1}

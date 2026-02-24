@@ -17,11 +17,8 @@ const SolutionsSection = () => {
   });
 
   return (
-    <section
-      aria-labelledby="solutions-heading"
-      className="overflow-hidden bg-[#1428A0]"
-    >
-      <div className="mx-auto flex min-h-screen max-w-400 flex-col gap-10 px-6 py-20 md:px-15 lg:px-20">
+    <section aria-labelledby="solutions-heading" className="bg-[#1428A0]">
+      <div className="flex min-h-screen flex-col justify-center gap-20 p-10 md:p-15 lg:p-20">
         <h2
           id="solutions-heading"
           ref={ref1}
@@ -53,7 +50,7 @@ const SolutionsSection = () => {
               </p>
             </div>
           </article>
-          
+
           <article className="flex flex-col gap-6 overflow-hidden rounded-3xl bg-white p-6 shadow-xl md:gap-8 md:rounded-4xl md:p-8">
             <div className="group relative flex h-64 items-center justify-center overflow-hidden rounded-2xl bg-[url(/nexumm.jpg)] bg-center bg-cover font-bold text-3xl text-white md:h-80 md:rounded-3xl md:text-5xl">
               <div className="absolute inset-0 bg-black/20 transition-colors group-hover:bg-black/10" />

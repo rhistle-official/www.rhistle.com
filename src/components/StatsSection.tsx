@@ -17,8 +17,8 @@ const StatsSection = () => {
   });
 
   return (
-    <section className="overflow-hidden bg-linear-to-b from-black to-[#1428A0] text-white">
-      <div className="mx-auto flex min-h-screen max-w-400 flex-col justify-center gap-20 p-6 md:p-15 lg:p-20">
+    <section className="bg-linear-to-b from-black to-[#1428A0] text-white">
+      <div className="flex min-h-screen flex-col justify-center gap-20 p-10 md:p-15 lg:p-20">
         <div
           ref={ref1}
           className={`transition-all duration-1000 ${
@@ -36,7 +36,7 @@ const StatsSection = () => {
         </div>
         <ul
           ref={ref2}
-          className={`grid grid-cols-1 gap-12 transition-all delay-300 duration-1000 md:grid-cols-3 md:gap-8 lg:gap-16 ${
+          className={`flex flex-col justify-between gap-12 transition-all delay-300 duration-1000 md:flex-row ${
             inView2 ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
         >

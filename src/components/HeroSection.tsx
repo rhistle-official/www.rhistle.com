@@ -18,10 +18,10 @@ const HeroSection = () => {
         ref={ref}
         className={`absolute inset-0 z-20 flex flex-col items-center justify-center gap-4 text-white transition-opacity duration-1000 md:gap-6 lg:gap-8 ${inView ? "opacity-100" : "opacity-0"}`}
       >
-        <h1 className="font-black text-2xl md:text-5xl lg:text-7xl">
+        <h1 className="font-black text-md md:text-4xl lg:text-7xl">
           {t("hero.title")}
         </h1>
-        <h2 className="font-extrabold text-xs md:text-2xl lg:text-4xl">
+        <h2 className="font-extrabold text-[0.5rem] md:text-lg lg:text-4xl">
           {t("hero.subtitle")}
         </h2>
       </div>

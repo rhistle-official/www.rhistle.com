@@ -30,7 +30,7 @@ const ScrollToTop = () => {
     <button
       type="button"
       onClick={handleClick}
-      className="fixed right-20 bottom-10 z-30"
+      className="fixed right-10 bottom-10 z-30 md:right-15 lg:right-20"
     >
       <div
         className={`flex ${!isScrolled && "hidden"} h-15 w-15 cursor-pointer items-center justify-center rounded-full bg-gray-900`}

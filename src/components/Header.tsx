@@ -24,15 +24,16 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed z-40 w-full font-bold text-white ${isScrolled && "border-gray-800 border-b bg-black"}`}
+      className={`fixed z-40 w-full font-bold ${isScrolled ? "bg-white" : "text-white"}`}
     >
-      <div className="hidden md:block">
-        <Navigation />
-      </div>
-
-      <div className="block md:hidden">
-        <MobileNavigation />
-      </div>
+      <nav className="px-10 py-4 transition-all md:px-15 md:py-5 lg:px-20 lg:py-6 lg:text-xl">
+        <div className="hidden md:block">
+          <Navigation isScrolled={isScrolled} />
+        </div>
+        <div className="block md:hidden">
+          <MobileNavigation isScrolled={isScrolled} />
+        </div>
+      </nav>
     </header>
   );
 };
