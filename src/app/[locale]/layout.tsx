@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "../globals.css";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Audiowide } from "next/font/google";
 import localFont from "next/font/local";
 import { notFound } from "next/navigation";
@@ -69,6 +70,7 @@ export default async function RootLayout({
           <Header />
           {children}
           <Analytics />
+          <SpeedInsights />
           <Footer />
         </NextIntlClientProvider>
         <ScrollToTop />
