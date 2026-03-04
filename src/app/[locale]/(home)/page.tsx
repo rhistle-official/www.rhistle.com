@@ -5,12 +5,12 @@ import StatsSection from "@/components/StatsSection";
 
 const page = () => {
   return (
-    <>
+    <main>
       <HeroSection />
       <StatsSection />
       <SolutionsSection />
       <PartnersSection />
-    </>
+    </main>
   );
 };
 export default page;

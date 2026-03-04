@@ -2,11 +2,16 @@ import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import DrawerMenu from "./DrawerMenu";
 import LocaleSwitcher from "./LocaleSwitcher";
 
 const Navigation = ({ isScrolled }: { isScrolled: boolean }) => {
   const t = useTranslations("header");
+
+  // const logoSrc = isRoot
+  //   ? isScrolled
+  //     ? "/rhistle_blue.png"
+  //     : "/rhistle_white.png"
+  //   : "/rhistle_blue.png";
 
   return (
     <nav>
@@ -17,7 +22,7 @@ const Navigation = ({ isScrolled }: { isScrolled: boolean }) => {
             className="flex w-30 items-center gap-2 md:w-35 lg:w-50"
           >
             <Image
-              src={`${isScrolled ? "/rhistle_blue.png" : "/rhistle_white.png"}`}
+              src={isScrolled ? "/rhistle_blue.png" : "/rhistle_white.png"}
               alt="RHISTLE 로고"
               width={200}
               height={58}

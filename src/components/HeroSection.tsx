@@ -12,7 +12,7 @@ const HeroSection = () => {
   });
 
   return (
-    <main className="relative h-screen w-full">
+    <section className="relative h-screen w-full">
       <div className="absolute bottom-0 z-10 flex h-screen w-full items-center justify-between bg-linear-to-b from-80% from-transparent via-90% via-transparent to-100% to-black text-white" />
       <div
         ref={ref}
@@ -38,7 +38,7 @@ const HeroSection = () => {
       >
         <source src="/hero.mp4" type="video/mp4" />
       </video>
-    </main>
+    </section>
   );
 };
 export default HeroSection;

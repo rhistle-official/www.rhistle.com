@@ -1,5 +1,7 @@
 {
   "metadata": {
+    "title": "RHISTLE",
+    "brand": "RHISTLE",
     "description": "RHISTLE is an IT specialist dedicated to enhancing customer value through beneficial and wise technology."
   },
   "header": {
@@ -21,6 +23,23 @@
       "corecode": "An integrated data interface solution that connects and optimizes scattered data within the company in real time. It standardizes the flow of data across complex systems to ensure a seamless work environment, while efficiently managing business data assets with strong security and flexible scalability.",
       "nexumm": "A next-generation warehouse management system (WMS) that enables efficient warehouse operations and precise inventory management. It visualizes the entire logistics process in real time from inbound to outbound, preventing order-picking errors and optimizing workflows, ensuring reduced operating costs and improved service quality for your warehouse."
     }
+  },
+  "company": {
+    "title": "About Us"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "If you have inquiries, please reach out using the form below.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send"
+    }
+  },
+  "solutions": {
+    "title": "Solutions"
   },
   "footer": {
     "name": "RHISTLE Co., Ltd.",

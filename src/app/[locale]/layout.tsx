@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
-import "../globals.css";
+import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import type { Metadata } from "next";
 import { Audiowide } from "next/font/google";
 import localFont from "next/font/local";
 import { notFound } from "next/navigation";
@@ -31,23 +31,20 @@ const audiowide = Audiowide({
   variable: "--font-audiowide",
 });
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata" });
 
   return {
     title: {
-      default: "RHISTLE",
-      template: "%s | RHISTLE",
+      default: t("title"),
+      template: `%s - ${t("brand")}`,
     },
     description: t("description"),
-    alternates: {
-      canonical: `https://www.rhistle.com/${locale}`,
-      languages: {
-        ko: "https://www.rhistle.com/ko",
-        en: "https://www.rhistle.com/en",
-      },
-    },
   };
 }
 
