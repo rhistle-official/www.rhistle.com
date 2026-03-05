@@ -7,13 +7,13 @@
   "header": {
     "solutions": "SOLUTIONS",
     "company": "COMPANY",
-    "contact": "CONTACT",
+    "inquiry": "INQUIRY",
     "blog": "BLOG"
   },
   "home": {
     "hero": {
       "title": "Challenge Limits, Benefit All.",
-      "subtitle": "We provide differentiated value to our customers through the best IT services."
+      "subtitle": "RHISTLE delivers exceptional value to customers through premier IT services"
     },
     "stats": {
       "first": "Proving Our Journey",
@@ -38,8 +38,11 @@
       "submit": "Send"
     }
   },
-  "solutions": {
-    "title": "Solutions"
+  "corecode": {
+    "title": "CoreCode"
+  },
+  "nexumm": {
+    "title": "Nexumm"
   },
   "footer": {
     "name": "RHISTLE Co., Ltd.",

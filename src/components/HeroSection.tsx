@@ -16,12 +16,12 @@ const HeroSection = () => {
       <div className="absolute bottom-0 z-10 flex h-screen w-full items-center justify-between bg-linear-to-b from-80% from-transparent via-90% via-transparent to-100% to-black text-white" />
       <div
         ref={ref}
-        className={`absolute inset-0 z-20 flex flex-col items-center justify-center gap-4 text-white transition-opacity duration-1000 md:gap-6 lg:gap-8 ${inView ? "opacity-100" : "opacity-0"}`}
+        className={`absolute inset-0 z-20 flex flex-col items-center justify-center gap-4 text-white transition-opacity duration-1000 ${inView ? "opacity-100" : "opacity-0"}`}
       >
-        <h1 className="font-black text-md md:text-4xl lg:text-7xl">
+        <h1 className="font-black text-lg md:text-4xl xl:text-7xl">
           {t("hero.title")}
         </h1>
-        <h2 className="font-extrabold text-[0.5rem] md:text-lg lg:text-4xl">
+        <h2 className="font-extrabold text-xs md:text-xl xl:text-4xl">
           {t("hero.subtitle")}
         </h2>
       </div>
@@ -34,7 +34,7 @@ const HeroSection = () => {
         muted
         preload="auto"
         playsInline
-        className="h-full w-full object-cover brightness-75"
+        className="h-full w-full object-cover brightness-70"
       >
         <source src="/hero.mp4" type="video/mp4" />
       </video>

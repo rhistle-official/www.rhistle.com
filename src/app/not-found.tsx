@@ -1,16 +1,44 @@
-import Link from "next/link";
+"use client";
+
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function NotFound() {
+  const router = useRouter();
+
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center gap-4 text-center text-gray-800">
-      <h1 className="font-bold text-5xl">🚧 페이지 공사중 🚧</h1>
-      <p className="text-xl">조금만 기다려주세요. 곧 업데이트 됩니다!</p>
-      <Link
-        href="/"
-        className="rounded bg-[#1428A0] px-6 py-3 text-white transition hover:bg-[#1428A0]/90"
-      >
-        홈으로
-      </Link>
-    </div>
+    <html lang="ko">
+      <body>
+        <div className="flex h-screen w-full flex-col items-center justify-center gap-6">
+          <Image
+            src={"/images/404.png"}
+            alt="404"
+            width={400}
+            height={400}
+            priority
+          />
+          <div className="flex gap-6">
+            <button
+              type="button"
+              onClick={() => {
+                router.push("/");
+              }}
+              className="cursor-pointer rounded-xl bg-rhistle px-6 py-3 font-bold text-lg text-white transition-colors duration-200 hover:bg-rhistle/90"
+            >
+              메인 페이지로 이동
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                router.back();
+              }}
+              className="cursor-pointer rounded-xl border border-rhistle px-6 py-3 font-bold text-lg text-rhistle transition-colors duration-200 hover:bg-gray-50"
+            >
+              이전 페이지로 이동
+            </button>
+          </div>
+        </div>
+      </body>
+    </html>
   );
 }

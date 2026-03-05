@@ -1,5 +1,4 @@
 import { ArrowUpRight } from "lucide-react";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import LocaleSwitcher from "./LocaleSwitcher";
@@ -7,38 +6,27 @@ import LocaleSwitcher from "./LocaleSwitcher";
 const Navigation = ({ isScrolled }: { isScrolled: boolean }) => {
   const t = useTranslations("header");
 
-  // const logoSrc = isRoot
-  //   ? isScrolled
-  //     ? "/rhistle_blue.png"
-  //     : "/rhistle_white.png"
-  //   : "/rhistle_blue.png";
-
   return (
     <nav>
-      <ul className="flex items-center justify-between">
+      <ul className="flex items-center justify-between text-xl">
+        <h1>
+          <li>
+            <Link
+              href="/"
+              className={`font-(family-name:--font-audiowide) text-3xl ${isScrolled ? "text-rhistle" : "text-white"}`}
+            >
+              RHISTLE
+            </Link>
+          </li>
+        </h1>
         <li>
-          <Link
-            href="/"
-            className="flex w-30 items-center gap-2 md:w-35 lg:w-50"
-          >
-            <Image
-              src={isScrolled ? "/rhistle_blue.png" : "/rhistle_white.png"}
-              alt="RHISTLE 로고"
-              width={200}
-              height={58}
-              priority
-              className="h-auto w-full object-contain"
-            />
-          </Link>
-        </li>
-        <li>
-          <Link href="/solutions">{t("solutions")}</Link>
+          <Link href="/solutions/corecode">{t("solutions")}</Link>
         </li>
         <li>
           <Link href="/company">{t("company")}</Link>
         </li>
         <li>
-          <Link href="/contact">{t("contact")}</Link>
+          <Link href="/inquiry">{t("inquiry")}</Link>
         </li>
         <li>
           <Link

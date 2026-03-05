@@ -1,55 +1,69 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import gsImg from "../../public/images/gs.webp";
+import innobizImg from "../../public/images/innobiz.webp";
+import kiboImg from "../../public/images/kibo.webp";
 
-const certifications = ["gs", "kibo", "innobiz"];
+const certifications = [
+  {
+    name: "gs",
+    image: gsImg,
+  },
+  {
+    name: "innobiz",
+    image: innobizImg,
+  },
+  {
+    name: "kibo",
+    image: kiboImg,
+  },
+];
 
 const Footer = () => {
   const t = useTranslations("footer");
 
   return (
-    <footer className="flex flex-col gap-8 bg-gray-100 p-10 md:p-15 lg:p-20">
-      <div className="flex flex-col gap-8">
-        <div className="flex w-30 items-center gap-2 md:w-35 lg:w-50">
-          <Image
-            src={"/rhistle_blue.png"}
-            alt="RHISTLE 로고"
-            width={200}
-            height={58}
-            priority
-            className="h-auto w-full object-contain"
-          />
+    <footer className="border-gray-200 border-t py-20">
+      <div className="mx-auto flex max-w-sm flex-col gap-8 sm:max-w-5xl xl:max-w-7xl">
+        <div className="flex flex-col gap-8">
+          <strong className="font-(family-name:--font-audiowide) text-rhistle text-xl sm:text-3xl xl:text-4xl">
+            RHISTLE
+          </strong>
+          <address className="flex flex-col gap-1 text-xs not-italic md:text-base lg:text-lg">
+            <div className="flex flex-wrap items-center gap-x-4">
+              <strong className="font-bold">{t("name")}</strong>
+              <span>{t("ceo")}</span>
+            </div>
+            <p>{t("address")}</p>
+            <div className="flex items-center gap-2">
+              <span>Tel: 02-3018-5114</span>
+              <span>|</span>
+              <span>FAX: 02-3018-3026</span>
+            </div>
+          </address>
         </div>
-        <address className="flex flex-col gap-1 text-xs not-italic md:text-base lg:text-lg">
-          <div className="flex flex-wrap items-center gap-x-4">
-            <p className="font-bold">{t("name")}</p>
-            <p>{t("ceo")}</p>
-          </div>
-          <p>{t("address")}</p>
-          <div className="flex items-center gap-2">
-            <p>Tel: 02-3018-5114</p>
-            <span>|</span>
-            <p>FAX: 02-3018-3026</p>
-          </div>
-        </address>
-      </div>
-      <hr className="text-gray-300" />
-      <div className="flex items-center justify-between">
-        <small className="text-[0.5rem] md:text-base lg:text-lg">
-          © {new Date().getFullYear()} RHISTLE. All rights reserved.
-        </small>
-        <ul className="flex gap-4 md:gap-6 lg:gap-8">
-          {certifications.map((certification) => (
-            <li key={certification} className="w-10 md:w-20 lg:w-25">
-              <Image
-                src={`/${certification}.webp`}
-                alt={`${certification} 인증 마크`}
-                width={120}
-                height={120}
-                className="h-auto w-full object-contain"
-              />
-            </li>
-          ))}
-        </ul>
+        <hr className="border-gray-200" />
+        <div className="flex items-center justify-between">
+          <small className="text-[0.5rem] md:text-base lg:text-lg">
+            © {new Date().getFullYear()} RHISTLE. All rights reserved.
+          </small>
+          <ul className="flex gap-4 md:gap-6 lg:gap-8">
+            {certifications.map((certification) => (
+              <li
+                key={certification.name}
+                className="relative h-10 w-10 md:h-20 md:w-20 lg:h-30 lg:w-30"
+              >
+                <Image
+                  src={certification.image}
+                  alt={`${certification.name} 인증 마크`}
+                  fill
+                  sizes="100vw"
+                  className="object-contain"
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </footer>
   );

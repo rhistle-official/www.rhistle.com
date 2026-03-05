@@ -35,7 +35,7 @@ const DrawerMenu = () => {
           <ul className="flex flex-col gap-6 font-medium text-lg text-white">
             <li>
               <Link
-                href="/solutions"
+                href="/solutions/corecode"
                 className="flex w-full items-center justify-center py-4 hover:bg-gray-900"
               >
                 {t("solutions")}
@@ -51,10 +51,10 @@ const DrawerMenu = () => {
             </li>
             <li>
               <Link
-                href="/contact"
+                href="/inquiry"
                 className="flex w-full items-center justify-center py-4 hover:bg-gray-900"
               >
-                {t("contact")}
+                {t("inquiry")}
               </Link>
             </li>
             <li>

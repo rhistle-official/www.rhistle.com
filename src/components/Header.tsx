@@ -6,8 +6,6 @@ import Navigation from "./Navigation";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  // const pathName = usePathname();
-  // const isRoot = routing.locales.some((locale) => pathName === `/${locale}`);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,19 +23,14 @@ const Header = () => {
   }, []);
 
   return (
-    // <header
-    //   className={`fixed z-40 w-full font-bold ${isRoot ? (isScrolled ? "border-gray-200 border-b bg-white" : "bg-transparent text-white") : "bg-white text-black"}`}
-    // >
     <header
-      className={`fixed z-40 w-full font-bold ${isScrolled ? "border-gray-200 border-b bg-white" : "bg-transparent text-white"}`}
+      className={`fixed z-40 w-full py-3 font-bold md:py-4 lg:py-5 ${isScrolled ? "border-gray-200 border-b bg-white" : "bg-transparent text-white"}`}
     >
-      <nav className="px-10 py-2 transition-all md:px-15 md:py-3 lg:px-20 lg:py-4 lg:text-xl">
+      <nav className="mx-auto w-full max-w-sm transition-all md:max-w-3xl xl:max-w-7xl">
         <div className="hidden md:block">
-          {/* <Navigation isScrolled={isScrolled} isRoot={isRoot} /> */}
           <Navigation isScrolled={isScrolled} />
         </div>
         <div className="block md:hidden">
-          {/* <MobileNavigation isScrolled={isScrolled} isRoot={isRoot} /> */}
           <MobileNavigation isScrolled={isScrolled} />
         </div>
       </nav>

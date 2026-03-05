@@ -42,7 +42,7 @@ const LocaleSwitcher = () => {
         onClick={() => setIsOpen(!isOpen)}
         className="flex cursor-pointer items-center justify-center"
       >
-        <Globe className="h-6 w-6 transition-all md:h-7 md:w-7 lg:h-8 lg:w-8" />
+        <Globe />
       </button>
       {isOpen && (
         <ul className="absolute left-1/2 mt-2 flex -translate-x-1/2 flex-col gap-2 rounded border p-2">

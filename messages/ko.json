@@ -7,13 +7,13 @@
   "header": {
     "solutions": "솔루션",
     "company": "회사소개",
-    "contact": "문의하기",
+    "inquiry": "문의하기",
     "blog": "블로그"
   },
   "home": {
     "hero": {
       "title": "Challenge Limits, Benefit All.",
-      "subtitle": "최고의 IT서비스를 통해 고객에게 차별화된 가치를 제공합니다."
+      "subtitle": "리슬은 최고의 IT서비스를 통해 고객에게 차별화된 가치를 제공합니다."
     },
     "stats": {
       "first": "우리가 걸어온 길을",
@@ -40,6 +40,12 @@
   },
   "solutions": {
     "title": "솔루션"
+  },
+  "corecode": {
+    "title": "코어코드"
+  },
+  "nexumm": {
+    "title": "넥섬"
   },
   "footer": {
     "name": "주식회사 리슬",

@@ -1,8 +1,6 @@
-import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
-import { Audiowide } from "next/font/google";
 import localFont from "next/font/local";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
@@ -25,9 +23,11 @@ const pretendard = localFont({
   variable: "--font-pretendard",
 });
 
-const audiowide = Audiowide({
+const audiowide = localFont({
+  src: "../fonts/Audiowide-Regular.woff2",
+  display: "swap",
   weight: "400",
-  subsets: ["latin"],
+  preload: true,
   variable: "--font-audiowide",
 });
 
@@ -48,7 +48,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function RootLayout({
+export default async function LocaleLayout({
   children,
   params,
 }: Readonly<Props>) {
@@ -59,10 +59,11 @@ export default async function RootLayout({
   }
 
   return (
-    <html lang={locale}>
-      <body
-        className={`${pretendard.variable} ${audiowide.variable} antialiased`}
-      >
+    <html
+      lang={locale}
+      className={`${pretendard.variable} ${audiowide.variable} antialiased`}
+    >
+      <body>
         <NextIntlClientProvider>
           <Header />
           {children}
