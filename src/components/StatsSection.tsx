@@ -1,75 +1,62 @@
 "use client";
 
-import { FolderKanban, Newspaper, Users } from "lucide-react"; // 아이콘 다양화
+import { FolderKanban, Newspaper, Users } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useInView } from "react-intersection-observer";
 import CountUp from "./CountUp";
 
 const StatsSection = () => {
   const t = useTranslations("home");
-  const { ref: ref1, inView: inView1 } = useInView({
-    threshold: 0.3,
-    triggerOnce: true,
-  });
-  const { ref: ref2, inView: inView2 } = useInView({
+  const { ref, inView } = useInView({
     threshold: 0.3,
     triggerOnce: true,
   });
 
   return (
     <section className="bg-linear-to-b from-black to-rhistle text-white">
-      <div className="mx-auto flex min-h-screen w-full max-w-sm flex-col justify-around md:max-w-3xl xl:max-w-7xl">
-        <div
-          ref={ref1}
-          className={`${
-            inView1 ? "animate-fade-in-up opacity-100" : "opacity-0"
-          } flex flex-col gap-4`}
-        >
-          <p className="font-medium text-blue-400 uppercase tracking-widest md:text-lg lg:text-xl">
-            since 2005
-          </p>
-          <h2 className="font-bold text-4xl leading-tight md:text-5xl xl:text-6xl">
+      <div className="mx-auto flex min-h-screen max-w-7xl flex-col justify-center gap-15 px-8 py-20 md:gap-25 xl:gap-30">
+        <div className="flex flex-col gap-4">
+          <p className="text-blue-400 text-xl tracking-widest">SINCE 2005</p>
+          <p className="font-bold text-4xl leading-tight md:text-5xl xl:text-6xl">
             {t("stats.first")}
             <br />
             {t("stats.second")}
-          </h2>
+          </p>
         </div>
         <ul
-          ref={ref2}
+          ref={ref}
           className={`flex flex-col justify-between gap-12 transition-all delay-300 duration-1000 md:flex-row ${
-            inView2 ? "animate-fade-in-up opacity-100" : "opacity-0"
+            inView ? "opacity-100" : "opacity-0"
           }`}
         >
-          <li className="flex flex-col gap-3 md:gap-5">
+          <li className="flex flex-col gap-5">
             <Newspaper className="text-blue-400" size={32} aria-hidden />
-            <div className="flex font-black text-7xl md:text-8xl xl:text-9xl">
-              {inView2 && <CountUp end={400} duration={1000} />}
+            <div className="flex font-bold text-7xl md:text-8xl xl:text-9xl">
+              {inView && <CountUp end={400} duration={1000} />}
               <span className="text-4xl text-blue-400 md:text-6xl">+</span>
             </div>
-            <span className="font-semibold text-base text-gray-300 md:text-xl xl:text-2xl">
+            <span className="font-semibold text-xl xl:text-2xl">
               SOLUTIONS DEPLOYED
             </span>
           </li>
 
           {/* 통계 아이템 2 */}
-          <li className="flex flex-col gap-3 border-white/10 border-t pt-8 md:gap-5 md:border-none md:pt-0">
+          <li className="flex flex-col gap-5">
             <Users className="text-blue-400" size={32} aria-hidden />
-            <div className="flex font-black text-7xl md:text-8xl xl:text-9xl">
-              {inView2 && <CountUp end={50} duration={1000} />}
+            <div className="flex font-bold text-7xl md:text-8xl xl:text-9xl">
+              {inView && <CountUp end={50} duration={1000} />}
               <span className="text-4xl text-blue-400 md:text-6xl">+</span>
             </div>
-            <span className="font-semibold text-base text-gray-300 md:text-xl xl:text-2xl">
-              CUSTOMERS
-            </span>
+            <span className="font-semibold text-xl xl:text-2xl">CUSTOMERS</span>
           </li>
 
-          <li className="flex flex-col gap-3 border-white/10 border-t pt-8 md:gap-5 md:border-none md:pt-0">
+          <li className="flex flex-col gap-5">
             <FolderKanban className="text-blue-400" size={32} aria-hidden />
-            <div className="flex font-black text-7xl md:text-8xl xl:text-9xl">
-              {inView2 && <CountUp end={220} duration={1000} />}
+            <div className="flex font-bold text-7xl md:text-8xl xl:text-9xl">
+              {inView && <CountUp end={220} duration={1000} />}
               <span className="text-4xl text-blue-400 md:text-6xl">+</span>
             </div>
-            <span className="font-semibold text-base text-gray-300 md:text-xl xl:text-2xl">
+            <span className="font-semibold text-xl xl:text-2xl">
               PROJECTS COMPLETED
             </span>
           </li>

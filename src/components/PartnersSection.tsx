@@ -1,7 +1,4 @@
-"use client";
-
 import Image from "next/image";
-import { useInView } from "react-intersection-observer";
 import hyundaiAutoeverImg from "../../public/images/hyundaiAutoever.png";
 import kpmgImg from "../../public/images/kpmg.png";
 import lgCNSImg from "../../public/images/lgCNS.png";
@@ -21,33 +18,19 @@ const partners = [
   { name: "kpmg", image: kpmgImg },
   { name: "pwc", image: pwcImg },
 ];
-const PartnersSection = () => {
-  const { ref: ref1, inView: inView1 } = useInView({
-    threshold: 0.3,
-    triggerOnce: true,
-  });
-  const { ref: ref2, inView: inView2 } = useInView({
-    threshold: 0.3,
-    triggerOnce: true,
-  });
 
+const PartnersSection = () => {
   return (
     <section>
-      <div className="mx-auto flex min-h-screen w-full max-w-sm flex-col justify-around sm:max-w-5xl xl:max-w-7xl">
-        <span
-          ref={ref1}
-          className={`font-bold text-4xl md:text-5xl lg:text-6xl ${inView1 ? "animate-fade-in-up opacity-100" : "opacity-0"}`}
-        >
+      <div className="mx-auto flex min-h-screen max-w-7xl flex-col justify-center gap-20 px-8 py-20 md:gap-25 xl:gap-30">
+        <span className="font-bold text-4xl md:text-5xl xl:text-6xl">
           Partners
         </span>
-        <ul
-          ref={ref2}
-          className={`grid grid-cols-2 place-items-center gap-28 md:grid-cols-4 lg:grid-cols-4 ${inView2 ? "animate-fade-in-up opacity-100" : "opacity-0"}`}
-        >
+        <ul className="grid grid-cols-2 place-items-center gap-28 md:grid-cols-4 lg:grid-cols-4">
           {partners.map((partner) => (
             <li
               key={partner.name}
-              className="relative h-20 w-20 sm:h-30 sm:w-30 xl:h-50 xl:w-50"
+              className="relative h-30 w-30 md:h-40 md:w-40 xl:h-50 xl:w-50"
             >
               <Image
                 src={partner.image}

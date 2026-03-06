@@ -23,13 +23,13 @@ const Footer = () => {
   const t = useTranslations("footer");
 
   return (
-    <footer className="border-gray-200 border-t py-20">
-      <div className="mx-auto flex max-w-sm flex-col gap-8 sm:max-w-5xl xl:max-w-7xl">
+    <footer className="border-gray-200 border-t py-10 md:py-15 xl:py-20">
+      <div className="mx-auto flex max-w-7xl flex-col gap-8 px-8">
         <div className="flex flex-col gap-8">
-          <strong className="font-(family-name:--font-audiowide) text-rhistle text-xl sm:text-3xl xl:text-4xl">
+          <strong className="font-(family-name:--font-audiowide) text-rhistle text-xl md:text-3xl xl:text-4xl">
             RHISTLE
           </strong>
-          <address className="flex flex-col gap-1 text-xs not-italic md:text-base lg:text-lg">
+          <address className="flex flex-col gap-1 text-xs not-italic md:text-base xl:text-lg">
             <div className="flex flex-wrap items-center gap-x-4">
               <strong className="font-bold">{t("name")}</strong>
               <span>{t("ceo")}</span>
@@ -42,7 +42,9 @@ const Footer = () => {
             </div>
           </address>
         </div>
+
         <hr className="border-gray-200" />
+
         <div className="flex items-center justify-between">
           <small className="text-[0.5rem] md:text-base lg:text-lg">
             © {new Date().getFullYear()} RHISTLE. All rights reserved.

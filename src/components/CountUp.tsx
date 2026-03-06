@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 
 const CountUp = ({ end, duration }: { end: number; duration: number }) => {
@@ -21,6 +23,7 @@ const CountUp = ({ end, duration }: { end: number; duration: number }) => {
       clearInterval(timer);
     };
   }, [end, duration]);
+
   return <>{count}</>;
 };
 export default CountUp;

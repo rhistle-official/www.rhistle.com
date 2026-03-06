@@ -1,29 +1,19 @@
-"use client";
-
 import { useTranslations } from "next-intl";
-import { useInView } from "react-intersection-observer";
 import ScrollDown from "./ScrollDown";
 
 const HeroSection = () => {
   const t = useTranslations("home");
-  const { ref, inView } = useInView({
-    threshold: 0,
-    triggerOnce: true,
-  });
 
   return (
     <section className="relative h-screen w-full">
       <div className="absolute bottom-0 z-10 flex h-screen w-full items-center justify-between bg-linear-to-b from-80% from-transparent via-90% via-transparent to-100% to-black text-white" />
-      <div
-        ref={ref}
-        className={`absolute inset-0 z-20 flex flex-col items-center justify-center gap-4 text-white transition-opacity duration-1000 ${inView ? "opacity-100" : "opacity-0"}`}
-      >
-        <h1 className="font-black text-lg md:text-4xl xl:text-7xl">
-          {t("hero.title")}
-        </h1>
-        <h2 className="font-extrabold text-xs md:text-xl xl:text-4xl">
+      <div className="absolute inset-0 z-20 flex flex-col items-center justify-center gap-2 text-white md:gap-4 xl:gap-6">
+        <h2 className="font-extrabold text-xs sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl">
           {t("hero.subtitle")}
         </h2>
+        <h1 className="font-bold text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+          {t("hero.title")}
+        </h1>
       </div>
       <div className="absolute bottom-8 left-1/2 z-20 -translate-x-1/2">
         <ScrollDown />

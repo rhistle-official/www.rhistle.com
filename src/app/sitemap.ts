@@ -12,19 +12,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://www.rhistle.com/company",
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.8,
+      priority: 0.9,
     },
     {
-      url: "https://www.rhistle.com/contact",
+      url: "https://www.rhistle.com/inquiry",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://www.rhistle.com/solutions",
+      url: "https://www.rhistle.com/solutions/corecode",
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.8,
+      priority: 0.9,
+    },
+    {
+      url: "https://www.rhistle.com/solutions/nexumm",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
     },
   ];
 }
