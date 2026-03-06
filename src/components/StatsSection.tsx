@@ -33,11 +33,11 @@ const StatsSection = () => {
             <Newspaper className="text-blue-400" size={32} aria-hidden />
             <div className="flex font-bold text-7xl md:text-8xl xl:text-9xl">
               {inView && <CountUp end={400} duration={1000} />}
-              <span className="text-4xl text-blue-400 md:text-6xl">+</span>
+              <p className="text-4xl text-blue-400 md:text-6xl">+</p>
             </div>
-            <span className="font-semibold text-xl xl:text-2xl">
+            <p className="font-semibold text-xl xl:text-2xl">
               SOLUTIONS DEPLOYED
-            </span>
+            </p>
           </li>
 
           {/* 통계 아이템 2 */}
@@ -45,20 +45,20 @@ const StatsSection = () => {
             <Users className="text-blue-400" size={32} aria-hidden />
             <div className="flex font-bold text-7xl md:text-8xl xl:text-9xl">
               {inView && <CountUp end={50} duration={1000} />}
-              <span className="text-4xl text-blue-400 md:text-6xl">+</span>
+              <p className="text-4xl text-blue-400 md:text-6xl">+</p>
             </div>
-            <span className="font-semibold text-xl xl:text-2xl">CUSTOMERS</span>
+            <p className="font-semibold text-xl xl:text-2xl">CUSTOMERS</p>
           </li>
 
           <li className="flex flex-col gap-5">
             <FolderKanban className="text-blue-400" size={32} aria-hidden />
             <div className="flex font-bold text-7xl md:text-8xl xl:text-9xl">
               {inView && <CountUp end={220} duration={1000} />}
-              <span className="text-4xl text-blue-400 md:text-6xl">+</span>
+              <p className="text-4xl text-blue-400 md:text-6xl">+</p>
             </div>
-            <span className="font-semibold text-xl xl:text-2xl">
+            <p className="font-semibold text-xl xl:text-2xl">
               PROJECTS COMPLETED
-            </span>
+            </p>
           </li>
         </ul>
       </div>

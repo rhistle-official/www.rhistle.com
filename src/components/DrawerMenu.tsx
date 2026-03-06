@@ -51,20 +51,20 @@ const DrawerMenu = () => {
             </li>
             <li>
               <Link
-                href="/inquiry"
-                className="flex w-full items-center justify-center py-4 hover:bg-gray-900"
-              >
-                {t("inquiry")}
-              </Link>
-            </li>
-            <li>
-              <Link
                 href="https://tech.rhistle.com"
                 target="_blank"
                 className="flex w-full items-center justify-center py-4 hover:bg-gray-900"
               >
                 {t("blog")}
                 <ArrowUpRight />
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/inquiry"
+                className="flex w-full items-center justify-center py-4 hover:bg-gray-900"
+              >
+                {t("inquiry")}
               </Link>
             </li>
           </ul>

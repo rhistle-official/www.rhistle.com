@@ -23,9 +23,7 @@ const PartnersSection = () => {
   return (
     <section>
       <div className="mx-auto flex min-h-screen max-w-7xl flex-col justify-center gap-20 px-8 py-20 md:gap-25 xl:gap-30">
-        <span className="font-bold text-4xl md:text-5xl xl:text-6xl">
-          Partners
-        </span>
+        <p className="font-bold text-4xl md:text-5xl xl:text-6xl">Partners</p>
         <ul className="grid grid-cols-2 place-items-center gap-28 md:grid-cols-4 lg:grid-cols-4">
           {partners.map((partner) => (
             <li
@@ -36,7 +34,7 @@ const PartnersSection = () => {
                 src={partner.image}
                 alt={partner.name}
                 fill
-                sizes="100vw"
+                sizes="(min-width: 1280px) 200px, (min-width: 768px) 160px, 120px"
                 className="object-contain"
               />
             </li>

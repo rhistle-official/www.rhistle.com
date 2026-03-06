@@ -17,8 +17,8 @@ const SolutionsTab = () => {
   const pathName = usePathname();
 
   return (
-    <div className="bg-gray-200 pt-2 sm:pt-3 xl:pt-4">
-      <div className="mx-auto flex max-w-sm gap-4 sm:max-w-5xl xl:max-w-7xl">
+    <div className="border-gray-200 border-b">
+      <div className="mx-auto flex max-w-7xl gap-4 px-8">
         {tabs.map((tab) => {
           const isActive = pathName === tab.href;
 
@@ -26,7 +26,7 @@ const SolutionsTab = () => {
             <Link
               key={tab.name}
               href={tab.href}
-              className={`${isActive && "bg-white"} rounded-t-2xl p-2 sm:text-xl xl:text-2xl`}
+              className={`${isActive && "border-rhistle border-b-4 text-rhistle"} p-2 text-gray-500 sm:text-xl xl:text-2xl`}
             >
               {tab.name}
             </Link>

@@ -36,7 +36,7 @@ const page = () => {
       </section>
 
       {/* 본문 */}
-      <section></section>
+      <section>코어코드 페이지</section>
     </main>
   );
 };

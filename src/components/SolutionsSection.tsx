@@ -22,9 +22,9 @@ const SolutionsSection = () => {
   return (
     <section className="bg-rhistle">
       <div className="mx-auto flex min-h-screen max-w-7xl flex-col justify-center gap-20 px-8 py-20 md:gap-25 xl:gap-30">
-        <span className="font-bold text-4xl text-white md:text-5xl xl:text-6xl">
+        <p className="font-bold text-4xl text-white md:text-5xl xl:text-6xl">
           Solutions
-        </span>
+        </p>
         <div className="flex flex-col gap-10 md:flex-row">
           {solutions.map((solution) => (
             <article
@@ -36,21 +36,21 @@ const SolutionsSection = () => {
                   src={solution.image}
                   alt="corecode"
                   fill
-                  sizes="100vw"
+                  sizes="200px"
                   className="object-cover brightness-70"
                 />
-                <span className="absolute inset-0 flex items-center justify-center text-4xl text-white">
+                <p className="absolute inset-0 flex items-center justify-center text-4xl text-white">
                   {solution.name}
-                </span>
+                </p>
               </div>
 
               <div className="flex flex-col gap-3 p-6">
-                <span className="font-extrabold text-2xl text-slate-900 md:text-4xl">
+                <p className="font-extrabold text-2xl text-slate-900 md:text-4xl">
                   {solution.name}
-                </span>
-                <span className="text-base text-slate-600 md:text-lg">
+                </p>
+                <p className="text-base text-slate-600 md:text-lg">
                   {t(solution.translationKey)}
-                </span>
+                </p>
               </div>
             </article>
           ))}

@@ -35,7 +35,7 @@ const page = () => {
       </section>
 
       {/* 본문 */}
-      <section></section>
+      <section>nexumm 페이지</section>
     </main>
   );
 };

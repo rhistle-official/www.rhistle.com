@@ -32,13 +32,13 @@ const Footer = () => {
           <address className="flex flex-col gap-1 text-xs not-italic md:text-base xl:text-lg">
             <div className="flex flex-wrap items-center gap-x-4">
               <strong className="font-bold">{t("name")}</strong>
-              <span>{t("ceo")}</span>
+              <p>{t("ceo")}</p>
             </div>
             <p>{t("address")}</p>
             <div className="flex items-center gap-2">
-              <span>Tel: 02-3018-5114</span>
-              <span>|</span>
-              <span>FAX: 02-3018-3026</span>
+              <p>Tel: 02-3018-5114</p>
+              <p>|</p>
+              <p>FAX: 02-3018-3026</p>
             </div>
           </address>
         </div>
@@ -59,7 +59,7 @@ const Footer = () => {
                   src={certification.image}
                   alt={`${certification.name} 인증 마크`}
                   fill
-                  sizes="100vw"
+                  sizes="(min-width: 1024px) 120px, (min-width: 768px) 80px, 40px"
                   className="object-contain"
                 />
               </li>

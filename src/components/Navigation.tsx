@@ -26,9 +26,6 @@ const Navigation = ({ isScrolled }: { isScrolled: boolean }) => {
           <Link href="/company">{t("company")}</Link>
         </li>
         <li>
-          <Link href="/inquiry">{t("inquiry")}</Link>
-        </li>
-        <li>
           <Link
             href="https://tech.rhistle.com"
             target="_blank"
@@ -38,7 +35,14 @@ const Navigation = ({ isScrolled }: { isScrolled: boolean }) => {
             <ArrowUpRight />
           </Link>
         </li>
-        <li>
+
+        <li className="flex items-center gap-4">
+          <Link
+            href="/inquiry"
+            className={`rounded-full ${isScrolled ? "bg-gray-200" : "bg-gray-500"} px-3 py-2 text-lg`}
+          >
+            {t("inquiry")}
+          </Link>
           <LocaleSwitcher />
         </li>
       </ul>
