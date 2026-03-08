@@ -38,10 +38,10 @@ const Navigation = ({ isScrolled }: { isScrolled: boolean }) => {
 
         <li className="flex items-center gap-4">
           <Link
-            href="/inquiry"
+            href="/contact"
             className={`rounded-full ${isScrolled ? "bg-gray-200" : "bg-gray-500"} px-3 py-2 text-lg`}
           >
-            {t("inquiry")}
+            {t("contact")}
           </Link>
           <LocaleSwitcher />
         </li>

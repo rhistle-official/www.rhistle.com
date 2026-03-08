@@ -17,7 +17,7 @@ const SolutionsTab = () => {
   const pathName = usePathname();
 
   return (
-    <div className="border-gray-200 border-b">
+    <div className="border-gray-200 border-b bg-white">
       <div className="mx-auto flex max-w-7xl gap-4 px-8">
         {tabs.map((tab) => {
           const isActive = pathName === tab.href;

@@ -19,11 +19,16 @@ const partners = [
   { name: "pwc", image: pwcImg },
 ];
 
-const PartnersSection = () => {
+const Partners = () => {
   return (
     <section>
-      <div className="mx-auto flex min-h-screen max-w-7xl flex-col justify-center gap-20 px-8 py-20 md:gap-25 xl:gap-30">
-        <p className="font-bold text-4xl md:text-5xl xl:text-6xl">Partners</p>
+      <div className="mx-auto flex min-h-screen max-w-7xl flex-col justify-center gap-10 px-8 py-20">
+        <div className="space-y-4">
+          <h2 className="font-medium text-gray-500 text-xl">Partners</h2>
+          <p className="break-keep font-bold text-5xl">
+            리슬과 함께하는 혁신 파트너
+          </p>
+        </div>
         <ul className="grid grid-cols-2 place-items-center gap-28 md:grid-cols-4 lg:grid-cols-4">
           {partners.map((partner) => (
             <li
@@ -44,4 +49,4 @@ const PartnersSection = () => {
     </section>
   );
 };
-export default PartnersSection;
+export default Partners;

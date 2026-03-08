@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import ScrollDown from "./ScrollDown";
 
-const HeroSection = () => {
+const Hero = () => {
   const t = useTranslations("home");
 
   return (
@@ -31,4 +31,4 @@ const HeroSection = () => {
     </section>
   );
 };
-export default HeroSection;
+export default Hero;

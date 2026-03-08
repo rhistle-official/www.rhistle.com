@@ -30,12 +30,12 @@ const ScrollToTop = () => {
     <button
       type="button"
       onClick={handleClick}
-      className="fixed right-10 bottom-10 z-30 md:right-15 lg:right-20"
+      className="fixed right-8 bottom-10 z-30"
     >
       <div
-        className={`flex ${!isScrolled && "hidden"} h-15 w-15 cursor-pointer items-center justify-center rounded-full bg-gray-900`}
+        className={`flex ${!isScrolled && "hidden"} h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-black opacity-85 md:h-12 md:w-12 xl:h-15 xl:w-15`}
       >
-        <CircleArrowUp className="scale-150 text-white" />
+        <CircleArrowUp className="scale-105 text-white md:scale-125 xl:scale-150" />
       </div>
     </button>
   );

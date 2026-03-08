@@ -1,15 +1,17 @@
-import HeroSection from "@/components/HeroSection";
-import PartnersSection from "@/components/PartnersSection";
-import SolutionsSection from "@/components/SolutionsSection";
-import StatsSection from "@/components/StatsSection";
+import BusinessCase from "@/components/BusinessCase";
+import Hero from "@/components/Hero";
+import Partners from "@/components/Partners";
+import Solutions from "@/components/Solutions";
+import Stats from "@/components/Stats";
 
 const page = () => {
   return (
     <main>
-      <HeroSection />
-      <StatsSection />
-      <SolutionsSection />
-      <PartnersSection />
+      <Hero />
+      <Stats />
+      <BusinessCase />
+      <Solutions />
+      <Partners />
     </main>
   );
 };

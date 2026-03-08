@@ -35,7 +35,28 @@ const page = () => {
       </section>
 
       {/* 본문 */}
-      <section>nexumm 페이지</section>
+      <section className="mx-auto max-w-7xl px-8 py-40 text-center">
+        <div className="flex flex-col items-center gap-6">
+          {/* 은은하게 깜빡이는 원형 포인트 */}
+          <div className="relative">
+            <div className="absolute inset-0 animate-ping rounded-full bg-blue-400 opacity-20"></div>
+            <div className="relative h-4 w-4 rounded-full bg-blue-600"></div>
+          </div>
+
+          <h2 className="font-bold text-4xl text-slate-900 tracking-tight md:text-5xl">
+            준비 중입니다
+          </h2>
+          <div>
+            <p className="text-lg text-slate-500">
+              리슬의 핵심 기술 가치를 담기 위해 현재 페이지를 최적화하고
+              있습니다.
+            </p>
+            <p className="text-lg text-slate-500">
+              더 나은 모습으로 곧 찾아뵙겠습니다.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };

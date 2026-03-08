@@ -61,10 +61,10 @@ const DrawerMenu = () => {
             </li>
             <li>
               <Link
-                href="/inquiry"
+                href="/contact"
                 className="flex w-full items-center justify-center py-4 hover:bg-gray-900"
               >
-                {t("inquiry")}
+                {t("contact")}
               </Link>
             </li>
           </ul>

@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import { useInView } from "react-intersection-observer";
 import CountUp from "./CountUp";
 
-const StatsSection = () => {
+const Stats = () => {
   const t = useTranslations("home");
   const { ref, inView } = useInView({
     threshold: 0.3,
@@ -16,8 +16,8 @@ const StatsSection = () => {
     <section className="bg-linear-to-b from-black to-rhistle text-white">
       <div className="mx-auto flex min-h-screen max-w-7xl flex-col justify-center gap-15 px-8 py-20 md:gap-25 xl:gap-30">
         <div className="flex flex-col gap-4">
-          <p className="text-blue-400 text-xl tracking-widest">SINCE 2005</p>
-          <p className="font-bold text-4xl leading-tight md:text-5xl xl:text-6xl">
+          <p className="text-blue-400 text-xl">Since 2005</p>
+          <p className="font-bold text-3xl leading-tight md:text-4xl xl:text-5xl">
             {t("stats.first")}
             <br />
             {t("stats.second")}
@@ -66,4 +66,4 @@ const StatsSection = () => {
   );
 };
 
-export default StatsSection;
+export default Stats;
