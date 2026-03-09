@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed z-40 w-full py-3 font-bold md:py-4 xl:py-5 ${isScrolled ? "border-gray-200 border-b bg-white" : "bg-transparent text-white"}`}
+      className={`fixed z-50 w-full py-3 font-bold md:py-4 xl:py-5 ${isScrolled ? "border-gray-200 border-b bg-white" : "bg-transparent text-white"}`}
     >
       <nav className="mx-auto max-w-7xl px-8">
         <div className="hidden md:block">

@@ -17,7 +17,7 @@ const SolutionsTab = () => {
   const pathName = usePathname();
 
   return (
-    <div className="border-gray-200 border-b bg-white">
+    <section className="sticky top-13.25 border-gray-200 border-b bg-white md:top-19.25 xl:top-21.25">
       <div className="mx-auto flex max-w-7xl gap-4 px-8">
         {tabs.map((tab) => {
           const isActive = pathName === tab.href;
@@ -33,7 +33,7 @@ const SolutionsTab = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 export default SolutionsTab;
