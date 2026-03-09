@@ -110,12 +110,14 @@ const History = () => {
   });
 
   return (
-    <section ref={ref} className="grid grid-cols-2 space-y-6 py-16">
+    <section ref={ref} className="grid grid-cols-2 gap-6 py-16">
       <div
-        className={`${inView ? "sticky top-21.25" : ""} space-x-4 self-start`}
+        className={`${inView && "sticky top-21.25"} space-y-2 self-start sm:space-y-4`}
       >
         <p className="font-medium text-gray-500 text-xl">Company History</p>
-        <h2 className="break-keep font-bold text-5xl">리슬이 걸어온 길</h2>
+        <h2 className="break-keep font-bold text-3xl md:text-4xl xl:text-5xl">
+          리슬이 걸어온 길
+        </h2>
         <p className="mt-4 max-w-xs text-gray-600 leading-relaxed">
           2005년 설립 이후 리슬은 데이터 기술을 기반으로 제조 현장과 기업
           시스템을 연결하며 성장해왔습니다. 다양한 산업 현장에서 축적된 경험을

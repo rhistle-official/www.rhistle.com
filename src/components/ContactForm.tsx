@@ -7,7 +7,7 @@ import type { ContactFormState } from "@/types/contact";
 const ContactForm = () => {
   const [state, action, pending] = useActionState<ContactFormState, FormData>(
     submitContact,
-    {},
+    { success: false, message: "" },
   );
   return (
     <form
@@ -82,7 +82,7 @@ const ContactForm = () => {
       {state?.success && (
         <p className="text-green-500">문의가 정상적으로 접수되었습니다.</p>
       )}
-      {state?.error && <p className="text-red-500">{state.error}</p>}
+      {/* {state?.error && <p className="text-red-500">{state.error}</p>} */}
     </form>
   );
 };

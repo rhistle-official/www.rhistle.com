@@ -24,12 +24,12 @@ const Footer = () => {
 
   return (
     <footer className="border-gray-200 border-t py-10 md:py-15 xl:py-20">
-      <div className="mx-auto flex max-w-7xl flex-col gap-8 px-8">
+      <div className="mx-auto flex max-w-7xl flex-col gap-8 px-8 text-sm md:text-base xl:text-xl">
         <div className="flex flex-col gap-8">
           <strong className="font-(family-name:--font-audiowide) text-rhistle text-xl md:text-3xl xl:text-4xl">
             RHISTLE
           </strong>
-          <address className="flex flex-col gap-1 text-xs not-italic md:text-base xl:text-lg">
+          <address className="flex flex-col gap-1 not-italic">
             <div className="flex flex-wrap items-center gap-x-4">
               <strong className="font-bold">{t("name")}</strong>
               <p>{t("ceo")}</p>
@@ -46,7 +46,7 @@ const Footer = () => {
         <hr className="border-gray-200" />
 
         <div className="flex items-center justify-between">
-          <small className="text-[0.5rem] md:text-base lg:text-lg">
+          <small>
             © {new Date().getFullYear()} RHISTLE. All rights reserved.
           </small>
           <ul className="flex gap-4 md:gap-6 lg:gap-8">

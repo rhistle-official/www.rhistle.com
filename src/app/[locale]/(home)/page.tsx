@@ -147,9 +147,11 @@ const page = () => {
       <Stats />
 
       <section className="mx-auto flex min-h-screen max-w-7xl flex-col justify-center gap-10 px-8 py-20">
-        <div className="space-y-4">
+        <div className="space-y-2 sm:space-y-4">
           <h2 className="font-medium text-gray-500 text-xl">Business Cases</h2>
-          <p className="break-keep font-bold text-5xl">디지털 전환 성공 사례</p>
+          <p className="break-keep font-bold text-3xl md:text-4xl xl:text-5xl">
+            디지털 전환 성공 사례
+          </p>
         </div>
 
         <div className="grid gap-8 lg:grid-cols-2">
@@ -224,10 +226,10 @@ const page = () => {
         </div>
       </section>
 
-      <section className="mx-auto flex min-h-screen max-w-7xl flex-col justify-center gap-10 px-8 py-20">
-        <div className="space-y-4">
+      <section className="mx-auto flex min-h-screen max-w-7xl flex-col justify-center gap-10 px-8 py-20 text-xl">
+        <div className="space-y-2 sm:space-y-4">
           <h2 className="font-medium text-gray-500 text-xl">Solutions</h2>
-          <p className="break-keep font-bold text-5xl">
+          <p className="break-keep font-bold text-3xl md:text-4xl xl:text-5xl">
             디지털 혁신을 위한 솔루션
           </p>
         </div>
@@ -245,16 +247,17 @@ const page = () => {
                   src={solution.image}
                   alt={solution.name}
                   fill
+                  sizes="360px"
                   className="object-cover"
                 />
               </div>
 
               {/* Text */}
               <div className="space-y-4">
-                <p className="font-bold text-4xl">{solution.name}</p>
-                <p className="text-lg text-slate-600">
-                  {t(solution.translationKey)}
+                <p className="font-bold text-3xl md:text-4xl xl:text-5xl">
+                  {solution.name}
                 </p>
+                <p className="text-slate-600">{t(solution.translationKey)}</p>
                 <Link
                   href={solution.href}
                   className="flex items-center text-slate-600"
@@ -269,9 +272,9 @@ const page = () => {
 
       <section>
         <div className="mx-auto flex min-h-screen max-w-7xl flex-col justify-center gap-10 px-8 py-20">
-          <div className="space-y-4">
+          <div className="space-y-2 sm:space-y-4">
             <h2 className="font-medium text-gray-500 text-xl">Partners</h2>
-            <p className="break-keep font-bold text-5xl">
+            <p className="break-keep font-bold text-3xl md:text-4xl xl:text-5xl">
               리슬과 함께하는 혁신 파트너
             </p>
           </div>
@@ -295,7 +298,7 @@ const page = () => {
       </section>
 
       <CallToAction
-        href="/pdf/RHISTLE_Company_Profile.pdf"
+        href="/pdf/RHISTLE_Profile.pdf"
         download="회사소개서_(주)리슬.pdf"
         title="회사소개서 다운로드"
       />

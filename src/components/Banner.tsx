@@ -8,7 +8,7 @@ const Banner = ({
   title: string;
 }) => {
   return (
-    <section className="relative h-100">
+    <section className="relative h-60 md:h-80 xl:h-100">
       <Image
         src={bannerImg}
         alt="company-banner"

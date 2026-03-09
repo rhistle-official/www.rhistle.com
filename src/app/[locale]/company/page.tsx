@@ -209,9 +209,9 @@ const page = () => {
           </div>
         </section>
 
-        <section className="space-y-6 py-16">
+        <section className="space-y-2 py-16 sm:space-y-4">
           <p className="font-medium text-gray-500 text-xl">Company Values</p>
-          <h2 className="break-keep font-bold text-5xl">
+          <h2 className="break-keep font-bold text-3xl md:text-4xl xl:text-5xl">
             리슬이 지향하는 미래
           </h2>
 
@@ -229,7 +229,7 @@ const page = () => {
                   )}
 
                   <div className="flex flex-col gap-4">
-                    <h3 className="flex items-center gap-2 font-bold text-2xl text-blue-900">
+                    <h3 className="flex items-center gap-2 font-bold text-blue-900">
                       <span className="h-8 w-2 rounded-full bg-rhistle" />
                       {value.title}
                     </h3>
