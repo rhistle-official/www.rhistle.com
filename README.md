@@ -18,15 +18,4 @@ pnpm install
 ### 3. 개발 서버 실행 (Run Development)
 ```
 pnpm dev
-```
-## 빌드 및 배포 (Build & Deployment)
-
-### 1. 프로덕션 빌드 (Build for Production)
-```
-pnpm build
-```
-
-### 프로덕션 서버 실행 (Start Server)
-```
-pnpm start
-```
+``
