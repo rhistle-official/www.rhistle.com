@@ -93,8 +93,7 @@ export async function submitContact(
   try {
     await transporter.sendMail({
       from: `"${cleanName}" <${process.env.MAIL_USER}>`,
-      to: "seokjun.ham@rhistle.com",
-      replyTo: email,
+      to: "junsik.choi@rhistle.com",
       subject: `[문의] ${cleanCategory} - ${cleanCompany}`,
       html: `
         <div>
