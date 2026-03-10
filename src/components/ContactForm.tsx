@@ -60,29 +60,18 @@ const ContactForm = () => {
         placeholder="문의 내용을 입력해 주세요"
         className="h-45 w-full resize-none rounded-xl border-none bg-gray-100 p-4 outline-none transition-all placeholder:text-rhistle/50 focus:ring-2 focus:ring-rhistle"
       />
-
-      {/* <button
-          type="submit"
-          disabled={!agreed}
-          className={`w-full rounded-xl py-4 font-bold transition-all duration-300 ${
-            agreed
-              ? "bg-blue-600 text-white shadow-blue-100 shadow-lg hover:bg-blue-700"
-              : "cursor-not-allowed bg-slate-200 text-slate-400"
-          }`}
-        >
-          문의하기
-        </button> */}
       <button
         type="submit"
         disabled={pending}
-        className="w-full cursor-pointer rounded-xl bg-rhistle py-4 font-bold text-white"
+        className={`w-full rounded-xl py-4 font-bold ${pending ? "cursor-not-allowed bg-gray-100" : "cursor-pointer bg-rhistle text-white hover:bg-rhistle/90"}`}
       >
         {pending ? "전송 중..." : "문의하기"}
       </button>
-      {state?.success && (
-        <p className="text-green-500">문의가 정상적으로 접수되었습니다.</p>
+      {state?.message && (
+        <p className={` ${state.success ? "text-green-600" : "text-red-500"}`}>
+          {state.message}
+        </p>
       )}
-      {/* {state?.error && <p className="text-red-500">{state.error}</p>} */}
     </form>
   );
 };
