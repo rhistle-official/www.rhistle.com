@@ -1,7 +1,7 @@
 "use server";
 
-import DOMPurify from "isomorphic-dompurify";
 import nodemailer from "nodemailer";
+import sanitizeHtml from "sanitize-html";
 import { z } from "zod";
 import type { ContactFormState } from "@/types/contact";
 
@@ -59,7 +59,7 @@ async function sendSlackMessage(payload: {
 }
 
 const stripHtml = (str: string) =>
-  DOMPurify.sanitize(str, { ALLOWED_TAGS: [] });
+  sanitizeHtml(str, { allowedTags: [], allowedAttributes: {} });
 
 export async function submitContact(
   prevState: ContactFormState,
