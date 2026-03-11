@@ -1,13 +1,11 @@
 @import "tailwindcss";
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 @theme {
   --font-sans:
     var(--font-pretendard), ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --font-audiowide: var(--font-audiowide);
 
   --color-rhistle: #1428a0;
 

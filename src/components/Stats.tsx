@@ -5,6 +5,12 @@ import { useTranslations } from "next-intl";
 import { useInView } from "react-intersection-observer";
 import CountUp from "./CountUp";
 
+const StatsItems = [
+  { name: "Solutions Deployed", icon: Newspaper, endValue: 400 },
+  { name: "Customers", icon: Users, endValue: 50 },
+  { name: "Projects Completed", icon: FolderKanban, endValue: 220 },
+];
+
 const Stats = () => {
   const t = useTranslations("home");
   const { ref, inView } = useInView({
@@ -14,9 +20,9 @@ const Stats = () => {
 
   return (
     <section className="bg-linear-to-b from-black to-rhistle text-white">
-      <div className="mx-auto flex min-h-screen max-w-7xl flex-col justify-center gap-15 px-8 py-20 md:gap-25 xl:gap-30">
-        <div className="flex flex-col gap-4">
-          <p className="text-blue-400 text-xl">Since 2005</p>
+      <div className="mx-auto flex min-h-screen max-w-7xl flex-col justify-center gap-20 px-8 py-20">
+        <div className="space-y-2 md:space-y-4">
+          <p className="text-blue-400 md:text-lg xl:text-xl">Since 2005</p>
           <p className="font-bold text-3xl leading-tight md:text-4xl xl:text-5xl">
             {t("stats.first")}
             <br />
@@ -26,40 +32,21 @@ const Stats = () => {
         <ul
           ref={ref}
           className={`flex flex-col justify-between gap-12 transition-all delay-300 duration-1000 md:flex-row ${
-            inView ? "opacity-100" : "opacity-0"
+            inView ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
         >
-          <li className="flex flex-col gap-5">
-            <Newspaper className="text-blue-400" size={32} aria-hidden />
-            <div className="flex font-bold text-7xl md:text-8xl xl:text-9xl">
-              {inView && <CountUp end={400} duration={1000} />}
-              <p className="text-4xl text-blue-400 md:text-6xl">+</p>
-            </div>
-            <p className="font-semibold text-xl xl:text-2xl">
-              SOLUTIONS DEPLOYED
-            </p>
-          </li>
-
-          {/* 통계 아이템 2 */}
-          <li className="flex flex-col gap-5">
-            <Users className="text-blue-400" size={32} aria-hidden />
-            <div className="flex font-bold text-7xl md:text-8xl xl:text-9xl">
-              {inView && <CountUp end={50} duration={1000} />}
-              <p className="text-4xl text-blue-400 md:text-6xl">+</p>
-            </div>
-            <p className="font-semibold text-xl xl:text-2xl">CUSTOMERS</p>
-          </li>
-
-          <li className="flex flex-col gap-5">
-            <FolderKanban className="text-blue-400" size={32} aria-hidden />
-            <div className="flex font-bold text-7xl md:text-8xl xl:text-9xl">
-              {inView && <CountUp end={220} duration={1000} />}
-              <p className="text-4xl text-blue-400 md:text-6xl">+</p>
-            </div>
-            <p className="font-semibold text-xl xl:text-2xl">
-              PROJECTS COMPLETED
-            </p>
-          </li>
+          {StatsItems.map(({ name, icon: Icon, endValue }) => (
+            <li key={name} className="flex flex-col gap-5">
+              <Icon className="text-blue-400" size={32} aria-hidden />
+              <div className="flex font-bold">
+                {inView && <CountUp end={endValue} duration={1000} />}
+                <p className="text-3xl text-blue-400 md:text-4xl xl:text-5xl">
+                  +
+                </p>
+              </div>
+              <p className="font-semibold md:text-lg xl:text-xl">{name}</p>
+            </li>
+          ))}
         </ul>
       </div>
     </section>

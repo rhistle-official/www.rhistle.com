@@ -156,7 +156,7 @@ const page = () => {
 
       <SolutionsTab />
 
-      <section className="mx-auto max-w-7xl space-y-16 px-8 py-16 text-base text-gray-700 xl:text-xl">
+      <section className="mx-auto max-w-7xl space-y-16 px-8 py-20 md:text-lg xl:text-xl">
         <div className="space-y-6">
           <p className="font-bold text-rhistle">Overview</p>
           <p>
@@ -202,7 +202,7 @@ const page = () => {
                   {highlights.map((item) => (
                     <li key={item.title}>
                       <p className="font-bold">{item.title}</p>
-                      <ul className="pl-4">
+                      <ul className="pl-4 text-base">
                         {item.details.map((detail) => (
                           <li key={detail}>- {detail}</li>
                         ))}
@@ -217,7 +217,7 @@ const page = () => {
                   Functionality
                 </p>
 
-                <ul className="space-y-2">
+                <ul className="space-y-2 text-base">
                   {functionalities.map((func) => (
                     <li key={func}>{func}</li>
                   ))}
@@ -287,7 +287,7 @@ const page = () => {
                     <Icon className="h-8 w-8 text-rhistle" />
                   </div>
 
-                  <ul className="space-y-2 text-base text-gray-700">
+                  <ul className="space-y-2 text-base">
                     {item.descriptions.map((desc) => (
                       <li key={desc}>{desc}</li>
                     ))}
@@ -319,7 +319,7 @@ const page = () => {
                       <span className="font-black text-rhistle/30 transition-colors duration-500 group-hover:text-rhistle">
                         {item.id}
                       </span>
-                      <h3 className="font-bold text-gray-700">{item.title}</h3>
+                      <h3 className="font-bold">{item.title}</h3>
                     </div>
 
                     <div className="relative h-6 w-6">
@@ -334,7 +334,7 @@ const page = () => {
                         {item.desc.map((line) => (
                           <li
                             key={line}
-                            className="flex items-center gap-3 text-gray-700 opacity-0 transition-all delay-100 duration-700 group-hover:opacity-100"
+                            className="flex items-center gap-3 opacity-0 transition-all delay-100 duration-700 group-hover:opacity-100"
                           >
                             <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-rhistle" />
                             <span className="leading-relaxed">{line}</span>

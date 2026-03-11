@@ -20,9 +20,9 @@ const ScrollDown = () => {
   }, []);
   return (
     <div
-      className={`${isScrolled ? "opacity-0" : "opacity-100"} flex flex-col items-center gap-1 text-white transition-opacity duration-500 ease-in-out`}
+      className={`${isScrolled ? "opacity-0" : "opacity-100"} flex flex-col items-center gap-1 text-sm text-white transition-opacity duration-500 ease-in-out md:text-base`}
     >
-      <p className="text-sm md:text-base">scroll down</p>
+      <p>scroll down</p>
       <ChevronsDown className="animate-bounce" />
     </div>
   );

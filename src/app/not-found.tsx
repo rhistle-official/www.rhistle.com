@@ -2,12 +2,13 @@
 
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { pretendard } from "./fonts";
 
 export default function NotFound() {
   const router = useRouter();
 
   return (
-    <html lang="ko">
+    <html lang="ko" className={`${pretendard.variable}`}>
       <body>
         <div className="flex h-screen w-full flex-col items-center justify-center gap-6">
           <Image

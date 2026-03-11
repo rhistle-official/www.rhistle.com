@@ -122,12 +122,12 @@ const page = () => {
       <section className="relative h-screen w-full">
         <div className="absolute bottom-0 z-10 flex h-screen w-full items-center justify-between bg-linear-to-b from-80% from-transparent via-90% via-transparent to-100% to-black text-white" />
         <div className="absolute inset-0 z-20 flex flex-col items-center justify-center gap-2 text-white md:gap-4 xl:gap-6">
-          <h2 className="font-extrabold text-xs sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl">
-            {t("hero.subtitle")}
-          </h2>
-          <h1 className="font-bold text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+          <h1 className="font-extrabold text-xs sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl">
             {t("hero.title")}
           </h1>
+          <h2 className="font-bold text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+            {t("hero.subtitle")}
+          </h2>
         </div>
         <div className="absolute bottom-8 left-1/2 z-20 -translate-x-1/2">
           <ScrollDown />
@@ -146,9 +146,9 @@ const page = () => {
 
       <Stats />
 
-      <section className="mx-auto flex min-h-screen max-w-7xl flex-col justify-center gap-10 px-8 py-20">
-        <div className="space-y-2 sm:space-y-4">
-          <h2 className="font-medium text-gray-500 text-xl">Business Cases</h2>
+      <section className="mx-auto flex min-h-screen max-w-7xl flex-col justify-center gap-20 px-8 py-20">
+        <div className="space-y-2 md:space-y-4">
+          <h2 className="text-gray-500">Business Cases</h2>
           <p className="break-keep font-bold text-3xl md:text-4xl xl:text-5xl">
             디지털 전환 성공 사례
           </p>
@@ -156,36 +156,27 @@ const page = () => {
 
         <div className="grid gap-8 lg:grid-cols-2">
           {cases.map((item) => (
-            <div
+            <article
               key={item.id}
               className="space-y-8 overflow-hidden rounded-3xl border border-gray-100 p-8 shadow-sm"
             >
               <div>
-                <p className="font-medium text-gray-400">{item.id}</p>
-                <h3 className="font-bold text-3xl text-gray-900">
-                  {item.title}
-                </h3>
-                <p className="font-medium text-gray-600 text-lg">
-                  {item.subtitle}
-                </p>
+                <p className="text-gray-500">{item.id}</p>
+                <h3 className="font-bold text-3xl">{item.title}</h3>
+                <p>{item.subtitle}</p>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-2 md:space-y-4">
                 <div>
                   <h4 className="font-bold">Challenge</h4>
-                  <p className="break-keep font-medium text-gray-700">
-                    "{item.challenge}"
-                  </p>
+                  <p className="break-keep">"{item.challenge}"</p>
                 </div>
 
                 <div>
                   <h4 className="font-bold">Solutions</h4>
-                  <ul>
+                  <ul className="space-y-2">
                     {item.solutions.map((sol) => (
-                      <li
-                        key={sol}
-                        className="flex items-center gap-3 text-gray-700"
-                      >
+                      <li key={sol} className="break-keep">
                         - {sol}
                       </li>
                     ))}
@@ -195,40 +186,37 @@ const page = () => {
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <h4 className="font-bold text-rhistle">Results</h4>
-                    <div className="space-y-3">
+                    <ul className="space-y-2">
                       {item.results.map((result) => (
-                        <div key={result}>
-                          <p className="break-keep font-bold text-gray-800">
-                            {result}
-                          </p>
-                        </div>
+                        <li key={result} className="break-keep">
+                          {result}
+                        </li>
                       ))}
-                    </div>
+                    </ul>
                   </div>
+
                   <div>
                     <h4 className="font-bold text-rhistle">
                       Business Benefits
                     </h4>
-                    <div className="space-y-3">
+                    <ul className="space-y-2">
                       {item.benefits.map((benefit) => (
-                        <div key={benefit}>
-                          <p className="break-keep font-bold text-gray-800">
-                            {benefit}
-                          </p>
-                        </div>
+                        <li key={benefit} className="break-keep">
+                          {benefit}
+                        </li>
                       ))}
-                    </div>
+                    </ul>
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </section>
 
-      <section className="mx-auto flex min-h-screen max-w-7xl flex-col justify-center gap-10 px-8 py-20 text-xl">
+      <section className="mx-auto flex min-h-screen max-w-7xl flex-col justify-center gap-20 px-8 py-20">
         <div className="space-y-2 sm:space-y-4">
-          <h2 className="font-medium text-gray-500 text-xl">Solutions</h2>
+          <h2 className="text-gray-500">Solutions</h2>
           <p className="break-keep font-bold text-3xl md:text-4xl xl:text-5xl">
             디지털 혁신을 위한 솔루션
           </p>
@@ -241,7 +229,6 @@ const page = () => {
                 index % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""
               }`}
             >
-              {/* Image */}
               <div className="relative h-90 overflow-hidden rounded-3xl">
                 <Image
                   src={solution.image}
@@ -252,15 +239,14 @@ const page = () => {
                 />
               </div>
 
-              {/* Text */}
-              <div className="space-y-4">
+              <div className="space-y-2 sm:space-y-4">
                 <p className="font-bold text-3xl md:text-4xl xl:text-5xl">
                   {solution.name}
                 </p>
-                <p className="text-slate-600">{t(solution.translationKey)}</p>
+                <p>{t(solution.translationKey)}</p>
                 <Link
                   href={solution.href}
-                  className="flex items-center text-slate-600"
+                  className="flex items-center hover:text-rhistle"
                 >
                   바로가기 <ArrowRight />
                 </Link>
@@ -273,11 +259,12 @@ const page = () => {
       <section>
         <div className="mx-auto flex min-h-screen max-w-7xl flex-col justify-center gap-10 px-8 py-20">
           <div className="space-y-2 sm:space-y-4">
-            <h2 className="font-medium text-gray-500 text-xl">Partners</h2>
+            <h2 className="text-gray-500">Partners</h2>
             <p className="break-keep font-bold text-3xl md:text-4xl xl:text-5xl">
               리슬과 함께하는 혁신 파트너
             </p>
           </div>
+
           <ul className="grid grid-cols-2 place-items-center gap-28 md:grid-cols-4 lg:grid-cols-4">
             {partners.map((partner) => (
               <li

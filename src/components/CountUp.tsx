@@ -24,6 +24,6 @@ const CountUp = ({ end, duration }: { end: number; duration: number }) => {
     };
   }, [end, duration]);
 
-  return <>{count}</>;
+  return <p className="text-7xl md:text-8xl xl:text-9xl">{count}</p>;
 };
 export default CountUp;

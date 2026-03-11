@@ -24,9 +24,9 @@ const Footer = () => {
 
   return (
     <footer className="border-gray-200 border-t py-10 md:py-15 xl:py-20">
-      <div className="mx-auto flex max-w-7xl flex-col gap-8 px-8 text-sm md:text-base xl:text-xl">
+      <div className="mx-auto flex max-w-7xl flex-col gap-8 px-8 md:text-lg xl:text-xl">
         <div className="flex flex-col gap-8">
-          <strong className="font-(family-name:--font-audiowide) text-rhistle text-xl md:text-3xl xl:text-4xl">
+          <strong className="font-audiowide text-3xl text-rhistle">
             RHISTLE
           </strong>
           <address className="flex flex-col gap-1 not-italic">

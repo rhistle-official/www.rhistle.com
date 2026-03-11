@@ -1,36 +1,20 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: "https://www.rhistle.com/ko",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 1,
-    },
-    {
-      url: "https://www.rhistle.com/ko/company",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: "https://www.rhistle.com/ko/contact",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: "https://www.rhistle.com/ko/solutions/corecode",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: "https://www.rhistle.com/ko/solutions/nexumm",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
+  const baseUrl = "https://www.rhistle.com";
+
+  const routes = [
+    "",
+    "/company",
+    "/contact",
+    "/solutions/corecode",
+    "/solutions/nexumm",
   ];
+
+  return routes.map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: route === "" ? 1 : 0.8,
+  }));
 }
