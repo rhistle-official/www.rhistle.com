@@ -115,7 +115,7 @@ const partners = [
 ];
 
 const page = () => {
-  const t = useTranslations("home");
+  const home = useTranslations("home");
 
   return (
     <main>
@@ -123,10 +123,10 @@ const page = () => {
         <div className="absolute bottom-0 z-10 flex h-screen w-full items-center justify-between bg-linear-to-b from-80% from-transparent via-90% via-transparent to-100% to-black text-white" />
         <div className="absolute inset-0 z-20 flex flex-col items-center justify-center gap-2 text-white md:gap-4 xl:gap-6">
           <h1 className="font-extrabold text-xs sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl">
-            {t("hero.title")}
+            {home("hero.title")}
           </h1>
           <h2 className="font-bold text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
-            {t("hero.subtitle")}
+            {home("hero.subtitle")}
           </h2>
         </div>
         <div className="absolute bottom-8 left-1/2 z-20 -translate-x-1/2">
@@ -150,7 +150,7 @@ const page = () => {
         <div className="space-y-2 md:space-y-4">
           <h2 className="text-gray-500">Business Cases</h2>
           <p className="break-keep font-bold text-3xl md:text-4xl xl:text-5xl">
-            디지털 전환 성공 사례
+            {home("business.title")}
           </p>
         </div>
 
@@ -162,24 +162,30 @@ const page = () => {
             >
               <div>
                 <p className="text-gray-500">{item.id}</p>
-                <h3 className="font-bold text-3xl">{item.title}</h3>
-                <p>{item.subtitle}</p>
+                <h3 className="font-bold text-3xl">
+                  {home(`business.${item.id}.title`)}
+                </h3>
+                <p>{home(`business.${item.id}.subtitle`)}</p>
               </div>
 
               <div className="space-y-2 md:space-y-4">
                 <div>
                   <h4 className="font-bold">Challenge</h4>
-                  <p className="break-keep">"{item.challenge}"</p>
+                  <p className="break-keep">
+                    "{home(`business.${item.id}.challenge`)}"
+                  </p>
                 </div>
 
                 <div>
                   <h4 className="font-bold">Solutions</h4>
                   <ul className="space-y-2">
-                    {item.solutions.map((sol) => (
-                      <li key={sol} className="break-keep">
-                        - {sol}
-                      </li>
-                    ))}
+                    {home
+                      .raw(`business.${item.id}.solutions`)
+                      .map((sol: string) => (
+                        <li key={sol} className="break-keep">
+                          - {sol}
+                        </li>
+                      ))}
                   </ul>
                 </div>
 
@@ -187,11 +193,13 @@ const page = () => {
                   <div>
                     <h4 className="font-bold text-rhistle">Results</h4>
                     <ul className="space-y-2">
-                      {item.results.map((result) => (
-                        <li key={result} className="break-keep">
-                          {result}
-                        </li>
-                      ))}
+                      {home
+                        .raw(`business.${item.id}.results`)
+                        .map((result: string) => (
+                          <li key={result} className="break-keep">
+                            {result}
+                          </li>
+                        ))}
                     </ul>
                   </div>
 
@@ -200,11 +208,13 @@ const page = () => {
                       Business Benefits
                     </h4>
                     <ul className="space-y-2">
-                      {item.benefits.map((benefit) => (
-                        <li key={benefit} className="break-keep">
-                          {benefit}
-                        </li>
-                      ))}
+                      {home
+                        .raw(`business.${item.id}.benefits`)
+                        .map((benefit: string) => (
+                          <li key={benefit} className="break-keep">
+                            {benefit}
+                          </li>
+                        ))}
                     </ul>
                   </div>
                 </div>
@@ -218,7 +228,7 @@ const page = () => {
         <div className="space-y-2 sm:space-y-4">
           <h2 className="text-gray-500">Solutions</h2>
           <p className="break-keep font-bold text-3xl md:text-4xl xl:text-5xl">
-            디지털 혁신을 위한 솔루션
+            {home("solutions.title")}
           </p>
         </div>
         <div className="flex flex-col gap-32">
@@ -243,12 +253,13 @@ const page = () => {
                 <p className="font-bold text-3xl md:text-4xl xl:text-5xl">
                   {solution.name}
                 </p>
-                <p>{t(solution.translationKey)}</p>
+                <p>{home(solution.translationKey)}</p>
                 <Link
                   href={solution.href}
                   className="flex items-center hover:text-rhistle"
                 >
-                  바로가기 <ArrowRight />
+                  {home("solutions.goto")}
+                  <ArrowRight />
                 </Link>
               </div>
             </article>
@@ -261,7 +272,7 @@ const page = () => {
           <div className="space-y-2 sm:space-y-4">
             <h2 className="text-gray-500">Partners</h2>
             <p className="break-keep font-bold text-3xl md:text-4xl xl:text-5xl">
-              리슬과 함께하는 혁신 파트너
+              {home("partners")}
             </p>
           </div>
 
@@ -287,7 +298,7 @@ const page = () => {
       <CallToAction
         href="/pdf/RHISTLE_Profile.pdf"
         download="회사소개서_(주)리슬.pdf"
-        title="회사소개서 다운로드"
+        name="cta.download"
       />
     </main>
   );

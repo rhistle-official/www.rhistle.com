@@ -372,7 +372,7 @@ const page = () => {
       <CallToAction
         href="/pdf/CoreCode_Profile.pdf"
         download="CoreCode 소개서_(주)리슬.pdf"
-        title="CoreCode 소개서 다운로드"
+        name="CoreCode 소개서 다운로드"
       />
     </main>
   );

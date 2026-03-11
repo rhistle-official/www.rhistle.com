@@ -5,10 +5,10 @@
     "description": "RHISTLE is an IT specialist dedicated to enhancing customer value through beneficial and wise technology."
   },
   "header": {
-    "solutions": "SOLUTIONS",
-    "company": "COMPANY",
-    "contact": "CONTACT",
-    "blog": "BLOG"
+    "solutions": "Solutions",
+    "company": "Company",
+    "contact": "Contact",
+    "blog": "Blog"
   },
   "home": {
     "hero": {
@@ -19,11 +19,94 @@
       "first": "Proving Our Journey",
       "second": "in Numbers"
     },
+    "business": {
+      "title": "Digital Transformation Success Stories",
+      "Case 01": {
+        "title": "Smart Factory Consulting",
+        "subtitle": "Establishing a Smart Factory Roadmap for Company A",
+        "challenge": "Lack of system-based operational experience and need to set direction for data management",
+        "solutions": [
+          "Provided OT/IT/AT integrated consulting services",
+          "Collected, analyzed, and utilized data through on-site diagnosis to create a smart factory roadmap"
+        ],
+        "results": [
+          "Set targets for 30% productivity improvement and 44% quality enhancement",
+          "Established innovation tasks to define smart factory direction",
+          "Created a roadmap and strategy for executing innovation tasks"
+        ],
+        "benefits": ["Laid the foundation for smart factory transformation"]
+      },
+      "Case 02": {
+        "title": "WMS (Warehouse Management System) Implementation",
+        "subtitle": "Integrated Management of Raw Materials, Finished Goods, and VMI Warehouses",
+        "challenge": "Insufficient real-time inventory tracking and location management, need to strengthen regulatory compliance",
+        "solutions": [
+          "Standardized warehouse operation processes and master data",
+          "Developed Value Added Services (assembly, depletion, etc.)",
+          "Built a cloud-based globally scalable WMS"
+        ],
+        "results": [
+          "Enhanced supply chain responsiveness and operational efficiency",
+          "Established a digital warehouse management foundation",
+          "Strengthened regulatory compliance and response capabilities"
+        ],
+        "benefits": [
+          "Improved warehouse operation efficiency",
+          "Enhanced inventory visibility"
+        ]
+      },
+      "Case 03": {
+        "title": "Integrated Disaster Monitoring System",
+        "subtitle": "Advanced Disaster Prevention System for Company A",
+        "challenge": "Lack of integration between related systems caused slower crisis response and increased costs",
+        "solutions": [
+          "Built an integrated disaster monitoring system combining fire, gas, temperature sensors, and CCTV",
+          "Established early response and prevention systems through real-time monitoring and statistical analysis",
+          "Implemented enterprise-wide crisis management with timely alerts and risk detection"
+        ],
+        "results": [
+          "Operated a real-time disaster detection and integrated monitoring system",
+          "Improved preventive operation efficiency through integrated data monitoring and analysis"
+        ],
+        "benefits": [
+          "Saved 7.6 billion KRW annually in operational costs",
+          "Enhanced operational efficiency by 50%"
+        ]
+      },
+      "Case 04": {
+        "title": "Smart Factory Equipment Automation",
+        "subtitle": "Bidirectional Real-Time Data Integration System",
+        "challenge": "Real-time processing of large-scale data and flexible response to changing manufacturing environments",
+        "solutions": [
+          "Established a standard data collection framework for the plant floor",
+          "Applied modeling-based standard adaptors for each equipment",
+          "Enabled bidirectional real-time integration with new manufacturing systems (MES/Quality Control)"
+        ],
+        "results": [
+          "Stable operation of 24x7 production systems",
+          "Tracked quality across all processes on a lot basis",
+          "Improved ability to respond to equipment additions, modifications, line changes, and business expansion"
+        ],
+        "benefits": [
+          "Achieved near-zero system downtime",
+          "Reduced equipment automation implementation time by 34%"
+        ]
+      }
+    },
     "solutions": {
+      "title": "Digital Transformation Solutions",
       "corecode": "An integrated data interface solution that connects and optimizes scattered data within the company in real time. It standardizes the flow of data across complex systems to ensure a seamless work environment, while efficiently managing business data assets with strong security and flexible scalability.",
-      "nexumm": "A next-generation warehouse management system (WMS) that enables efficient warehouse operations and precise inventory management. It visualizes the entire logistics process in real time from inbound to outbound, preventing order-picking errors and optimizing workflows, ensuring reduced operating costs and improved service quality for your warehouse."
+      "nexumm": "A next-generation warehouse management system (WMS) that enables efficient warehouse operations and precise inventory management. It visualizes the entire logistics process in real time from inbound to outbound, preventing order-picking errors and optimizing workflows, ensuring reduced operating costs and improved service quality for your warehouse.",
+      "goto": "Go to"
+    },
+    "partners": "Innovation Partners",
+    "cta": {
+      "message": "Achieve successful digital transformation with RHISTLE",
+      "download": "Download Company Brochure",
+      "contact": "Contact Us"
     }
   },
+
   "company": {
     "title": "About Us"
   },

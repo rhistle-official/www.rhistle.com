@@ -62,7 +62,7 @@ const stripHtml = (str: string) =>
   sanitizeHtml(str, { allowedTags: [], allowedAttributes: {} });
 
 export async function submitContact(
-  prevState: ContactFormState,
+  _prevState: ContactFormState,
   formData: FormData,
 ): Promise<ContactFormState> {
   const rawData = Object.fromEntries(formData);
