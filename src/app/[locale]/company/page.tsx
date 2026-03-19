@@ -263,7 +263,7 @@ const page = () => {
       <CallToAction
         href="/pdf/RHISTLE_Company_Profile.pdf"
         download="회사소개서_(주)리슬.pdf"
-        title="회사소개서 다운로드"
+        name="회사소개서 다운로드"
       />
     </main>
   );
