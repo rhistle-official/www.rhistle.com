@@ -1,6 +1,7 @@
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
@@ -8,7 +9,22 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import { routing } from "@/i18n/routing";
-import { audiowide, pretendard } from "../fonts";
+
+const pretendard = localFont({
+  src: "../fonts/PretendardVariable.woff2",
+  display: "swap",
+  weight: "45 920",
+  preload: true,
+  variable: "--font-pretendard",
+});
+
+const audiowide = localFont({
+  src: "../fonts/Audiowide-Regular.woff2",
+  display: "swap",
+  weight: "400",
+  preload: true,
+  variable: "--font-audiowide",
+});
 
 export async function generateMetadata({
   params,
@@ -20,18 +36,35 @@ export async function generateMetadata({
   const baseUrl = "https://www.rhistle.com";
 
   return {
+    metadataBase: new URL(baseUrl),
     title: {
       default: t("title"),
       template: `%s | ${t("brand")}`,
     },
     description: t("description"),
     alternates: {
-      canonical: baseUrl,
+      canonical: `/${locale}`,
       languages: {
-        "ko-KR": `${baseUrl}/ko`,
-        "en-US": `${baseUrl}/en`,
-        "x-default": baseUrl,
+        "ko-KR": "/ko",
+        "en-US": "/en",
+        "x-default": "/",
       },
+    },
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url: `/${locale}`,
+      siteName: t("brand"),
+      locale: locale === "ko" ? "ko_KR" : "en_US",
+      type: "website",
+      images: [
+        {
+          url: "/images/og-rhistle.png",
+          width: 1200,
+          height: 630,
+          alt: t("title"),
+        },
+      ],
     },
   };
 }
