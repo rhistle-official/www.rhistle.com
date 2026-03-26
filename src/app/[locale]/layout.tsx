@@ -1,5 +1,4 @@
-import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { notFound } from "next/navigation";
@@ -26,6 +25,38 @@ const audiowide = localFont({
   variable: "--font-audiowide",
 });
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "home" });
+
+  return {
+    title: {
+      default: t("title"),
+      template: `%s | ${t("title")}`,
+    },
+    description: t("description"),
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url: "https://rhistle.com",
+      siteName: "rhistle.com",
+      type: "website",
+      images: [
+        {
+          url: "https://rhistle.com/image/og-rhistle.png",
+          width: 1200,
+          height: 630,
+          alt: "리슬(RHISTLE)",
+        },
+      ],
+    },
+  };
+}
+
 export default async function LocaleLayout({
   children,
   params,
@@ -44,12 +75,20 @@ export default async function LocaleLayout({
       lang={locale}
       className={`${pretendard.variable} ${audiowide.variable} antialiased`}
     >
+      <head>
+        <meta
+          name="google-site-verification"
+          content="vOadKuv4Iy8NVHLs3BjK6riU62KNXEqdBAnEvubLGtI"
+        />
+        <meta
+          name="naver-site-verification"
+          content="07cf86f4a5a618536e7521d06f50d64c4de1edae"
+        />
+      </head>
       <body>
         <NextIntlClientProvider>
           <Header />
           {children}
-          <Analytics />
-          <SpeedInsights />
           <Footer />
         </NextIntlClientProvider>
         <ScrollToTop />
