@@ -19,12 +19,12 @@ export async function generateMetadata({
     openGraph: {
       title: t("title"),
       description: t("description"),
-      url: "https://rhistle.com",
+      url: "https://www.rhistle.com",
       siteName: "rhistle.com",
       type: "website",
       images: [
         {
-          url: "https://rhistle.com/image/og-rhistle.png",
+          url: "https://www.rhistle.com/image/og-rhistle.png",
           width: 1200,
           height: 630,
           alt: "리슬(RHISTLE)",

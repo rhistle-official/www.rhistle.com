@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: "https://rhistle.com/sitemap.xml",
+    sitemap: "https://www.rhistle.com/sitemap.xml",
   };
 }
