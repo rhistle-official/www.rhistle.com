@@ -6,6 +6,8 @@
     "blog": "블로그"
   },
   "home": {
+    "title": "리슬",
+    "description": "이롭고 슬기로운 기술로 고객의 가치를 더하는 IT 전문 기업, 리슬(RHISTLE)입니다.",
     "hero": {
       "title": "리슬은 최고의 IT서비스를 통해 고객에게 차별화된 가치를 제공합니다.",
       "subtitle": "Challenge Limits, Benefit All."

@@ -1,29 +1,38 @@
+import type { Metadata } from "next";
 import "./globals.css";
+import { getTranslations } from "next-intl/server";
 
-export const metadata = {
-  title: {
-    default: "리슬",
-    template: "%s | 리슬",
-  },
-  description:
-    "이롭고 슬기로운 기술로 고객의 가치를 더하는 IT 전문 기업, 리슬(RHISTLE)입니다.",
-  openGraph: {
-    title: "리슬",
-    description:
-      "이롭고 슬기로운 기술로 고객의 가치를 더하는 IT 전문 기업, 리슬(RHISTLE)입니다.",
-    url: "https://www.rhistle.com",
-    siteName: "rhistle.com",
-    type: "website",
-    images: [
-      {
-        url: "https://www.rhistle.com/image/og-rhistle.png",
-        width: 1200,
-        height: 630,
-        alt: "리슬(RHISTLE)",
-      },
-    ],
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "metadata" });
+
+  return {
+    title: {
+      default: t("title"),
+      template: `%s | ${t("title")}`,
+    },
+    description: t("description"),
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url: "https://www.rhistle.com",
+      siteName: "rhistle.com",
+      type: "website",
+      images: [
+        {
+          url: "/image/og-rhistle.png",
+          width: 1200,
+          height: 630,
+          alt: "리슬(RHISTLE)",
+        },
+      ],
+    },
+  };
+}
 
 export default async function RootLayout({
   children,

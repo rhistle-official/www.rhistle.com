@@ -6,6 +6,8 @@
     "blog": "Blog"
   },
   "home": {
+    "title": "RHISTLE",
+    "description": "RHISTLE, an IT expert dedicated to enriching customer value through smart and impactful technology.",
     "hero": {
       "title": "RHISTLE delivers exceptional value to customers through premier IT services",
       "subtitle": "Challenge Limits, Benefit All."
