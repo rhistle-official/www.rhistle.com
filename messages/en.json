@@ -1,9 +1,4 @@
 {
-  "metadata": {
-    "title": "RHISTLE",
-    "brand": "RHISTLE",
-    "description": "RHISTLE is an IT specialist dedicated to enhancing customer value through beneficial and wise technology."
-  },
   "header": {
     "solutions": "Solutions",
     "company": "Company",
@@ -106,9 +101,9 @@
       "contact": "Contact Us"
     }
   },
-
   "company": {
-    "title": "About Us"
+    "title": "About Us",
+    "description": "Official introduction to RHISTLE's innovative solutions and corporate values."
   },
   "contact": {
     "title": "Contact Us",
@@ -122,7 +117,8 @@
     }
   },
   "corecode": {
-    "title": "CoreCode"
+    "title": "CoreCode",
+    "description": "Introducing CoreCode by RHISTLE: A powerful interface solution bridging the gap between facilities and systems. Experience seamless real-time data acquisition and stable equipment control."
   },
   "nexumm": {
     "title": "Nexumm"

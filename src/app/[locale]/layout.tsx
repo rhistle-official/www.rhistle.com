@@ -26,49 +26,6 @@ const audiowide = localFont({
   variable: "--font-audiowide",
 });
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}): Promise<Metadata> {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "metadata" });
-  const baseUrl = "https://www.rhistle.com";
-
-  return {
-    metadataBase: new URL(baseUrl),
-    title: {
-      default: t("title"),
-      template: `%s | ${t("brand")}`,
-    },
-    description: t("description"),
-    alternates: {
-      canonical: `/${locale}`,
-      languages: {
-        "ko-KR": "/ko",
-        "en-US": "/en",
-        "x-default": "/",
-      },
-    },
-    openGraph: {
-      title: t("title"),
-      description: t("description"),
-      url: `/${locale}`,
-      siteName: t("brand"),
-      locale: locale === "ko" ? "ko_KR" : "en_US",
-      type: "website",
-      images: [
-        {
-          url: `${baseUrl}/images/og-rhistle.png`,
-          width: 1200,
-          height: 630,
-          alt: t("title"),
-        },
-      ],
-    },
-  };
-}
-
 export default async function LocaleLayout({
   children,
   params,

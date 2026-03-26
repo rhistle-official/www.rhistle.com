@@ -1,9 +1,25 @@
 import { Database, Factory, TrendingUp } from "lucide-react";
+import type { Metadata } from "next";
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 import Banner from "@/components/Banner";
 import CallToAction from "@/components/CallToAction";
 import SolutionsTab from "@/components/SolutionsTab";
-import corecodeImg from "../../../../../public/images/corecode.jpg";
+import corecodeImg from "@/public/image/corecode.jpg";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "company" });
+
+  return {
+    title: "CoreCode",
+    description: t("description"),
+  };
+}
 
 const features = [
   {
@@ -142,13 +158,6 @@ const effectData = [
   },
 ];
 
-export async function generateMetadata() {
-  return {
-    title: "CoreCode",
-    description: "리슬의 CoreCode를 소개하는 페이지입니다.",
-  };
-}
-
 const page = () => {
   return (
     <main>
@@ -168,7 +177,7 @@ const page = () => {
 
           <div className="w-full max-w-7xl">
             <Image
-              src="/images/corecode_overview_1.png"
+              src="/image/corecode_overview_1.png"
               alt="corecode_overview_1"
               width={2525}
               height={1128}
@@ -184,7 +193,7 @@ const page = () => {
           <div className="grid gap-16 lg:grid-cols-2">
             <div className="w-full max-w-7xl">
               <Image
-                src="/images/corecode_overview_2.png"
+                src="/image/corecode_overview_2.png"
                 alt="corecode_overview_2"
                 width={1121}
                 height={1054}
@@ -359,7 +368,7 @@ const page = () => {
           </p>
           <div className="w-full max-w-7xl">
             <Image
-              src="/images/corecode_applications.png"
+              src="/image/corecode_applications.png"
               alt="corecode_applications"
               width="1224"
               height="498"

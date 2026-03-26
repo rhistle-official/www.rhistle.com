@@ -5,16 +5,16 @@ import CallToAction from "@/components/CallToAction";
 import ScrollDown from "@/components/ScrollDown";
 import Stats from "@/components/Stats";
 import { Link } from "@/i18n/navigation";
-import corecodeImg from "../../../../public/images/corecode.jpg";
-import hyundaiAutoeverImg from "../../../../public/images/hyundaiAutoever.png";
-import kpmgImg from "../../../../public/images/kpmg.png";
-import lgCNSImg from "../../../../public/images/lgCNS.png";
-import nexummImg from "../../../../public/images/nexumm.jpg";
-import poscoICTImg from "../../../../public/images/poscoICT.png";
-import pwcImg from "../../../../public/images/pwc.png";
-import samsungSDSImg from "../../../../public/images/samsungSDS.png";
-import skCnCImg from "../../../../public/images/skCnC.png";
-import thiraImg from "../../../../public/images/thira.png";
+import corecodeImg from "@/public/image/corecode.jpg";
+import hyundaiAutoeverImg from "@/public/image/hyundaiAutoever.png";
+import kpmgImg from "@/public/image/kpmg.png";
+import lgCNSImg from "@/public/image/lgCNS.png";
+import nexummImg from "@/public/image/nexumm.jpg";
+import poscoICTImg from "@/public/image/poscoICT.png";
+import pwcImg from "@/public/image/pwc.png";
+import samsungSDSImg from "@/public/image/samsungSDS.png";
+import skCnCImg from "@/public/image/skCnC.png";
+import thiraImg from "@/public/image/thira.png";
 
 const cases = [
   {

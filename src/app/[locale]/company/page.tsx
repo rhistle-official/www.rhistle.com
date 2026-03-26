@@ -13,7 +13,7 @@ import { getTranslations } from "next-intl/server";
 import Banner from "@/components/Banner";
 import CallToAction from "@/components/CallToAction";
 import History from "@/components/History";
-import companyImg from "../../../../public/images/company.jpg";
+import companyImg from "@/public/image/company.jpg";
 
 export async function generateMetadata({
   params,
@@ -25,7 +25,7 @@ export async function generateMetadata({
 
   return {
     title: t("title"),
-    description: "리슬을 소개하는 페이지입니다.",
+    description: t("description"),
   };
 }
 

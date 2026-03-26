@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import gsImg from "../../public/images/gs.webp";
-import innobizImg from "../../public/images/innobiz.webp";
-import kiboImg from "../../public/images/kibo.webp";
+import gsImg from "../../public/image/gs.webp";
+import innobizImg from "../../public/image/innobiz.webp";
+import kiboImg from "../../public/image/kibo.webp";
 
 const certifications = [
   {

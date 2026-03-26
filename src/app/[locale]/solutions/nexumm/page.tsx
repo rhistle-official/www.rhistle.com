@@ -1,6 +1,6 @@
 import Banner from "@/components/Banner";
 import SolutionsTab from "@/components/SolutionsTab";
-import nexummImg from "../../../../../public/images/nexumm.jpg";
+import nexummImg from "@/public/image/nexumm.jpg";
 
 export async function generateMetadata() {
   return {
@@ -8,6 +8,7 @@ export async function generateMetadata() {
     description: "리슬의 Nexumm을 소개하는 페이지입니다.",
   };
 }
+
 const page = () => {
   return (
     <main>
