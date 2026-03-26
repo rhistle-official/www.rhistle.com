@@ -24,7 +24,7 @@ export async function generateMetadata({
       type: "website",
       images: [
         {
-          url: "/image/og-rhistle.png",
+          url: "https://www.rhistle.com/image/og-rhistle.png",
           width: 1200,
           height: 630,
           alt: "리슬(RHISTLE)",
