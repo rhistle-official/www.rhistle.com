@@ -11,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const sitemapEntries = routes.map((route) => ({
-    url: `${baseUrl}/${route}`,
+    url: `${baseUrl}${route}`,
     lastModified: new Date(),
   }));
 
