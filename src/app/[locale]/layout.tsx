@@ -59,7 +59,7 @@ export async function generateMetadata({
       type: "website",
       images: [
         {
-          url: "/images/og-rhistle.png",
+          url: `${baseUrl}/images/og-rhistle.png`,
           width: 1200,
           height: 630,
           alt: t("title"),
