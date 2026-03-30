@@ -83,12 +83,6 @@ export default async function LocaleLayout({
       lang={locale}
       className={`${pretendard.variable} ${audiowide.variable} antialiased`}
     >
-      <head>
-        <meta
-          name="naver-site-verification"
-          content="07cf86f4a5a618536e7521d06f50d64c4de1edae"
-        />
-      </head>
       <body>
         <NextIntlClientProvider>
           <Header />
