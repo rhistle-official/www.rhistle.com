@@ -99,7 +99,16 @@
     "partners": "Innovation Partners",
     "cta": {
       "message": "Achieve successful digital transformation with RHISTLE",
-      "download": "Download Company Brochure",
+      "name": {
+        "company": "Company Brochure",
+        "corecode": "CoreCode Brochure",
+        "nexumm": "Nexumm LX Brochure"
+      },
+      "download": {
+        "company": "Company_Brochure_RHISTLE_Co.,Ltd.pdf",
+        "corecode": "CoreCode_Brochure_RHISTLE_Co.,Ltd.pdf",
+        "nexummLX": "Nexumm_LX_Brochure_RHISTLE_Co.,Ltd.pdf"
+      },
       "contact": "Contact Us"
     }
   },

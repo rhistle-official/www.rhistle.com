@@ -93,7 +93,16 @@
     "partners": "리슬의 혁신 파트너",
     "cta": {
       "message": "성공적인 DX 전환, 리슬이 함께하겠습니다.",
-      "download": "회사소개서 다운로드",
+      "name": {
+        "company": "회사 소개서",
+        "corecode": "CoreCode 소개서",
+        "nexumm": "Nexumm LX 소개서"
+      },
+      "download": {
+        "company": "회사 소개서_(주)리슬.pdf",
+        "corecode": "CoreCode 소개서_(주)리슬.pdf",
+        "nexummLX": "Nexumm LX 소개서_(주)리슬.pdf"
+      },
       "contact": "문의하기"
     }
   },

@@ -34,6 +34,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "home" });
 
   return {
+    metadataBase: new URL("https://rhistle.com"),
     title: {
       default: t("title"),
       template: `%s | ${t("title")}`,

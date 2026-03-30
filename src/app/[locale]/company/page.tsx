@@ -260,11 +260,7 @@ const page = () => {
         <History />
       </div>
 
-      <CallToAction
-        href="/pdf/RHISTLE_Company_Profile.pdf"
-        download="회사소개서_(주)리슬.pdf"
-        name="회사소개서 다운로드"
-      />
+      <CallToAction href="/pdf/RHISTLE_Brochure.pdf" name="company" />
     </main>
   );
 };

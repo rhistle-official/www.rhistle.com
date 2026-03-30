@@ -28,7 +28,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed z-50 w-full py-3 font-bold md:py-4 xl:py-5 ${isScrolled ? "border-gray-200 border-b bg-white" : "bg-transparent text-white"}`}
+      className={`fixed z-30 w-full py-3 font-bold md:py-4 xl:py-5 ${isScrolled ? "border-gray-200 border-b bg-white" : "bg-transparent text-white"}`}
     >
       <nav className="mx-auto max-w-7xl px-8 text-xl">
         <div className="hidden items-center justify-between md:flex">
@@ -41,7 +41,7 @@ const Header = () => {
             </Link>
           </h1>
 
-          <Link href="/solutions/corecode">{t("solutions")}</Link>
+          <Link href="/solutions">{t("solutions")}</Link>
           <Link href="/company">{t("company")}</Link>
           <Link
             href="https://tech.rhistle.com"

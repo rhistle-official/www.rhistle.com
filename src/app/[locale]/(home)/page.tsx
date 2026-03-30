@@ -295,11 +295,7 @@ const page = () => {
         </div>
       </section>
 
-      <CallToAction
-        href="/pdf/RHISTLE_Profile.pdf"
-        download="회사소개서_(주)리슬.pdf"
-        name="cta.download"
-      />
+      <CallToAction href="/pdf/RHISTLE_Brochure.pdf" name="company" />
     </main>
   );
 };

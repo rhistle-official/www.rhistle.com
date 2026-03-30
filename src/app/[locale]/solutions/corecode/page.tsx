@@ -319,7 +319,7 @@ const page = () => {
             {features.map((item) => (
               <div
                 key={item.id}
-                className="group relative overflow-hidden rounded-3xl border border-blue-100 bg-blue-50 shadow-sm transition-all duration-500 ease-in-out"
+                className="group overflow-hidden rounded-3xl border border-blue-100 bg-blue-50 shadow-sm transition-all duration-500 ease-in-out"
               >
                 <div className="flex flex-col p-6 sm:p-8">
                   {/* 헤더 부분 (항상 보임) */}
@@ -378,11 +378,7 @@ const page = () => {
         </div>
       </section>
 
-      <CallToAction
-        href="/pdf/CoreCode_Profile.pdf"
-        download="CoreCode 소개서_(주)리슬.pdf"
-        name="CoreCode 소개서 다운로드"
-      />
+      <CallToAction href="/pdf/CoreCode_Brochure.pdf" name="corecode" />
     </main>
   );
 };
