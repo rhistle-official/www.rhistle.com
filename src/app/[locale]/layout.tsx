@@ -32,23 +32,32 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "home" });
+  const baseUrl = "https://rhistle.com";
+  const currentUrl = locale === "ko" ? baseUrl : `${baseUrl}/${locale}`;
 
   return {
-    metadataBase: new URL("https://rhistle.com"),
     title: {
       default: t("title"),
       template: `%s | ${t("title")}`,
     },
     description: t("description"),
+    alternates: {
+      canonical: currentUrl,
+      languages: {
+        ko: baseUrl,
+        en: `${baseUrl}/en`,
+        "x-default": baseUrl,
+      },
+    },
     openGraph: {
       title: t("title"),
       description: t("description"),
-      url: "https://rhistle.com",
+      url: currentUrl,
       siteName: "rhistle.com",
       type: "website",
       images: [
         {
-          url: "https://rhistle.com/image/og-rhistle.png",
+          url: `${baseUrl}/image/og-rhistle.png`,
           width: 1200,
           height: 630,
           alt: "리슬(RHISTLE)",
@@ -67,9 +76,7 @@ export default async function LocaleLayout({
 }>) {
   const { locale } = await params;
 
-  if (!hasLocale(routing.locales, locale)) {
-    notFound();
-  }
+  if (!hasLocale(routing.locales, locale)) notFound();
 
   return (
     <html
