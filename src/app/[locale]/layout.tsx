@@ -85,10 +85,6 @@ export default async function LocaleLayout({
     >
       <head>
         <meta
-          name="google-site-verification"
-          content="vOadKuv4Iy8NVHLs3BjK6riU62KNXEqdBAnEvubLGtI"
-        />
-        <meta
           name="naver-site-verification"
           content="07cf86f4a5a618536e7521d06f50d64c4de1edae"
         />

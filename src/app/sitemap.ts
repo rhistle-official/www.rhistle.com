@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return locales.flatMap((locale) =>
     hrefs.map((href) => ({
       url: `${host}${locale}${href}`,
-      lastModified: new Date(),
+      lastModified: new Date().toISOString(),
     })),
   );
 }
