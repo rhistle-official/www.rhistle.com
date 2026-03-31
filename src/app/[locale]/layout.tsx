@@ -78,11 +78,26 @@ export default async function LocaleLayout({
 
   if (!hasLocale(routing.locales, locale)) notFound();
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "리슬",
+    url: "https://rhistle.com",
+  };
+
   return (
     <html
       lang={locale}
       className={`${pretendard.variable} ${audiowide.variable} antialiased`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
+      </head>
       <body>
         <NextIntlClientProvider>
           <Header />
