@@ -11,6 +11,9 @@ export function proxy(request: NextRequest) {
   if (pathname.endsWith("/solutions"))
     return NextResponse.redirect(new URL("/solutions/corecode", request.url));
 
+  if (pathname.endsWith("/solutions/nexumm"))
+    return NextResponse.redirect(new URL(`${pathname}/lx`, request.url));
+
   return handleI18nRouting(request);
 }
 
