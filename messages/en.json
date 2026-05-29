@@ -676,7 +676,163 @@
     },
     "vx": {
       "title": "Nexumm VX",
-      "description": "Introducing Nexumm VX by RHISTLE: an integrated monitoring solution that visualizes equipment, environment, and safety data in real time with a digital twin."
+      "description": "Introducing Nexumm VX by RHISTLE: an integrated monitoring solution that visualizes equipment, environment, and safety data in real time with a digital twin.",
+      "hero": {
+        "code": "VX",
+        "name": "Nexumm VX",
+        "tagline": "Make data visible. Keep operations alive.",
+        "description": "An integrated monitoring solution that tracks equipment, environment, and safety data in real time and visualizes your facility through a digital twin."
+      },
+      "sections": {
+        "overview": {
+          "eyebrow": "Overview",
+          "title": "Unified Real-Time Monitoring & Digital Twin",
+          "description": "Receive data already collected and standardized by CoreCode, visualize your entire facility on a single screen, and detect anomalies before they escalate."
+        },
+        "synergy": {
+          "label": "Synergy with CoreCode",
+          "corecodeSub": "Data collection & standardization",
+          "vxSub": "Monitoring & digital twin",
+          "description": "VX instantly consumes the equipment and sensor data CoreCode gathers — no additional integration development required — delivering real-time monitoring and digital twin visualization."
+        },
+        "keyFeatures": {
+          "eyebrow": "Key Features",
+          "title": "Visible. Connected. Proactive."
+        },
+        "functionalities": {
+          "eyebrow": "Functionalities",
+          "title": "From data collection to analytics — the complete monitoring lifecycle"
+        },
+        "benefits": {
+          "eyebrow": "Business Benefits",
+          "title": "See more, respond faster, operate safer"
+        },
+        "applications": {
+          "eyebrow": "Applications",
+          "title": "Built for Diverse Monitoring Environments"
+        }
+      },
+      "highlights": {
+        "items": [
+          {
+            "title": "Native CoreCode Integration",
+            "detail": "Instantly leverage data collected and standardized via 100+ adaptors"
+          },
+          {
+            "title": "Digital Twin Visualization",
+            "detail": "Reproduce your facility in 3D for intuitive equipment and zone status visibility"
+          },
+          {
+            "title": "Unified Real-Time Dashboard",
+            "detail": "Equipment, environment, safety, and energy data — all on one screen"
+          },
+          {
+            "title": "Intelligent Anomaly Detection",
+            "detail": "Threshold- and pattern-based alarms deliver early warnings before incidents occur"
+          }
+        ]
+      },
+      "features": {
+        "visible": {
+          "title": "Visibility",
+          "descriptions": [
+            "Digital twin 3D visualization",
+            "Single unified dashboard",
+            "Zone- and equipment-level drill-down"
+          ]
+        },
+        "connected": {
+          "title": "Connectivity",
+          "descriptions": [
+            "Instant integration via CoreCode",
+            "Multi-protocol support — OPC, Modbus, and more",
+            "Heterogeneous data unification"
+          ]
+        },
+        "proactive": {
+          "title": "Proactive Response",
+          "descriptions": [
+            "Real-time anomaly detection",
+            "Early alerts and notifications",
+            "Foundation for predictive maintenance"
+          ]
+        }
+      },
+      "functionalities": {
+        "01": {
+          "title": "Data Collection & Integration",
+          "desc": [
+            "CoreCode connectivity",
+            "Standard protocol collection (OPC, Modbus, and more)",
+            "Heterogeneous data unification"
+          ]
+        },
+        "02": {
+          "title": "Real-Time Dashboard",
+          "desc": [
+            "Equipment operation status visualization",
+            "Environmental & safety KPI monitoring",
+            "Customizable dashboards"
+          ]
+        },
+        "03": {
+          "title": "Digital Twin",
+          "desc": ["3D facility model", "Live data mapping", "Zone and equipment drill-down"]
+        },
+        "04": {
+          "title": "Event & Alarm Management",
+          "desc": [
+            "Threshold- and pattern-based alarms",
+            "Anomaly detection",
+            "Alert and response history management"
+          ]
+        },
+        "05": {
+          "title": "Statistics & Analytics",
+          "desc": [
+            "Trend analysis",
+            "Utilization and environmental statistics",
+            "Report generation"
+          ]
+        }
+      },
+      "benefits": {
+        "layoutDashboard": {
+          "title": "Unified visibility to",
+          "highlight": "elevate operational & management capability",
+          "descriptions": [
+            "Single-pane control over distributed data",
+            "Real-time insight for faster decision-making",
+            "Intuitive situational awareness via digital twin"
+          ]
+        },
+        "shieldAlert": {
+          "title": "Proactive crisis response for",
+          "highlight": "stronger safety & operational stability",
+          "descriptions": [
+            "Early detection of fire, gas, and environmental anomalies",
+            "Faster crisis response times",
+            "Incident prevention before issues arise"
+          ]
+        },
+        "trendingUp": {
+          "title": "Data-driven improvements to",
+          "highlight": "drive continuous performance gains",
+          "descriptions": [
+            "Identify issues through statistics and analytics",
+            "Build a foundation for predictive maintenance",
+            "Improve energy efficiency and ESG performance"
+          ]
+        }
+      },
+      "applications": {
+        "items": [
+          "Smart factory equipment monitoring",
+          "Integrated disaster prevention (fire, gas, temperature, CCTV)",
+          "Energy & environmental monitoring",
+          "Safety monitoring"
+        ]
+      }
     }
   },
   "footer": {
