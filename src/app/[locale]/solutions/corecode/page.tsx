@@ -145,7 +145,6 @@ const page = () => {
         name="Data Interface Solution"
         tagline="흩어진 데이터를 하나로 잇다"
         description="다양한 설비·시스템의 데이터를 실시간으로 수집·연계하는 로우코드(Low-Code) 기반 통합 데이터 인터페이스 솔루션입니다."
-        gradient="from-[#0f8a5f] via-[#0a5d44] to-[#04231a]"
       />
 
       <section className="mx-auto max-w-7xl space-y-16 px-8 py-20 md:text-lg xl:text-xl">
