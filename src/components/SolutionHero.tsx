@@ -7,14 +7,16 @@ const SolutionHero = ({
   name,
   tagline,
   description,
+  gradient = "from-[#1428a0] via-[#0f1f7a] to-[#070d3d]",
 }: {
   code: string;
   name: string;
   tagline: string;
   description: string;
+  gradient?: string;
 }) => (
   <section className="relative overflow-hidden bg-rhistle text-white">
-    <div className="absolute inset-0 bg-gradient-to-br from-[#1428a0] via-[#0f1f7a] to-[#070d3d]" />
+    <div className={`absolute inset-0 bg-gradient-to-br ${gradient}`} />
     <div
       className="absolute inset-0 opacity-[0.15]"
       style={{
