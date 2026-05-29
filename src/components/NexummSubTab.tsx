@@ -3,8 +3,8 @@
 import { Link, usePathname } from "@/i18n/navigation";
 
 const tabs = [
-  { name: "Nexumm LX", href: "/solutions/nexumm/lx" },
-  { name: "Nexumm VX", href: "/solutions/nexumm/vx" },
+  { name: "Nexumm LX", href: "/solutions/lx" },
+  { name: "Nexumm VX", href: "/solutions/vx" },
 ];
 
 const NexummSubTab = () => {

@@ -6,12 +6,12 @@ const tabs = [
   {
     name: "CoreCode",
     href: "/solutions/corecode",
-    match: "/solutions/corecode",
+    match: ["/solutions/corecode"],
   },
   {
     name: "Nexumm",
-    href: "/solutions/nexumm/lx",
-    match: "/solutions/nexumm",
+    href: "/solutions/lx",
+    match: ["/solutions/lx", "/solutions/vx"],
   },
 ];
 
@@ -22,7 +22,7 @@ const SolutionsTab = () => {
     <section className="sticky top-13.25 z-10 border-gray-200 border-b bg-white md:top-19.25 xl:top-21.25">
       <div className="mx-auto flex max-w-7xl gap-4 px-8">
         {tabs.map((tab) => {
-          const isActive = pathName.startsWith(tab.match);
+          const isActive = tab.match.some((m) => pathName.startsWith(m));
 
           return (
             <Link
