@@ -30,38 +30,22 @@ const features = [
   {
     id: "02",
     title: "통합 개발 환경",
-    desc: [
-      "모델링 기반 개발 및 테스트",
-      "Adaptor Modeler / Visual Debugger",
-      "Tag Manager 지원",
-    ],
+    desc: ["모델링 기반 개발 및 테스트", "Adaptor Modeler / Visual Debugger", "Tag Manager 지원"],
   },
   {
     id: "03",
     title: "프로세싱 엔진",
-    desc: [
-      "Run-Time 시스템 자원 관리",
-      "메시지 Routing 및 전달 보증",
-      "표준 통신 프로토콜 지원",
-    ],
+    desc: ["Run-Time 시스템 자원 관리", "메시지 Routing 및 전달 보증", "표준 통신 프로토콜 지원"],
   },
   {
     id: "04",
     title: "시스템 운영 관리",
-    desc: [
-      "실시간 자원 모니터링",
-      "데이터 통계 및 분석",
-      "원격 프로그램 변경/관리",
-    ],
+    desc: ["실시간 자원 모니터링", "데이터 통계 및 분석", "원격 프로그램 변경/관리"],
   },
   {
     id: "05",
     title: "원격 에이전트",
-    desc: [
-      "소형 미들웨어 엔진 기능",
-      "서버 인터페이스 연동",
-      "원격 유지관리 및 Logging",
-    ],
+    desc: ["소형 미들웨어 엔진 기능", "서버 인터페이스 연동", "원격 유지관리 및 Logging"],
   },
 ];
 
@@ -75,10 +59,7 @@ const highlights = [
   },
   {
     title: "다양한 데이터 연계/통합 자산",
-    details: [
-      "100여종 이상의 Adaptors (PLC, Sensors, Files, DB 등)",
-      "연계 기술 및 노하우 탑재",
-    ],
+    details: ["100여종 이상의 Adaptors (PLC, Sensors, Files, DB 등)", "연계 기술 및 노하우 탑재"],
   },
   {
     title: "개발/운영 고효율 및 고성능",
@@ -169,10 +150,9 @@ const page = () => {
         <div className="space-y-6">
           <p className="font-bold text-rhistle">Overview</p>
           <p>
-            Industry 4.0시대, 데이터는 기업의 핵심 자산이며 데이터 수집과 관리는
-            주요 성공 요소입니다. <br />
-            그러나 지속적인 혁신을 위한 제조 현장의 데이터 수집 및 관리에는 많은
-            제약이 있습니다.
+            Industry 4.0시대, 데이터는 기업의 핵심 자산이며 데이터 수집과 관리는 주요 성공
+            요소입니다. <br />
+            그러나 지속적인 혁신을 위한 제조 현장의 데이터 수집 및 관리에는 많은 제약이 있습니다.
           </p>
 
           <div className="w-full max-w-7xl">
@@ -186,8 +166,8 @@ const page = () => {
           </div>
 
           <p>
-            로우 코드(Low-Code) 기반의 IoT 데이터 연계 및 저장을 쉽고 빠르게
-            개발, 변경, 운영할 수 있는 통합 환경을 제공합니다.
+            로우 코드(Low-Code) 기반의 IoT 데이터 연계 및 저장을 쉽고 빠르게 개발, 변경, 운영할 수
+            있는 통합 환경을 제공합니다.
           </p>
 
           <div className="grid gap-16 lg:grid-cols-2">
@@ -241,9 +221,8 @@ const page = () => {
         <div className="space-y-6">
           <p className="font-bold text-rhistle">Key Features</p>
           <p>
-            모델링 (Modeling, Low-Code) 기반의 개발 방법으로 개발 생산성이
-            높으며, 대용량 데이터를 빠르고 안정적으로 처리하고, 데이터 연계 환경
-            변화에 유연하게 대응할 수 있습니다.
+            모델링 (Modeling, Low-Code) 기반의 개발 방법으로 개발 생산성이 높으며, 대용량 데이터를
+            빠르고 안정적으로 처리하고, 데이터 연계 환경 변화에 유연하게 대응할 수 있습니다.
           </p>
 
           <div className="grid gap-4 md:grid-cols-3">
@@ -273,8 +252,8 @@ const page = () => {
         <div className="space-y-6">
           <p className="font-bold text-rhistle">Business Benefits</p>
           <p>
-            CoreCode 솔루션 도입을 통해 제조의 가치를 제고하고, 제조 운영 및
-            관리 역량을 강화하여 지속적으로 성과를 개선할 수 있습니다.
+            CoreCode 솔루션 도입을 통해 제조의 가치를 제고하고, 제조 운영 및 관리 역량을 강화하여
+            지속적으로 성과를 개선할 수 있습니다.
           </p>
 
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -312,8 +291,8 @@ const page = () => {
         <div className="space-y-6">
           <p className="font-bold text-rhistle">Functionalities</p>
           <p>
-            개발, 테스트, 배포, 운영 및 모니터링 등 시스템 개발 전체 단계를
-            지원할 수 있는 기능으로 구성되어 있습니다.
+            개발, 테스트, 배포, 운영 및 모니터링 등 시스템 개발 전체 단계를 지원할 수 있는 기능으로
+            구성되어 있습니다.
           </p>
           <div className="flex w-full flex-col gap-4">
             {features.map((item) => (
@@ -363,8 +342,8 @@ const page = () => {
         <div className="space-y-6">
           <p className="font-bold text-rhistle">Applications</p>
           <p>
-            데이터 연계 솔루션으로 비즈니스 요구에 따라 스마트팩토리 구축,
-            환경/안전 관제, IoT Platform 구성 등 다양하 게 활용할 수 있습니다.
+            데이터 연계 솔루션으로 비즈니스 요구에 따라 스마트팩토리 구축, 환경/안전 관제, IoT
+            Platform 구성 등 다양하 게 활용할 수 있습니다.
           </p>
           <div className="w-full max-w-7xl">
             <Image
