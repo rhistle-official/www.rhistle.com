@@ -520,7 +520,159 @@
     "title": "Nexumm",
     "lx": {
       "title": "Nexumm LX",
-      "description": "Introducing Nexumm LX by RHISTLE: a next-generation warehouse management system (WMS) that tracks and visualizes the entire logistics flow from inbound to outbound in real time."
+      "description": "Introducing Nexumm LX by RHISTLE: a next-generation warehouse management system (WMS) that tracks and visualizes the entire logistics flow from inbound to outbound in real time.",
+      "hero": {
+        "code": "LX",
+        "name": "Nexumm LX",
+        "tagline": "Track every moment of your inventory",
+        "description": "A next-generation WMS that tracks and visualizes the entire logistics flow — from inbound to outbound — in real time."
+      },
+      "sections": {
+        "overview": {
+          "eyebrow": "Overview",
+          "title": "Real-Time Inventory Visibility WMS",
+          "description": "Manage inventory location, quantity, and status on a single screen across multitenant, multi-warehouse environments with bidirectional ERP integration."
+        },
+        "keyFeatures": {
+          "eyebrow": "Key Features",
+          "title": "Accurate, Traceable, and Scalable"
+        },
+        "functionalities": {
+          "eyebrow": "Functionalities",
+          "title": "End-to-End Inventory Tracking — Inbound to Outbound",
+          "description": "Covering every stage of warehouse operations: inbound, outbound, inventory tracking, master data synchronization, and mobile field work."
+        },
+        "benefits": {
+          "eyebrow": "Business Benefits",
+          "title": "Visibility drives down costs"
+        },
+        "applications": {
+          "eyebrow": "Applications",
+          "title": "Built for Diverse Warehouse Environments"
+        }
+      },
+      "highlights": {
+        "items": [
+          {
+            "title": "Real-Time Inventory Visibility",
+            "detail": "Quantity and status synchronized in real time at the location level"
+          },
+          {
+            "title": "End-to-End Traceability",
+            "detail": "Full history tracking from inbound to outbound, powered by Lot and Serial numbers"
+          },
+          {
+            "title": "Automated ERP Integration",
+            "detail": "Automatically receive inbound and outbound instructions via file and API polling adaptors"
+          },
+          {
+            "title": "Multitenant Cloud",
+            "detail": "Isolated operation per company and warehouse, designed for global multi-site expansion"
+          }
+        ]
+      },
+      "features": {
+        "accurate": {
+          "title": "Inventory Accuracy",
+          "descriptions": [
+            "Error-free shop-floor operations via barcode scanning",
+            "Real-time sync keeps book and physical inventory aligned",
+            "Pre-receipt posting reflects quantities before formal inbound"
+          ]
+        },
+        "traceable": {
+          "title": "Traceability",
+          "descriptions": [
+            "Full history management at the Lot and Serial level",
+            "Track every step from inbound through storage to outbound",
+            "Regulatory-ready traceability for compliance requirements"
+          ]
+        },
+        "scalable": {
+          "title": "Scalability",
+          "descriptions": [
+            "Multitenant SaaS architecture",
+            "Multi-warehouse and global multi-site operations",
+            "Rapid cloud-based expansion"
+          ]
+        }
+      },
+      "functionalities": {
+        "01": {
+          "title": "Inbound Management",
+          "desc": [
+            "Receive ERP inbound instructions",
+            "Planned receipt management",
+            "Pre-receipt posting (quantity pre-applied, location unassigned)",
+            "Inbound inspection"
+          ]
+        },
+        "02": {
+          "title": "Outbound Management",
+          "desc": [
+            "Receive ERP outbound instructions",
+            "Picking & packing",
+            "Outbound verification"
+          ]
+        },
+        "03": {
+          "title": "Inventory Management & Tracking",
+          "desc": [
+            "Location management",
+            "Real-time inventory status",
+            "Lot & Serial tracking",
+            "Cycle count and inventory adjustment"
+          ]
+        },
+        "04": {
+          "title": "Master Data & Synchronization",
+          "desc": ["Item & BOM WMS synchronization (Pull)", "Standard master data management"]
+        },
+        "05": {
+          "title": "Mobile Operations",
+          "desc": [
+            "PDA barcode scan-based field operations",
+            "Mobile support for inbound, picking, and cycle count"
+          ]
+        }
+      },
+      "benefits": {
+        "packageSearch": {
+          "title": "Inventory visibility that drives",
+          "highlight": "higher inventory accuracy",
+          "descriptions": [
+            "Prevent stockouts and overstock with real-time inventory",
+            "Improve book inventory reliability",
+            "Enhance inventory turnover rate"
+          ]
+        },
+        "trendingUp": {
+          "title": "Operational efficiency gains that deliver",
+          "highlight": "lower operating costs",
+          "descriptions": [
+            "Optimize picker travel paths",
+            "Eliminate mis-picks and outbound errors",
+            "Boost throughput with barcode-driven operations"
+          ]
+        },
+        "boxes": {
+          "title": "Supply chain responsiveness for",
+          "highlight": "stronger compliance & agility",
+          "descriptions": [
+            "On-time inbound and outbound with ERP integration",
+            "Traceability-based regulatory compliance",
+            "Standardized operations across global multi-site locations"
+          ]
+        }
+      },
+      "applications": {
+        "items": [
+          "Raw material, finished goods & VMI warehouses",
+          "3PL & distribution centers",
+          "Global multi-site operations",
+          "Integrated manufacturing-logistics environments"
+        ]
+      }
     },
     "vx": {
       "title": "Nexumm VX",
