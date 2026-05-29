@@ -16,74 +16,8 @@ import samsungSDSImg from "@/public/image/samsungSDS.png";
 import skCnCImg from "@/public/image/skCnC.png";
 import thiraImg from "@/public/image/thira.png";
 
-const cases = [
-  {
-    id: "Case 01",
-    title: "스마트팩토리 컨설팅",
-    subtitle: "A 제조사 스마트팩토리 로드맵 수립",
-    challenge: "시스템 기반 운영 경험 부재 및 데이터 관리 추진 방향 설정 필요",
-    solutions: [
-      "OT/IT/AT 통합 컨설팅 서비스 제공",
-      "현장 진단을 통한 데이터 수집/분석/활용 스마트팩토리 로드맵 수립",
-    ],
-    results: [
-      "생산성 30%, 품질 44% 향상 목표 수립",
-      "스마트팩토리 방향 설정 혁신 과제 수립",
-      "혁신 과제 추진 로드랩 및 추진 전략 수립",
-    ],
-    benefits: ["스마트팩토리 전환 기반 마련"],
-  },
-  {
-    id: "Case 02",
-    title: "WMS(창고관리시스템) 구축",
-    subtitle: "원자재/완제품/VMI 창고 통합 관리",
-    challenge: "실시간 재고 추적 및 위치 관리 미흡, 규제 대응력 강화 필요",
-    solutions: [
-      "창고 운영 프로세스 및 기준정보 표준화",
-      "Value Added Service(조립/소진 등) 기능 개발",
-      "Cloud 기반의 글로벌 확산형 WMS 구축",
-    ],
-    results: [
-      "공급망 대응 및 운영 효율 제고",
-      "디지털 창고 관리 기반 확보",
-      "규제 준수 및 대응력 강화",
-    ],
-    benefits: ["창고 업무 효율 제고", "재고 Visibility 강화"],
-  },
-  {
-    id: "Case 03",
-    title: "통합 방재 모니터링 시스템",
-    subtitle: "A 제조사 선진 방재 시스템 구축",
-    challenge: "유관 시스템 간 연계 부재로 위기 대응 속도 저하 및 비용 증가",
-    solutions: [
-      "화재/가스/온도 센서 및 CCTV 통합 방재 모니터링 시스템 구축",
-      "실시간 모니터링 및 통계 분석을 통한 조기 대응 및 사전 예방 체계 구축",
-      "위험 감지 및 적기 안내를 통한 전사 위기 관리 시스템 구축",
-    ],
-    results: [
-      "실시간 재해 요인 감지 및 통합 모니터링 시스템 운영",
-      "통합 데이터 모니터링 및 분석을 통한 방지 운영 효율 향상",
-    ],
-    benefits: ["운영 비용 연간 76억 절감", "운영 효율화 50% 향상"],
-  },
-  {
-    id: "Case 04",
-    title: "스마트팩토리 설비 자동화",
-    subtitle: "양방향 실시간 데이터 연동 체계",
-    challenge: "대량 데이터의 실시간 처리 및 제조 환경 변화에 대한 유연한 대응",
-    solutions: [
-      "Plant Floor 데이터 수집 표준 체계 구축",
-      "모델링 기반의 설비별 표준 Adaptor 적용",
-      "신제조시스템(MES/품질관리) 양방향 실시간 연계",
-    ],
-    results: [
-      "24x7 생산시스템의 안정적 운영",
-      "Lot 기반 전 공정 품질 추적",
-      "설비 추가 및 변경, 라인 변경 및 확대 등의 사업 환경 변화 대응력 강화",
-    ],
-    benefits: ["시스템 장애 Near to Zero 달성", "설비 자동화 구축 시간 34% 단축"],
-  },
-];
+// Case text is sourced from messages (home.business.*); only the id is used here.
+const cases = [{ id: "Case 01" }, { id: "Case 02" }, { id: "Case 03" }, { id: "Case 04" }];
 
 const solutions = [
   {

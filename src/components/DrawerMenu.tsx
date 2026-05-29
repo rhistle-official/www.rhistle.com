@@ -23,8 +23,8 @@ const DrawerMenu = () => {
       </DrawerTrigger>
       <DrawerContent className="bg-black text-gray-800">
         <DrawerHeader className="flex self-end">
-          <DrawerTitle className="sr-only">전체 메뉴</DrawerTitle>
-          <DrawerDescription className="sr-only">사이트 메뉴 목록입니다.</DrawerDescription>
+          <DrawerTitle className="sr-only">{t("menu")}</DrawerTitle>
+          <DrawerDescription className="sr-only">{t("menuDescription")}</DrawerDescription>
           <DrawerClose>
             <X className="cursor-pointer text-white" />
           </DrawerClose>

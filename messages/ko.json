@@ -3,7 +3,9 @@
     "solutions": "솔루션",
     "company": "회사소개",
     "contact": "문의하기",
-    "blog": "블로그"
+    "blog": "블로그",
+    "menu": "전체 메뉴",
+    "menuDescription": "사이트 메뉴 목록입니다."
   },
   "home": {
     "title": "리슬",
@@ -332,9 +334,6 @@
       "success": "문의가 성공적으로 전송되었습니다.",
       "sendFail": "메일 전송에 실패했습니다. 잠시 후 다시 시도해 주세요."
     }
-  },
-  "solutions": {
-    "title": "솔루션"
   },
   "corecode": {
     "title": "코어코드",
@@ -763,6 +762,7 @@
   "footer": {
     "name": "주식회사 리슬",
     "ceo": "대표: 김경식",
-    "address": "서울특별시 서초구 바우뫼로 160 (양재동 108-7, 현산빌딩) 2층"
+    "address": "서울특별시 서초구 바우뫼로 160 (양재동 108-7, 현산빌딩) 2층",
+    "certificationAlt": "{name} 인증 마크"
   }
 }

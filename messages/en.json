@@ -3,7 +3,9 @@
     "solutions": "Solutions",
     "company": "Company",
     "contact": "Contact",
-    "blog": "Blog"
+    "blog": "Blog",
+    "menu": "Full menu",
+    "menuDescription": "Site navigation menu."
   },
   "home": {
     "title": "RHISTLE",
@@ -838,6 +840,7 @@
   "footer": {
     "name": "RHISTLE Co., Ltd.",
     "ceo": "CEO: Kyungsik Kim",
-    "address": "2F, Hyeonsan Building, 160 Baumae-ro, Seocho-gu, Seoul"
+    "address": "2F, Hyeonsan Building, 160 Baumae-ro, Seocho-gu, Seoul",
+    "certificationAlt": "{name} certification mark"
   }
 }
