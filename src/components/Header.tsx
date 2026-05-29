@@ -42,11 +42,11 @@ const Header = () => {
           </h1>
 
           <div className="group relative">
-            <span className="flex cursor-default items-center gap-1" aria-haspopup="true">
+            <span className="flex cursor-default items-center gap-1">
               {t("solutions")}
               <ChevronDown className="size-4" aria-hidden="true" />
             </span>
-            <div className="invisible absolute top-full left-0 z-40 min-w-44 translate-y-1 rounded-xl border border-gray-200 bg-white py-2 text-base text-gray-800 opacity-0 shadow-lg transition group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+            <div className="invisible absolute top-full left-0 z-40 min-w-44 translate-y-1 rounded-xl border border-gray-200 bg-white py-2 text-base text-gray-800 opacity-0 shadow-lg transition group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
               <Link href="/solutions/corecode" className="block px-4 py-2 hover:bg-gray-100">
                 CoreCode
               </Link>
