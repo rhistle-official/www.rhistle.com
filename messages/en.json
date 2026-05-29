@@ -102,12 +102,16 @@
       "name": {
         "company": "Company Brochure",
         "corecode": "CoreCode Brochure",
-        "nexumm": "Nexumm LX Brochure"
+        "nexumm": "Nexumm LX Brochure",
+        "nexummLx": "Nexumm LX Brochure",
+        "nexummVx": "Nexumm VX Brochure"
       },
       "download": {
         "company": "Company_Brochure_RHISTLE_Co.,Ltd.pdf",
         "corecode": "CoreCode_Brochure_RHISTLE_Co.,Ltd.pdf",
-        "nexummLX": "Nexumm_LX_Brochure_RHISTLE_Co.,Ltd.pdf"
+        "nexummLX": "Nexumm_LX_Brochure_RHISTLE_Co.,Ltd.pdf",
+        "nexummLx": "Nexumm_LX_Brochure_RHISTLE_Co.,Ltd.pdf",
+        "nexummVx": "Nexumm_VX_Brochure_RHISTLE_Co.,Ltd.pdf"
       },
       "contact": "Contact Us"
     }
@@ -132,7 +136,15 @@
     "description": "Introducing CoreCode by RHISTLE: A powerful interface solution bridging the gap between facilities and systems. Experience seamless real-time data acquisition and stable equipment control."
   },
   "nexumm": {
-    "title": "Nexumm"
+    "title": "Nexumm",
+    "lx": {
+      "title": "Nexumm LX",
+      "description": "Introducing Nexumm LX by RHISTLE: a next-generation warehouse management system (WMS) that tracks and visualizes the entire logistics flow from inbound to outbound in real time."
+    },
+    "vx": {
+      "title": "Nexumm VX",
+      "description": "Introducing Nexumm VX by RHISTLE: an integrated monitoring solution that visualizes equipment, environment, and safety data in real time with a digital twin."
+    }
   },
   "footer": {
     "name": "RHISTLE Co., Ltd.",
