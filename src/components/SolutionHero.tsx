@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import Image, { type StaticImageData } from "next/image";
 
 const SolutionHero = ({
   code,
@@ -8,15 +9,24 @@ const SolutionHero = ({
   tagline,
   description,
   gradient = "from-[#1428a0] via-[#0f1f7a] to-[#070d3d]",
+  image,
 }: {
   code: string;
   name: string;
   tagline: string;
-  description: string;
+  description?: string;
   gradient?: string;
+  image?: StaticImageData;
 }) => (
   <section className="relative overflow-hidden bg-rhistle text-white">
-    <div className={`absolute inset-0 bg-gradient-to-br ${gradient}`} />
+    {image ? (
+      <>
+        <Image src={image} alt="" fill priority sizes="100vw" className="object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#070d3d]/85 via-[#0f1f7a]/65 to-[#070d3d]/85" />
+      </>
+    ) : (
+      <div className={`absolute inset-0 bg-gradient-to-br ${gradient}`} />
+    )}
     <div
       className="absolute inset-0 opacity-[0.15]"
       style={{
@@ -57,14 +67,16 @@ const SolutionHero = ({
       >
         {tagline}
       </motion.p>
-      <motion.p
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.35 }}
-        className="mt-4 max-w-2xl text-white/70 md:text-lg"
-      >
-        {description}
-      </motion.p>
+      {description && (
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.35 }}
+          className="mt-4 max-w-2xl text-white/70 md:text-lg"
+        >
+          {description}
+        </motion.p>
+      )}
     </div>
   </section>
 );

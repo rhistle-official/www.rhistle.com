@@ -10,9 +10,9 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import Banner from "@/components/Banner";
 import CallToAction from "@/components/CallToAction";
 import History from "@/components/History";
+import SolutionHero from "@/components/SolutionHero";
 import companyImg from "@/public/image/company.jpg";
 
 export async function generateMetadata({
@@ -57,11 +57,7 @@ const industries = [
     engTitle: "Bio & Food",
     icon: FlaskConical,
     focus: "GMP, CSV 준수 및 배치 생산 공정 최적화",
-    projects: [
-      "스마트팩토리 설비 자동화",
-      "WMS(창고관리시스템) 구축",
-      "통합 폐수처리 시스템 구축",
-    ],
+    projects: ["스마트팩토리 설비 자동화", "WMS(창고관리시스템) 구축", "통합 폐수처리 시스템 구축"],
   },
   {
     title: "자동차 / 철강",
@@ -104,18 +100,15 @@ const companyValues = [
     items: [
       {
         subtitle: "Expertise",
-        description:
-          "검증된 솔루션과 고도화된 기술 역량으로 최상의 IT 서비스를 제공합니다.",
+        description: "검증된 솔루션과 고도화된 기술 역량으로 최상의 IT 서비스를 제공합니다.",
       },
       {
         subtitle: "Agility",
-        description:
-          "변화하는 환경에 민첩하게 대응하며 실행력 중심의 혁신을 선도합니다.",
+        description: "변화하는 환경에 민첩하게 대응하며 실행력 중심의 혁신을 선도합니다.",
       },
       {
         subtitle: "Human-Centric",
-        description:
-          "'리(利)롭게 슬기롭게'의 가치 아래 사람을 위한 기술을 추구합니다.",
+        description: "'리(利)롭게 슬기롭게'의 가치 아래 사람을 위한 기술을 추구합니다.",
       },
     ],
   },
@@ -124,14 +117,18 @@ const companyValues = [
 const page = () => {
   return (
     <main>
-      <Banner bannerImg={companyImg} title="회사소개" />
+      <SolutionHero
+        code="회사소개"
+        name="Company"
+        tagline="데이터와 기술로 디지털 혁신을 선도합니다"
+        image={companyImg}
+      />
 
       <div className="mx-auto max-w-7xl px-8">
         <section className="space-y-8 break-keep py-32 text-center leading-tight">
           <h1>
             <p className="block font-semibold text-4xl text-gray-800">
-              <span className="font-bold text-rhistle">리슬</span>은 데이터 기술
-              역량을 바탕으로
+              <span className="font-bold text-rhistle">리슬</span>은 데이터 기술 역량을 바탕으로
             </p>
             <p className="block font-extrabold text-5xl text-gray-900 leading-normal tracking-tight">
               제조 현장부터 통합 물류, <br />
@@ -172,25 +169,17 @@ const page = () => {
                       <h3 className="font-bold text-3xl text-gray-900 tracking-tight">
                         {item.title}
                       </h3>
-                      <p className="font-semibold text-rhistle text-sm">
-                        {item.engTitle}
-                      </p>
+                      <p className="font-semibold text-rhistle text-sm">{item.engTitle}</p>
                     </div>
 
                     <div>
-                      <p className="font-bold text-gray-400 tracking-tighter">
-                        Key Focus
-                      </p>
-                      <p className="break-keep text-gray-600 text-lg leading-snug">
-                        {item.focus}
-                      </p>
+                      <p className="font-bold text-gray-400 tracking-tighter">Key Focus</p>
+                      <p className="break-keep text-gray-600 text-lg leading-snug">{item.focus}</p>
                     </div>
                   </div>
 
                   <div className="space-y-3">
-                    <p className="font-bold text-gray-400 tracking-widest">
-                      Service Scope
-                    </p>
+                    <p className="font-bold text-gray-400 tracking-widest">Service Scope</p>
                     <ul className="space-y-3">
                       {item.projects.map((project) => (
                         <li
