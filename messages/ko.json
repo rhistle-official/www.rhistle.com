@@ -107,7 +107,200 @@
   },
   "company": {
     "title": "회사소개",
-    "description": "IT 솔루션 전문 기업 리슬(RHISTLE)의 비전 및 주요 사업 영역을 소개합니다."
+    "description": "IT 솔루션 전문 기업 리슬(RHISTLE)의 비전 및 주요 사업 영역을 소개합니다.",
+    "hero": {
+      "code": "회사소개",
+      "name": "Company",
+      "tagline": "데이터와 기술로 디지털 혁신을 선도합니다"
+    },
+    "intro": {
+      "line1": "은 데이터 기술 역량을 바탕으로",
+      "line2": "제조 현장부터 통합 물류,",
+      "line3": "고객 접점 및 업무 효율까지 가치를 선도하는",
+      "line4": "디지털 전환(DX) 전문기업",
+      "line5": "입니다.",
+      "sub": "품질이 검증된 솔루션과 고도의 기술력을 기반으로",
+      "sub2": "최고의 IT 서비스를 약속합니다."
+    },
+    "industry": {
+      "eyebrow": "Industry Served",
+      "heading1": "다양한 제조 산업의",
+      "heading2": "디지털 전환을 함께합니다",
+      "keyFocus": "Key Focus",
+      "serviceScope": "Service Scope",
+      "semiconductor": {
+        "title": "반도체 및 디스플레이",
+        "engTitle": "Semiconductor & Display",
+        "focus": "High volume, variety, velocity 데이터 처리 및 안전/환경 관리",
+        "projects": [
+          "스마트팩토리 설비 자동화",
+          "설비 엔지니어링 데이터 연계",
+          "환경/안전 통합방재 모니터링"
+        ]
+      },
+      "battery": {
+        "title": "2차 전지",
+        "engTitle": "Secondary Battery",
+        "focus": "대규모 설비 중심의 자본 집약적 공정 및 데이터 분석 강화",
+        "projects": [
+          "제조 IoT Platform 구축",
+          "설비 연계 시스템 구축",
+          "Gas Leak 및 Utility 통합 모니터링"
+        ]
+      },
+      "bio": {
+        "title": "바이오 제약 및 식품",
+        "engTitle": "Bio & Food",
+        "focus": "GMP, CSV 준수 및 배치 생산 공정 최적화",
+        "projects": [
+          "스마트팩토리 설비 자동화",
+          "WMS(창고관리시스템) 구축",
+          "통합 폐수처리 시스템 구축"
+        ]
+      },
+      "automotive": {
+        "title": "자동차 / 철강",
+        "engTitle": "Automotive & Steel",
+        "focus": "단순 조립, 협력사 협업 생산 및 다양한 인터페이스 방식 대응",
+        "projects": [
+          "글로벌 전장 검사 시스템 구축",
+          "협력사 부품 품질 데이터 연계 구축",
+          "설비 연계 시스템 구축"
+        ]
+      },
+      "general": {
+        "title": "일반 제조 및 공공",
+        "engTitle": "General Mfg & Public",
+        "focus": "안전/환경 시스템 고도화 및 전사 통합 시스템 구축",
+        "projects": [
+          "스마트팩토리 구축 컨설팅",
+          "FEMS/ERP 데이터 연동 시스템 구축",
+          "전사 통합 시스템 고도화"
+        ]
+      }
+    },
+    "values": {
+      "eyebrow": "Company Values",
+      "heading": "리슬이 지향하는 미래",
+      "vision": {
+        "text": "\"데이터와 기술로 진화하는 디지털 혁신의 리더\""
+      },
+      "mission": {
+        "text": "\"데이터 통합과 지능형 시스템 구축을 통해 고객과 산업, 세상에 이로운 변화를 만든다.\""
+      },
+      "coreValues": {
+        "expertise": {
+          "subtitle": "Expertise",
+          "description": "검증된 솔루션과 고도화된 기술 역량으로 최상의 IT 서비스를 제공합니다."
+        },
+        "agility": {
+          "subtitle": "Agility",
+          "description": "변화하는 환경에 민첩하게 대응하며 실행력 중심의 혁신을 선도합니다."
+        },
+        "humanCentric": {
+          "subtitle": "Human-Centric",
+          "description": "'리(利)롭게 슬기롭게'의 가치 아래 사람을 위한 기술을 추구합니다."
+        }
+      }
+    }
+  },
+  "history": {
+    "eyebrow": "Company History",
+    "heading": "리슬이 걸어온 길",
+    "description1": "2005년 설립 이후 리슬은 데이터 기술을 기반으로 제조 현장과 기업 시스템을 연결하며 성장해왔습니다.",
+    "description2": "다양한 산업 현장에서 축적된 경험을 바탕으로 디지털 혁신의 여정을 이어가고 있습니다.",
+    "entries": {
+      "2025": {
+        "date": "2025년",
+        "items": [
+          "Vexi (관제 DT 솔루션) 출시 예정",
+          "Nexumm (제조 IT Framework) 출시",
+          "셀트리온 제약 CoreCode Suite 공급"
+        ]
+      },
+      "2024": {
+        "date": "2024년",
+        "items": ["CoreCode Suite V5 출시", "스마트팩토리 사업 확대 (컨설팅, 시스템 구축)"]
+      },
+      "2023": {
+        "date": "2023년",
+        "items": ["LG전자 CoreCode Suite 공급", "LS티라유텍 전략적 제휴 체결"]
+      },
+      "2022": {
+        "date": "2022년",
+        "items": ["LGCNS 협력업체 선정"]
+      },
+      "2020": {
+        "date": "2020년",
+        "items": ["SK 하이닉스 CoreCode Suite 공급", "셀트리온 CoreCode Suite 공급"]
+      },
+      "2018": {
+        "date": "2018년",
+        "items": ["기아자동차 CoreCode Suite 공급", "현대제철 CoreCode Suite 공급"]
+      },
+      "2017": {
+        "date": "2017년",
+        "items": ["현대자동차 CoreCode Suite 공급"]
+      },
+      "2016": {
+        "date": "2016년",
+        "items": ["현대오토에버 협력업체 선정", "한화오션 CoreCode 공급"]
+      },
+      "2015": {
+        "date": "2015년",
+        "items": ["SK AX 협력업체 선정"]
+      },
+      "2014": {
+        "date": "2014년",
+        "items": ["CoreCode Suite GS 인증"]
+      },
+      "2013": {
+        "date": "2013년",
+        "items": ["CoreCode XSTORE GS 인증"]
+      },
+      "2012": {
+        "date": "2012년",
+        "items": ["포스코, 포스하이메탈 CoreCode Suite 공급", "대법원 CoreCode XSTORE 공급"]
+      },
+      "2011": {
+        "date": "2011년",
+        "items": ["포스크DX 협력업체 선정", "삼성전자 CoreCode 공급"]
+      },
+      "2010": {
+        "date": "2010년",
+        "items": [
+          "삼성SDI CoreCode Suite 공급",
+          "코닝정밀소재 CoreCode Suite 공급",
+          "삼성디스플레이 CoreCode Suite 공급"
+        ]
+      },
+      "2009": {
+        "date": "2009년",
+        "items": ["삼성 SDS 협력업체 선정"]
+      },
+      "2008": {
+        "date": "2008년",
+        "items": ["기술혁신형 중소기업(INNO-BIZ) 인증 (중소벤처기업부)"]
+      },
+      "2007": {
+        "date": "2007년",
+        "items": ["통합 인터페이스 장치 특허 출원", "CoreCode Suite V4 (인터페이스 미들웨어) 출시"]
+      },
+      "2006": {
+        "date": "2006년",
+        "items": [
+          "CoreCode XSTORE (XML 문서관리 소프트웨어)' 출시",
+          "SK 하이닉스 중국 우시 CoreCode Suite 공급",
+          "CoreCode Suite (인터페이스 미들웨어 )' 출시",
+          "기업부설연구소 설립",
+          "우량기술기업 선정"
+        ]
+      },
+      "2005": {
+        "date": "2005년",
+        "items": ["(주)나무아이앤씨 설립"]
+      }
+    }
   },
   "contact": {
     "title": "문의하기",

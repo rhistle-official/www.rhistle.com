@@ -113,7 +113,218 @@
   },
   "company": {
     "title": "About Us",
-    "description": "Official introduction to RHISTLE's innovative solutions and corporate values."
+    "description": "Official introduction to RHISTLE's innovative solutions and corporate values.",
+    "hero": {
+      "code": "About Us",
+      "name": "Company",
+      "tagline": "Leading digital innovation through data and technology"
+    },
+    "intro": {
+      "line1": "is built on deep data technology expertise,",
+      "line2": "from the manufacturing floor to integrated logistics,",
+      "line3": "driving value across every customer touchpoint and operational layer —",
+      "line4": "a Digital Transformation (DX) specialist",
+      "line5": "that delivers.",
+      "sub": "Backed by proven solutions and advanced technical capabilities,",
+      "sub2": "we are committed to delivering the best in IT services."
+    },
+    "industry": {
+      "eyebrow": "Industry Served",
+      "heading1": "Partnering with diverse",
+      "heading2": "manufacturing industries on their digital journey",
+      "keyFocus": "Key Focus",
+      "serviceScope": "Service Scope",
+      "semiconductor": {
+        "title": "Semiconductor & Display",
+        "engTitle": "Semiconductor & Display",
+        "focus": "High-volume, high-variety, high-velocity data processing with safety and environmental management",
+        "projects": [
+          "Smart factory equipment automation",
+          "Equipment engineering data integration",
+          "Integrated environmental & safety disaster monitoring"
+        ]
+      },
+      "battery": {
+        "title": "Secondary Battery",
+        "engTitle": "Secondary Battery",
+        "focus": "Capital-intensive, large-scale equipment processes with enhanced data analytics",
+        "projects": [
+          "Manufacturing IoT platform deployment",
+          "Equipment integration system build-out",
+          "Gas leak and utility integrated monitoring"
+        ]
+      },
+      "bio": {
+        "title": "Bio & Food",
+        "engTitle": "Bio & Food",
+        "focus": "GMP and CSV compliance with batch production process optimization",
+        "projects": [
+          "Smart factory equipment automation",
+          "WMS (Warehouse Management System) implementation",
+          "Integrated wastewater treatment system build-out"
+        ]
+      },
+      "automotive": {
+        "title": "Automotive & Steel",
+        "engTitle": "Automotive & Steel",
+        "focus": "Assembly operations, supplier collaboration, and multi-interface environment support",
+        "projects": [
+          "Global automotive electronics inspection system",
+          "Supplier component quality data integration",
+          "Equipment integration system build-out"
+        ]
+      },
+      "general": {
+        "title": "General Mfg & Public",
+        "engTitle": "General Mfg & Public",
+        "focus": "Safety and environmental system advancement with enterprise-wide integrated system deployment",
+        "projects": [
+          "Smart factory consulting",
+          "FEMS/ERP data integration system build-out",
+          "Enterprise-wide system optimization"
+        ]
+      }
+    },
+    "values": {
+      "eyebrow": "Company Values",
+      "heading": "The future RHISTLE strives toward",
+      "vision": {
+        "text": "\"The leader of digital innovation, evolving through data and technology\""
+      },
+      "mission": {
+        "text": "\"Through data integration and intelligent systems, we create meaningful change for our customers, industries, and the world.\""
+      },
+      "coreValues": {
+        "expertise": {
+          "subtitle": "Expertise",
+          "description": "We deliver best-in-class IT services backed by proven solutions and advanced technical capabilities."
+        },
+        "agility": {
+          "subtitle": "Agility",
+          "description": "We respond swiftly to a changing landscape, leading execution-driven innovation."
+        },
+        "humanCentric": {
+          "subtitle": "Human-Centric",
+          "description": "Under the ethos of 'beneficial and wise,' we pursue technology that serves people."
+        }
+      }
+    }
+  },
+  "history": {
+    "eyebrow": "Company History",
+    "heading": "The road RHISTLE has traveled",
+    "description1": "Since our founding in 2005, RHISTLE has grown by connecting manufacturing environments and enterprise systems through data technology.",
+    "description2": "Building on experience accumulated across diverse industries, we continue our journey toward digital innovation.",
+    "entries": {
+      "2025": {
+        "date": "2025",
+        "items": [
+          "Vexi (Supervisory DT Solution) — upcoming launch",
+          "Nexumm (Manufacturing IT Framework) launched",
+          "CoreCode Suite supplied to Celltrion Pharm"
+        ]
+      },
+      "2024": {
+        "date": "2024",
+        "items": [
+          "CoreCode Suite V5 released",
+          "Smart factory business expansion (consulting & system integration)"
+        ]
+      },
+      "2023": {
+        "date": "2023",
+        "items": [
+          "CoreCode Suite supplied to LG Electronics",
+          "Strategic partnership with LS Thira Utech"
+        ]
+      },
+      "2022": {
+        "date": "2022",
+        "items": ["Selected as LGCNS partner vendor"]
+      },
+      "2020": {
+        "date": "2020",
+        "items": ["CoreCode Suite supplied to SK Hynix", "CoreCode Suite supplied to Celltrion"]
+      },
+      "2018": {
+        "date": "2018",
+        "items": [
+          "CoreCode Suite supplied to Kia Motors",
+          "CoreCode Suite supplied to Hyundai Steel"
+        ]
+      },
+      "2017": {
+        "date": "2017",
+        "items": ["CoreCode Suite supplied to Hyundai Motor Company"]
+      },
+      "2016": {
+        "date": "2016",
+        "items": [
+          "Selected as Hyundai AutoEver partner vendor",
+          "CoreCode supplied to Hanwha Ocean"
+        ]
+      },
+      "2015": {
+        "date": "2015",
+        "items": ["Selected as SK AX partner vendor"]
+      },
+      "2014": {
+        "date": "2014",
+        "items": ["CoreCode Suite GS certification"]
+      },
+      "2013": {
+        "date": "2013",
+        "items": ["CoreCode XSTORE GS certification"]
+      },
+      "2012": {
+        "date": "2012",
+        "items": [
+          "CoreCode Suite supplied to POSCO and POSCO Hi Metal",
+          "CoreCode XSTORE supplied to the Supreme Court of Korea"
+        ]
+      },
+      "2011": {
+        "date": "2011",
+        "items": ["Selected as POSCO DX partner vendor", "CoreCode supplied to Samsung Electronics"]
+      },
+      "2010": {
+        "date": "2010",
+        "items": [
+          "CoreCode Suite supplied to Samsung SDI",
+          "CoreCode Suite supplied to Corning Precision Materials",
+          "CoreCode Suite supplied to Samsung Display"
+        ]
+      },
+      "2009": {
+        "date": "2009",
+        "items": ["Selected as Samsung SDS partner vendor"]
+      },
+      "2008": {
+        "date": "2008",
+        "items": ["Certified as Innovative SME (INNO-BIZ) by the Ministry of SMEs and Startups"]
+      },
+      "2007": {
+        "date": "2007",
+        "items": [
+          "Patent filed for integrated interface device",
+          "CoreCode Suite V4 (interface middleware) released"
+        ]
+      },
+      "2006": {
+        "date": "2006",
+        "items": [
+          "CoreCode XSTORE (XML document management software) released",
+          "CoreCode Suite supplied to SK Hynix Wuxi, China",
+          "CoreCode Suite (interface middleware) released",
+          "In-house R&D center established",
+          "Recognized as an excellent technology company"
+        ]
+      },
+      "2005": {
+        "date": "2005",
+        "items": ["NAMU I&C Co., Ltd. founded"]
+      }
+    }
   },
   "contact": {
     "title": "Contact Us",
