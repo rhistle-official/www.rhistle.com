@@ -180,7 +180,10 @@ const page = () => {
                 <p className="font-audiowide text-2xl">CoreCode</p>
                 <p className="mt-2 text-white/70">데이터 수집·표준화</p>
               </div>
-              <ArrowRight className="mx-auto size-8 rotate-90 sm:rotate-0" />
+              <ArrowRight
+                aria-hidden="true"
+                className="mx-auto size-8 rotate-90 sm:rotate-0"
+              />
               <div className="flex-1 rounded-2xl bg-white/20 p-6 text-center">
                 <p className="font-audiowide text-2xl">Nexumm VX</p>
                 <p className="mt-2 text-white/70">관제·디지털 트윈</p>

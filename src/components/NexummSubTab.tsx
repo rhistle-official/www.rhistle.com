@@ -11,7 +11,10 @@ const NexummSubTab = () => {
   const pathName = usePathname();
 
   return (
-    <section className="sticky top-21.25 z-[9] border-gray-200 border-b bg-white/85 backdrop-blur md:top-30.75 xl:top-34.25">
+    <nav
+      aria-label="Nexumm 제품 선택"
+      className="sticky top-21.25 z-[9] border-gray-200 border-b bg-white/85 backdrop-blur md:top-30.75 xl:top-34.25"
+    >
       <div className="mx-auto flex max-w-7xl gap-6 px-8">
         {tabs.map((tab) => {
           const isActive = pathName.startsWith(tab.href);
@@ -29,7 +32,7 @@ const NexummSubTab = () => {
           );
         })}
       </div>
-    </section>
+    </nav>
   );
 };
 export default NexummSubTab;
