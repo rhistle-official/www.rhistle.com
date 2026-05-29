@@ -22,6 +22,7 @@ const AccordionFeatures = ({ items }: { items: Item[] }) => {
           >
             <button
               type="button"
+              aria-expanded={isOpen}
               onClick={() => setOpen(isOpen ? null : item.id)}
               className="flex w-full items-center justify-between gap-6 p-6 text-left sm:p-8"
             >

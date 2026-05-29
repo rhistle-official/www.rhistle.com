@@ -22,7 +22,7 @@ const FeatureCard = ({
     viewport={{ once: true, margin: "-80px" }}
     transition={{ duration: 0.5, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
     whileHover={{ y: -6 }}
-    className="group flex flex-col gap-5 rounded-3xl border border-gray-100 bg-white p-7 shadow-sm transition-shadow hover:shadow-xl"
+    className="flex flex-col gap-5 rounded-3xl border border-gray-100 bg-white p-7 shadow-sm transition-shadow hover:shadow-xl"
   >
     <div className="flex items-center justify-between">
       <span className="flex size-12 items-center justify-center rounded-2xl bg-rhistle/10 text-rhistle">
