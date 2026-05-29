@@ -338,7 +338,151 @@
   },
   "corecode": {
     "title": "코어코드",
-    "description": "설비와 시스템을 잇는 강력한 인터페이스 솔루션, 리슬(RHISTLE)의 CoreCode를 소개합니다. 실시간 데이터 수집과 안정적인 설비 제어를 경험하세요."
+    "description": "설비와 시스템을 잇는 강력한 인터페이스 솔루션, 리슬(RHISTLE)의 CoreCode를 소개합니다. 실시간 데이터 수집과 안정적인 설비 제어를 경험하세요.",
+    "hero": {
+      "code": "CoreCode",
+      "name": "Data Interface Solution",
+      "tagline": "흩어진 데이터를 하나로 잇다",
+      "description": "다양한 설비·시스템의 데이터를 실시간으로 수집·연계하는 로우코드(Low-Code) 기반 통합 데이터 인터페이스 솔루션입니다."
+    },
+    "overview": {
+      "eyebrow": "Overview",
+      "p1": "Industry 4.0시대, 데이터는 기업의 핵심 자산이며 데이터 수집과 관리는 주요 성공 요소입니다. 그러나 지속적인 혁신을 위한 제조 현장의 데이터 수집 및 관리에는 많은 제약이 있습니다.",
+      "p2": "로우 코드(Low-Code) 기반의 IoT 데이터 연계 및 저장을 쉽고 빠르게 개발, 변경, 운영할 수 있는 통합 환경을 제공합니다."
+    },
+    "highlights": {
+      "eyebrow": "Highlights",
+      "items": [
+        {
+          "title": "표준 체계 지원",
+          "details": [
+            "표준 통신 프로토콜 지원 (OPC, Modbus, Ethernet/IP 등)",
+            "산업별 표준 데이터 체계 지원"
+          ]
+        },
+        {
+          "title": "다양한 데이터 연계/통합 자산",
+          "details": [
+            "100여종 이상의 Adaptors (PLC, Sensors, Files, DB 등)",
+            "연계 기술 및 노하우 탑재"
+          ]
+        },
+        {
+          "title": "개발/운영 고효율 및 고성능",
+          "details": [
+            "로우 코드 기반 개발 및 시각적 디버깅",
+            "고성능 3V (Volume, Variety, Velocity) 데이터 처리"
+          ]
+        }
+      ]
+    },
+    "functionalityBadge": "Functionality",
+    "functionalityItems": [
+      "설비 연계 및 데이터 인티그레이션",
+      "모델링 기반 개발 및 시각적 디버깅",
+      "시스템 가동 현황 모니터링 및 이상 추적",
+      "시스템 운영 관리"
+    ],
+    "keyFeatures": {
+      "eyebrow": "Key Features",
+      "desc": "모델링 (Modeling, Low-Code) 기반의 개발 방법으로 개발 생산성이 높으며, 대용량 데이터를 빠르고 안정적으로 처리하고, 데이터 연계 환경 변화에 유연하게 대응할 수 있습니다."
+    },
+    "performance": {
+      "speedy": {
+        "title": "개발 생산성 ↑",
+        "descriptions": [
+          "모델링(Low-Code) 기반 개발 도구와 Visual Debugger 등 직관적 개발 환경",
+          "현장에서 검증된 인터페이스 및 Built-In 컴포넌트 제공",
+          "Custom 컴포넌트 개발을 위한 API 제공"
+        ]
+      },
+      "stable": {
+        "title": "운영 안정성 ↑",
+        "descriptions": [
+          "대용량 데이터 초고속 처리 Throughput 보장",
+          "Up-time 100% 검증 및 솔루션 이중화 기반 고가용성",
+          "System Monitoring 및 운영 Utility 제공"
+        ]
+      },
+      "flexible": {
+        "title": "유연성 ↑",
+        "descriptions": [
+          "다양한 설비 및 센서 연계를 위한 아키텍처 구성",
+          "설비/센서 벤더와 독립적인 시스템 구축",
+          "신규 설비 추가 및 변경에 빠르게 대응"
+        ]
+      }
+    },
+    "benefits": {
+      "eyebrow": "Business Benefits",
+      "desc": "CoreCode 솔루션 도입을 통해 제조의 가치를 제고하고, 제조 운영 및 관리 역량을 강화하여 지속적으로 성과를 개선할 수 있습니다."
+    },
+    "effectData": {
+      "factory": {
+        "title": "제조 가시성 확보 및 경쟁력 강화로",
+        "highlight": "제조 가치 제고",
+        "descriptions": [
+          "제조 현장의 실시간 파악을 통한 제조 경쟁력 강화",
+          "검사/계측 설비 데이터 관리를 통한 제품 품질 향상",
+          "제조 환경 및 안전 관련 데이터 관리를 통한 ESG 성과 개선"
+        ]
+      },
+      "database": {
+        "title": "실시간 데이터 기반 의사결정 및 분석을 통한",
+        "highlight": "운영/관리 역량 제고",
+        "descriptions": [
+          "실시간 데이터 기반으로 적기, 정확한 의사 결정",
+          "설비, 센서 증가에 대한 체계적 연결 및 데이터 관리",
+          "연계 시스템 구축 및 관리 비용 절감"
+        ]
+      },
+      "trending": {
+        "title": "설비, IoT 디바이스에 대한 운영 관리로",
+        "highlight": "지속적 성과 개선",
+        "descriptions": [
+          "현장 설비 및 현장 활동의 주요 특성 파악",
+          "데이터 분석을 통한 문제점 식별 및 지속적 개선"
+        ]
+      }
+    },
+    "functionalities": {
+      "eyebrow": "Functionalities",
+      "desc": "개발, 테스트, 배포, 운영 및 모니터링 등 시스템 개발 전체 단계를 지원할 수 있는 기능으로 구성되어 있습니다."
+    },
+    "features": {
+      "01": {
+        "title": "산업용 표준 Adaptor",
+        "desc": ["다양한 설비, PLC, DCS 대응", "표준 인터페이스로 능동적 변화 대응"]
+      },
+      "02": {
+        "title": "통합 개발 환경",
+        "desc": [
+          "모델링 기반 개발 및 테스트",
+          "Adaptor Modeler / Visual Debugger",
+          "Tag Manager 지원"
+        ]
+      },
+      "03": {
+        "title": "프로세싱 엔진",
+        "desc": [
+          "Run-Time 시스템 자원 관리",
+          "메시지 Routing 및 전달 보증",
+          "표준 통신 프로토콜 지원"
+        ]
+      },
+      "04": {
+        "title": "시스템 운영 관리",
+        "desc": ["실시간 자원 모니터링", "데이터 통계 및 분석", "원격 프로그램 변경/관리"]
+      },
+      "05": {
+        "title": "원격 에이전트",
+        "desc": ["소형 미들웨어 엔진 기능", "서버 인터페이스 연동", "원격 유지관리 및 Logging"]
+      }
+    },
+    "applications": {
+      "eyebrow": "Applications",
+      "desc": "데이터 연계 솔루션으로 비즈니스 요구에 따라 스마트팩토리 구축, 환경/안전 관제, IoT Platform 구성 등 다양하게 활용할 수 있습니다."
+    }
   },
   "nexumm": {
     "title": "넥섬",

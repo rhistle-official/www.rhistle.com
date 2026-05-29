@@ -359,7 +359,162 @@
   },
   "corecode": {
     "title": "CoreCode",
-    "description": "Introducing CoreCode by RHISTLE: A powerful interface solution bridging the gap between facilities and systems. Experience seamless real-time data acquisition and stable equipment control."
+    "description": "Introducing CoreCode by RHISTLE: A powerful interface solution bridging the gap between facilities and systems. Experience seamless real-time data acquisition and stable equipment control.",
+    "hero": {
+      "code": "CoreCode",
+      "name": "Data Interface Solution",
+      "tagline": "Connecting dispersed data into a single, unified flow",
+      "description": "An integrated Low-Code data interface solution that collects and connects data from diverse equipment and systems in real time."
+    },
+    "overview": {
+      "eyebrow": "Overview",
+      "p1": "In the Industry 4.0 era, data is a core enterprise asset and effective data collection and management are critical success factors. Yet manufacturing environments face significant constraints when it comes to gathering and managing data for continuous innovation.",
+      "p2": "CoreCode provides a unified environment that makes it easy and fast to develop, modify, and operate Low-Code IoT data integration and storage."
+    },
+    "highlights": {
+      "eyebrow": "Highlights",
+      "items": [
+        {
+          "title": "Standards-Based Architecture",
+          "details": [
+            "Support for standard communication protocols (OPC, Modbus, Ethernet/IP, and more)",
+            "Industry-standard data schema support"
+          ]
+        },
+        {
+          "title": "Rich Data Integration Asset Library",
+          "details": [
+            "100+ Adaptor types (PLC, Sensors, Files, DB, and more)",
+            "Proven integration technology and deep domain know-how"
+          ]
+        },
+        {
+          "title": "High-Efficiency Development & High-Performance Operations",
+          "details": [
+            "Low-Code development with visual debugging",
+            "High-performance 3V (Volume, Variety, Velocity) data processing"
+          ]
+        }
+      ]
+    },
+    "functionalityBadge": "Functionality",
+    "functionalityItems": [
+      "Equipment connectivity & data integration",
+      "Model-based development & visual debugging",
+      "System operation monitoring & anomaly tracking",
+      "System operations management"
+    ],
+    "keyFeatures": {
+      "eyebrow": "Key Features",
+      "desc": "Modeling (Low-Code)-based development delivers high productivity, while the engine handles large-scale data quickly and reliably — giving you the flexibility to adapt as your integration landscape evolves."
+    },
+    "performance": {
+      "speedy": {
+        "title": "Developer Productivity ↑",
+        "descriptions": [
+          "Intuitive modeling (Low-Code) development tools with a Visual Debugger",
+          "Field-proven interface components and built-in Building Blocks",
+          "Open API for custom component development"
+        ]
+      },
+      "stable": {
+        "title": "Operational Stability ↑",
+        "descriptions": [
+          "High-throughput processing guaranteed for large-scale data",
+          "100% Up-time validated with high-availability redundancy",
+          "System monitoring and operational utility suite"
+        ]
+      },
+      "flexible": {
+        "title": "Flexibility ↑",
+        "descriptions": [
+          "Architecture designed for diverse equipment and sensor connectivity",
+          "Vendor-agnostic system design independent of equipment suppliers",
+          "Rapid response to new equipment additions and configuration changes"
+        ]
+      }
+    },
+    "benefits": {
+      "eyebrow": "Business Benefits",
+      "desc": "Adopting CoreCode elevates manufacturing value, strengthens operational and management capabilities, and enables continuous performance improvement."
+    },
+    "effectData": {
+      "factory": {
+        "title": "Gaining manufacturing visibility and competitive advantage to",
+        "highlight": "elevate manufacturing value",
+        "descriptions": [
+          "Strengthen manufacturing competitiveness through real-time shop-floor insight",
+          "Improve product quality via inspection and measurement data management",
+          "Advance ESG performance through manufacturing environment and safety data management"
+        ]
+      },
+      "database": {
+        "title": "Enabling real-time data-driven decision-making and analytics to",
+        "highlight": "enhance operational & management capability",
+        "descriptions": [
+          "Make timely, accurate decisions powered by real-time data",
+          "Systematically connect and manage growing equipment and sensor fleets",
+          "Reduce the cost of building and maintaining integration systems"
+        ]
+      },
+      "trending": {
+        "title": "Managing operations across equipment and IoT devices to",
+        "highlight": "drive continuous performance improvement",
+        "descriptions": [
+          "Understand key characteristics of on-site equipment and field activities",
+          "Identify issues and drive continuous improvement through data analytics"
+        ]
+      }
+    },
+    "functionalities": {
+      "eyebrow": "Functionalities",
+      "desc": "CoreCode covers the complete system development lifecycle — from development and testing to deployment, operations, and monitoring."
+    },
+    "features": {
+      "01": {
+        "title": "Industry-Standard Adaptors",
+        "desc": [
+          "Compatible with diverse equipment, PLC, and DCS systems",
+          "Standard interfaces for proactive adaptation to change"
+        ]
+      },
+      "02": {
+        "title": "Integrated Development Environment",
+        "desc": [
+          "Model-based development and testing",
+          "Adaptor Modeler / Visual Debugger",
+          "Tag Manager support"
+        ]
+      },
+      "03": {
+        "title": "Processing Engine",
+        "desc": [
+          "Run-Time system resource management",
+          "Message routing and guaranteed delivery",
+          "Standard communication protocol support"
+        ]
+      },
+      "04": {
+        "title": "System Operations Management",
+        "desc": [
+          "Real-time resource monitoring",
+          "Data statistics and analytics",
+          "Remote program change and management"
+        ]
+      },
+      "05": {
+        "title": "Remote Agent",
+        "desc": [
+          "Lightweight middleware engine functionality",
+          "Server interface connectivity",
+          "Remote maintenance and logging"
+        ]
+      }
+    },
+    "applications": {
+      "eyebrow": "Applications",
+      "desc": "As a data integration solution, CoreCode supports a wide range of use cases — from smart factory deployment and environmental/safety monitoring to IoT platform configuration — tailored to your business needs."
+    }
   },
   "nexumm": {
     "title": "Nexumm",
