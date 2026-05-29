@@ -102,14 +102,12 @@
       "name": {
         "company": "Company Brochure",
         "corecode": "CoreCode Brochure",
-        "nexumm": "Nexumm LX Brochure",
         "nexummLx": "Nexumm LX Brochure",
         "nexummVx": "Nexumm VX Brochure"
       },
       "download": {
         "company": "Company_Brochure_RHISTLE_Co.,Ltd.pdf",
         "corecode": "CoreCode_Brochure_RHISTLE_Co.,Ltd.pdf",
-        "nexummLX": "Nexumm_LX_Brochure_RHISTLE_Co.,Ltd.pdf",
         "nexummLx": "Nexumm_LX_Brochure_RHISTLE_Co.,Ltd.pdf",
         "nexummVx": "Nexumm_VX_Brochure_RHISTLE_Co.,Ltd.pdf"
       },

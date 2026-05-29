@@ -7,7 +7,8 @@ const hrefs = [
   "/company",
   "/contact",
   "/solutions/corecode",
-  "/solutions/nexumm",
+  "/solutions/nexumm/lx",
+  "/solutions/nexumm/vx",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

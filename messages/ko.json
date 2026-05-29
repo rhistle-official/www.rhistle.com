@@ -96,14 +96,12 @@
       "name": {
         "company": "회사 소개서",
         "corecode": "CoreCode 소개서",
-        "nexumm": "Nexumm LX 소개서",
         "nexummLx": "Nexumm LX 소개서",
         "nexummVx": "Nexumm VX 소개서"
       },
       "download": {
         "company": "회사 소개서_(주)리슬.pdf",
         "corecode": "CoreCode 소개서_(주)리슬.pdf",
-        "nexummLX": "Nexumm LX 소개서_(주)리슬.pdf",
         "nexummLx": "Nexumm LX 소개서_(주)리슬.pdf",
         "nexummVx": "Nexumm VX 소개서_(주)리슬.pdf"
       },
