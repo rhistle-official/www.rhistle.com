@@ -14,11 +14,7 @@ const LocaleSwitcher = () => {
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target;
 
-      if (
-        dropdownRef.current &&
-        target instanceof Node &&
-        !dropdownRef.current.contains(target)
-      ) {
+      if (dropdownRef.current && target instanceof Node && !dropdownRef.current.contains(target)) {
         setIsOpen(false);
       }
     };
