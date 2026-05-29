@@ -26,9 +26,7 @@ const Footer = () => {
     <footer className="border-gray-200 border-t py-10 md:py-15 xl:py-20">
       <div className="mx-auto flex max-w-7xl flex-col gap-8 px-8 md:text-lg xl:text-xl">
         <div className="flex flex-col gap-8">
-          <strong className="font-audiowide text-3xl text-rhistle">
-            RHISTLE
-          </strong>
+          <strong className="font-audiowide text-3xl text-rhistle">RHISTLE</strong>
           <address className="flex flex-col gap-1 not-italic">
             <div className="flex flex-wrap items-center gap-x-4">
               <strong className="font-bold">{t("name")}</strong>
@@ -46,9 +44,7 @@ const Footer = () => {
         <hr className="border-gray-200" />
 
         <div className="flex items-center justify-between">
-          <small>
-            © {new Date().getFullYear()} RHISTLE. All rights reserved.
-          </small>
+          <small>© {new Date().getFullYear()} RHISTLE. All rights reserved.</small>
           <ul className="flex gap-4 md:gap-6 lg:gap-8">
             {certifications.map((certification) => (
               <li
@@ -57,7 +53,7 @@ const Footer = () => {
               >
                 <Image
                   src={certification.image}
-                  alt={`${certification.name} 인증 마크`}
+                  alt={t("certificationAlt", { name: certification.name })}
                   fill
                   sizes="(min-width: 1024px) 120px, (min-width: 768px) 80px, 40px"
                   className="object-contain"

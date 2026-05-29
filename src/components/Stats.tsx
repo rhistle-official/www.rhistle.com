@@ -40,9 +40,7 @@ const Stats = () => {
               <Icon className="text-blue-400" size={32} aria-hidden />
               <div className="flex font-bold">
                 {inView && <CountUp end={endValue} duration={1000} />}
-                <p className="text-3xl text-blue-400 md:text-4xl xl:text-5xl">
-                  +
-                </p>
+                <p className="text-3xl text-blue-400 md:text-4xl xl:text-5xl">+</p>
               </div>
               <p className="font-semibold md:text-lg xl:text-xl">{name}</p>
             </li>

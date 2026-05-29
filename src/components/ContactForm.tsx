@@ -1,32 +1,31 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useActionState } from "react";
 import { submitContact } from "@/actions/contact";
 import type { ContactFormState } from "@/types/contact";
 
 const ContactForm = () => {
-  const [state, action, pending] = useActionState<ContactFormState, FormData>(
-    submitContact,
-    { success: false, message: "" },
-  );
+  const t = useTranslations("contact.form");
+  const [state, action, pending] = useActionState<ContactFormState, FormData>(submitContact, {
+    success: false,
+    message: "",
+  });
   return (
-    <form
-      action={action}
-      className="space-y-6 rounded-3xl border border-gray-100 p-8 shadow-sm"
-    >
+    <form action={action} className="space-y-6 rounded-3xl border border-gray-100 p-8 shadow-sm">
       <div className="grid grid-cols-2 gap-4">
         <input
           type="text"
           name="name"
           required
-          placeholder="성함"
+          placeholder={t("name")}
           className="w-full rounded-xl border-none bg-gray-100 p-4 outline-none transition-all placeholder:text-rhistle/50 focus:ring-2 focus:ring-rhistle"
         />
         <input
           type="text"
           name="company"
           required
-          placeholder="회사명"
+          placeholder={t("company")}
           className="w-full rounded-xl border-none bg-gray-100 p-4 outline-none transition-all placeholder:text-rhistle/50 focus:ring-2 focus:ring-rhistle"
         />
       </div>
@@ -35,7 +34,7 @@ const ContactForm = () => {
         type="email"
         name="email"
         required
-        placeholder="이메일 주소"
+        placeholder={t("email")}
         className="w-full rounded-xl border-none bg-gray-100 p-4 outline-none transition-all placeholder:text-rhistle/50 focus:ring-2 focus:ring-rhistle"
       />
 
@@ -46,18 +45,18 @@ const ContactForm = () => {
         className="w-full rounded-xl border-none bg-gray-100 p-4 text-rhistle/50 outline-none transition-all valid:text-black focus:ring-2 focus:ring-rhistle"
       >
         <option value="" disabled hidden>
-          문의 유형 선택
+          {t("categoryPlaceholder")}
         </option>
-        <option value="솔루션 도입 문의">솔루션 도입 문의</option>
-        <option value="기술 지원">기술 지원</option>
-        <option value="기타">기타</option>
+        <option value={t("categories.solution")}>{t("categories.solution")}</option>
+        <option value={t("categories.support")}>{t("categories.support")}</option>
+        <option value={t("categories.etc")}>{t("categories.etc")}</option>
       </select>
 
       {/* 고정 높이 Textarea */}
       <textarea
         name="content"
         required
-        placeholder="문의 내용을 입력해 주세요"
+        placeholder={t("contentPlaceholder")}
         className="h-45 w-full resize-none rounded-xl border-none bg-gray-100 p-4 outline-none transition-all placeholder:text-rhistle/50 focus:ring-2 focus:ring-rhistle"
       />
       <button
@@ -65,11 +64,11 @@ const ContactForm = () => {
         disabled={pending}
         className={`w-full rounded-xl py-4 font-bold ${pending ? "cursor-not-allowed bg-gray-100" : "cursor-pointer bg-rhistle text-white hover:bg-rhistle/90"}`}
       >
-        {pending ? "전송 중..." : "문의하기"}
+        {pending ? t("submitting") : t("submit")}
       </button>
       {state?.message && (
         <p className={` ${state.success ? "text-green-600" : "text-red-500"}`}>
-          {state.message}
+          {t(state.message)}
         </p>
       )}
     </form>

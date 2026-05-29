@@ -1,4 +1,4 @@
-import "./globals.css";
+import "../globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { notFound } from "next/navigation";
@@ -60,7 +60,7 @@ export async function generateMetadata({
           url: `${baseUrl}/image/og-rhistle.png`,
           width: 1200,
           height: 630,
-          alt: "리슬(RHISTLE)",
+          alt: t("title"),
         },
       ],
     },
@@ -78,18 +78,17 @@ export default async function LocaleLayout({
 
   if (!hasLocale(routing.locales, locale)) notFound();
 
+  const t = await getTranslations({ locale, namespace: "footer" });
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "리슬",
+    name: t("name"),
     url: "https://rhistle.com",
   };
 
   return (
-    <html
-      lang={locale}
-      className={`${pretendard.variable} ${audiowide.variable} antialiased`}
-    >
+    <html lang={locale} className={`${pretendard.variable} ${audiowide.variable} antialiased`}>
       <head>
         <script
           type="application/ld+json"

@@ -3,7 +3,9 @@
     "solutions": "Solutions",
     "company": "Company",
     "contact": "Contact",
-    "blog": "Blog"
+    "blog": "Blog",
+    "menu": "Full menu",
+    "menuDescription": "Site navigation menu."
   },
   "home": {
     "title": "RHISTLE",
@@ -47,10 +49,7 @@
           "Established a digital warehouse management foundation",
           "Strengthened regulatory compliance and response capabilities"
         ],
-        "benefits": [
-          "Improved warehouse operation efficiency",
-          "Enhanced inventory visibility"
-        ]
+        "benefits": ["Improved warehouse operation efficiency", "Enhanced inventory visibility"]
       },
       "Case 03": {
         "title": "Integrated Disaster Monitoring System",
@@ -102,41 +101,746 @@
       "name": {
         "company": "Company Brochure",
         "corecode": "CoreCode Brochure",
-        "nexumm": "Nexumm LX Brochure"
+        "nexummLx": "Nexumm LX Brochure",
+        "nexummVx": "Nexumm VX Brochure"
       },
       "download": {
         "company": "Company_Brochure_RHISTLE_Co.,Ltd.pdf",
         "corecode": "CoreCode_Brochure_RHISTLE_Co.,Ltd.pdf",
-        "nexummLX": "Nexumm_LX_Brochure_RHISTLE_Co.,Ltd.pdf"
+        "nexummLx": "Nexumm_LX_Brochure_RHISTLE_Co.,Ltd.pdf",
+        "nexummVx": "Nexumm_VX_Brochure_RHISTLE_Co.,Ltd.pdf"
       },
       "contact": "Contact Us"
     }
   },
   "company": {
     "title": "About Us",
-    "description": "Official introduction to RHISTLE's innovative solutions and corporate values."
+    "description": "Official introduction to RHISTLE's innovative solutions and corporate values.",
+    "hero": {
+      "code": "About Us",
+      "name": "Company",
+      "tagline": "Leading digital innovation through data and technology"
+    },
+    "intro": {
+      "line1": "is built on deep data technology expertise,",
+      "line2": "from the manufacturing floor to integrated logistics,",
+      "line3": "driving value across every customer touchpoint and operational layer —",
+      "line4": "a Digital Transformation (DX) specialist",
+      "line5": "that delivers.",
+      "sub": "Backed by proven solutions and advanced technical capabilities,",
+      "sub2": "we are committed to delivering the best in IT services."
+    },
+    "industry": {
+      "eyebrow": "Industry Served",
+      "heading1": "Partnering with diverse",
+      "heading2": "manufacturing industries on their digital journey",
+      "keyFocus": "Key Focus",
+      "serviceScope": "Service Scope",
+      "semiconductor": {
+        "title": "Semiconductor & Display",
+        "engTitle": "Semiconductor & Display",
+        "focus": "High-volume, high-variety, high-velocity data processing with safety and environmental management",
+        "projects": [
+          "Smart factory equipment automation",
+          "Equipment engineering data integration",
+          "Integrated environmental & safety disaster monitoring"
+        ]
+      },
+      "battery": {
+        "title": "Secondary Battery",
+        "engTitle": "Secondary Battery",
+        "focus": "Capital-intensive, large-scale equipment processes with enhanced data analytics",
+        "projects": [
+          "Manufacturing IoT platform deployment",
+          "Equipment integration system build-out",
+          "Gas leak and utility integrated monitoring"
+        ]
+      },
+      "bio": {
+        "title": "Bio & Food",
+        "engTitle": "Bio & Food",
+        "focus": "GMP and CSV compliance with batch production process optimization",
+        "projects": [
+          "Smart factory equipment automation",
+          "WMS (Warehouse Management System) implementation",
+          "Integrated wastewater treatment system build-out"
+        ]
+      },
+      "automotive": {
+        "title": "Automotive & Steel",
+        "engTitle": "Automotive & Steel",
+        "focus": "Assembly operations, supplier collaboration, and multi-interface environment support",
+        "projects": [
+          "Global automotive electronics inspection system",
+          "Supplier component quality data integration",
+          "Equipment integration system build-out"
+        ]
+      },
+      "general": {
+        "title": "General Mfg & Public",
+        "engTitle": "General Mfg & Public",
+        "focus": "Safety and environmental system advancement with enterprise-wide integrated system deployment",
+        "projects": [
+          "Smart factory consulting",
+          "FEMS/ERP data integration system build-out",
+          "Enterprise-wide system optimization"
+        ]
+      }
+    },
+    "values": {
+      "eyebrow": "Company Values",
+      "heading": "The future RHISTLE strives toward",
+      "vision": {
+        "text": "\"The leader of digital innovation, evolving through data and technology\""
+      },
+      "mission": {
+        "text": "\"Through data integration and intelligent systems, we create meaningful change for our customers, industries, and the world.\""
+      },
+      "coreValues": {
+        "expertise": {
+          "subtitle": "Expertise",
+          "description": "We deliver best-in-class IT services backed by proven solutions and advanced technical capabilities."
+        },
+        "agility": {
+          "subtitle": "Agility",
+          "description": "We respond swiftly to a changing landscape, leading execution-driven innovation."
+        },
+        "humanCentric": {
+          "subtitle": "Human-Centric",
+          "description": "Under the ethos of 'beneficial and wise,' we pursue technology that serves people."
+        }
+      }
+    }
+  },
+  "history": {
+    "eyebrow": "Company History",
+    "heading": "The road RHISTLE has traveled",
+    "description1": "Since our founding in 2005, RHISTLE has grown by connecting manufacturing environments and enterprise systems through data technology.",
+    "description2": "Building on experience accumulated across diverse industries, we continue our journey toward digital innovation.",
+    "entries": {
+      "2025": {
+        "date": "2025",
+        "items": [
+          "Vexi (Supervisory DT Solution) — upcoming launch",
+          "Nexumm (Manufacturing IT Framework) launched",
+          "CoreCode Suite supplied to Celltrion Pharm"
+        ]
+      },
+      "2024": {
+        "date": "2024",
+        "items": [
+          "CoreCode Suite V5 released",
+          "Smart factory business expansion (consulting & system integration)"
+        ]
+      },
+      "2023": {
+        "date": "2023",
+        "items": [
+          "CoreCode Suite supplied to LG Electronics",
+          "Strategic partnership with LS Thira Utech"
+        ]
+      },
+      "2022": {
+        "date": "2022",
+        "items": ["Selected as LGCNS partner vendor"]
+      },
+      "2020": {
+        "date": "2020",
+        "items": ["CoreCode Suite supplied to SK Hynix", "CoreCode Suite supplied to Celltrion"]
+      },
+      "2018": {
+        "date": "2018",
+        "items": [
+          "CoreCode Suite supplied to Kia Motors",
+          "CoreCode Suite supplied to Hyundai Steel"
+        ]
+      },
+      "2017": {
+        "date": "2017",
+        "items": ["CoreCode Suite supplied to Hyundai Motor Company"]
+      },
+      "2016": {
+        "date": "2016",
+        "items": [
+          "Selected as Hyundai AutoEver partner vendor",
+          "CoreCode supplied to Hanwha Ocean"
+        ]
+      },
+      "2015": {
+        "date": "2015",
+        "items": ["Selected as SK AX partner vendor"]
+      },
+      "2014": {
+        "date": "2014",
+        "items": ["CoreCode Suite GS certification"]
+      },
+      "2013": {
+        "date": "2013",
+        "items": ["CoreCode XSTORE GS certification"]
+      },
+      "2012": {
+        "date": "2012",
+        "items": [
+          "CoreCode Suite supplied to POSCO and POSCO Hi Metal",
+          "CoreCode XSTORE supplied to the Supreme Court of Korea"
+        ]
+      },
+      "2011": {
+        "date": "2011",
+        "items": ["Selected as POSCO DX partner vendor", "CoreCode supplied to Samsung Electronics"]
+      },
+      "2010": {
+        "date": "2010",
+        "items": [
+          "CoreCode Suite supplied to Samsung SDI",
+          "CoreCode Suite supplied to Corning Precision Materials",
+          "CoreCode Suite supplied to Samsung Display"
+        ]
+      },
+      "2009": {
+        "date": "2009",
+        "items": ["Selected as Samsung SDS partner vendor"]
+      },
+      "2008": {
+        "date": "2008",
+        "items": ["Certified as Innovative SME (INNO-BIZ) by the Ministry of SMEs and Startups"]
+      },
+      "2007": {
+        "date": "2007",
+        "items": [
+          "Patent filed for integrated interface device",
+          "CoreCode Suite V4 (interface middleware) released"
+        ]
+      },
+      "2006": {
+        "date": "2006",
+        "items": [
+          "CoreCode XSTORE (XML document management software) released",
+          "CoreCode Suite supplied to SK Hynix Wuxi, China",
+          "CoreCode Suite (interface middleware) released",
+          "In-house R&D center established",
+          "Recognized as an excellent technology company"
+        ]
+      },
+      "2005": {
+        "date": "2005",
+        "items": ["NAMU I&C Co., Ltd. founded"]
+      }
+    }
   },
   "contact": {
     "title": "Contact Us",
     "description": "If you have inquiries, please reach out using the form below.",
+    "hero": "Contact",
+    "intro": {
+      "description": "We are committed to ensuring RHISTLE's technology delivers meaningful value to your business.",
+      "address": "2F Hyunsan Bldg, 160 Baumoe-ro, Seocho-gu, Seoul, Korea"
+    },
     "form": {
       "name": "Name",
-      "email": "Email",
-      "subject": "Subject",
-      "message": "Message",
-      "submit": "Send"
+      "company": "Company",
+      "email": "Email address",
+      "categoryPlaceholder": "Select inquiry type",
+      "categories": {
+        "solution": "Solution adoption inquiry",
+        "support": "Technical support",
+        "etc": "Other"
+      },
+      "contentPlaceholder": "Please enter your inquiry",
+      "submit": "Send inquiry",
+      "submitting": "Sending...",
+      "errors": {
+        "name": "Name is required.",
+        "company": "Company is required.",
+        "email": "Please enter a valid email address.",
+        "content": "Please enter at least 10 characters."
+      },
+      "success": "Your inquiry has been sent successfully.",
+      "sendFail": "Failed to send your message. Please try again shortly."
     }
   },
   "corecode": {
     "title": "CoreCode",
-    "description": "Introducing CoreCode by RHISTLE: A powerful interface solution bridging the gap between facilities and systems. Experience seamless real-time data acquisition and stable equipment control."
+    "description": "Introducing CoreCode by RHISTLE: A powerful interface solution bridging the gap between facilities and systems. Experience seamless real-time data acquisition and stable equipment control.",
+    "hero": {
+      "code": "CoreCode",
+      "name": "Data Interface Solution",
+      "tagline": "Connecting dispersed data into a single, unified flow",
+      "description": "An integrated Low-Code data interface solution that collects and connects data from diverse equipment and systems in real time."
+    },
+    "overview": {
+      "eyebrow": "Overview",
+      "p1": "In the Industry 4.0 era, data is a core enterprise asset and effective data collection and management are critical success factors. Yet manufacturing environments face significant constraints when it comes to gathering and managing data for continuous innovation.",
+      "p2": "CoreCode provides a unified environment that makes it easy and fast to develop, modify, and operate Low-Code IoT data integration and storage."
+    },
+    "highlights": {
+      "eyebrow": "Highlights",
+      "items": [
+        {
+          "title": "Standards-Based Architecture",
+          "details": [
+            "Support for standard communication protocols (OPC, Modbus, Ethernet/IP, and more)",
+            "Industry-standard data schema support"
+          ]
+        },
+        {
+          "title": "Rich Data Integration Asset Library",
+          "details": [
+            "100+ Adaptor types (PLC, Sensors, Files, DB, and more)",
+            "Proven integration technology and deep domain know-how"
+          ]
+        },
+        {
+          "title": "High-Efficiency Development & High-Performance Operations",
+          "details": [
+            "Low-Code development with visual debugging",
+            "High-performance 3V (Volume, Variety, Velocity) data processing"
+          ]
+        }
+      ]
+    },
+    "functionalityBadge": "Functionality",
+    "functionalityItems": [
+      "Equipment connectivity & data integration",
+      "Model-based development & visual debugging",
+      "System operation monitoring & anomaly tracking",
+      "System operations management"
+    ],
+    "keyFeatures": {
+      "eyebrow": "Key Features",
+      "desc": "Modeling (Low-Code)-based development delivers high productivity, while the engine handles large-scale data quickly and reliably — giving you the flexibility to adapt as your integration landscape evolves."
+    },
+    "performance": {
+      "speedy": {
+        "title": "Developer Productivity ↑",
+        "descriptions": [
+          "Intuitive modeling (Low-Code) development tools with a Visual Debugger",
+          "Field-proven interface components and built-in Building Blocks",
+          "Open API for custom component development"
+        ]
+      },
+      "stable": {
+        "title": "Operational Stability ↑",
+        "descriptions": [
+          "High-throughput processing guaranteed for large-scale data",
+          "100% Up-time validated with high-availability redundancy",
+          "System monitoring and operational utility suite"
+        ]
+      },
+      "flexible": {
+        "title": "Flexibility ↑",
+        "descriptions": [
+          "Architecture designed for diverse equipment and sensor connectivity",
+          "Vendor-agnostic system design independent of equipment suppliers",
+          "Rapid response to new equipment additions and configuration changes"
+        ]
+      }
+    },
+    "benefits": {
+      "eyebrow": "Business Benefits",
+      "desc": "Adopting CoreCode elevates manufacturing value, strengthens operational and management capabilities, and enables continuous performance improvement."
+    },
+    "effectData": {
+      "factory": {
+        "title": "Gaining manufacturing visibility and competitive advantage to",
+        "highlight": "elevate manufacturing value",
+        "descriptions": [
+          "Strengthen manufacturing competitiveness through real-time shop-floor insight",
+          "Improve product quality via inspection and measurement data management",
+          "Advance ESG performance through manufacturing environment and safety data management"
+        ]
+      },
+      "database": {
+        "title": "Enabling real-time data-driven decision-making and analytics to",
+        "highlight": "enhance operational & management capability",
+        "descriptions": [
+          "Make timely, accurate decisions powered by real-time data",
+          "Systematically connect and manage growing equipment and sensor fleets",
+          "Reduce the cost of building and maintaining integration systems"
+        ]
+      },
+      "trending": {
+        "title": "Managing operations across equipment and IoT devices to",
+        "highlight": "drive continuous performance improvement",
+        "descriptions": [
+          "Understand key characteristics of on-site equipment and field activities",
+          "Identify issues and drive continuous improvement through data analytics"
+        ]
+      }
+    },
+    "functionalities": {
+      "eyebrow": "Functionalities",
+      "desc": "CoreCode covers the complete system development lifecycle — from development and testing to deployment, operations, and monitoring."
+    },
+    "features": {
+      "01": {
+        "title": "Industry-Standard Adaptors",
+        "desc": [
+          "Compatible with diverse equipment, PLC, and DCS systems",
+          "Standard interfaces for proactive adaptation to change"
+        ]
+      },
+      "02": {
+        "title": "Integrated Development Environment",
+        "desc": [
+          "Model-based development and testing",
+          "Adaptor Modeler / Visual Debugger",
+          "Tag Manager support"
+        ]
+      },
+      "03": {
+        "title": "Processing Engine",
+        "desc": [
+          "Run-Time system resource management",
+          "Message routing and guaranteed delivery",
+          "Standard communication protocol support"
+        ]
+      },
+      "04": {
+        "title": "System Operations Management",
+        "desc": [
+          "Real-time resource monitoring",
+          "Data statistics and analytics",
+          "Remote program change and management"
+        ]
+      },
+      "05": {
+        "title": "Remote Agent",
+        "desc": [
+          "Lightweight middleware engine functionality",
+          "Server interface connectivity",
+          "Remote maintenance and logging"
+        ]
+      }
+    },
+    "applications": {
+      "eyebrow": "Applications",
+      "desc": "As a data integration solution, CoreCode supports a wide range of use cases — from smart factory deployment and environmental/safety monitoring to IoT platform configuration — tailored to your business needs."
+    }
   },
   "nexumm": {
-    "title": "Nexumm"
+    "title": "Nexumm",
+    "lx": {
+      "title": "Nexumm LX",
+      "description": "Introducing Nexumm LX by RHISTLE: a next-generation warehouse management system (WMS) that tracks and visualizes the entire logistics flow from inbound to outbound in real time.",
+      "hero": {
+        "code": "LX",
+        "name": "Nexumm LX",
+        "tagline": "Track every moment of your inventory",
+        "description": "A next-generation WMS that tracks and visualizes the entire logistics flow — from inbound to outbound — in real time."
+      },
+      "sections": {
+        "overview": {
+          "eyebrow": "Overview",
+          "title": "Real-Time Inventory Visibility WMS",
+          "description": "Manage inventory location, quantity, and status on a single screen across multitenant, multi-warehouse environments with bidirectional ERP integration."
+        },
+        "keyFeatures": {
+          "eyebrow": "Key Features",
+          "title": "Accurate, Traceable, and Scalable"
+        },
+        "functionalities": {
+          "eyebrow": "Functionalities",
+          "title": "End-to-End Inventory Tracking — Inbound to Outbound",
+          "description": "Covering every stage of warehouse operations: inbound, outbound, inventory tracking, master data synchronization, and mobile field work."
+        },
+        "benefits": {
+          "eyebrow": "Business Benefits",
+          "title": "Visibility drives down costs"
+        },
+        "applications": {
+          "eyebrow": "Applications",
+          "title": "Built for Diverse Warehouse Environments"
+        }
+      },
+      "highlights": {
+        "items": [
+          {
+            "title": "Real-Time Inventory Visibility",
+            "detail": "Quantity and status synchronized in real time at the location level"
+          },
+          {
+            "title": "End-to-End Traceability",
+            "detail": "Full history tracking from inbound to outbound, powered by Lot and Serial numbers"
+          },
+          {
+            "title": "Automated ERP Integration",
+            "detail": "Automatically receive inbound and outbound instructions via file and API polling adaptors"
+          },
+          {
+            "title": "Multitenant Cloud",
+            "detail": "Isolated operation per company and warehouse, designed for global multi-site expansion"
+          }
+        ]
+      },
+      "features": {
+        "accurate": {
+          "title": "Inventory Accuracy",
+          "descriptions": [
+            "Error-free shop-floor operations via barcode scanning",
+            "Real-time sync keeps book and physical inventory aligned",
+            "Pre-receipt posting reflects quantities before formal inbound"
+          ]
+        },
+        "traceable": {
+          "title": "Traceability",
+          "descriptions": [
+            "Full history management at the Lot and Serial level",
+            "Track every step from inbound through storage to outbound",
+            "Regulatory-ready traceability for compliance requirements"
+          ]
+        },
+        "scalable": {
+          "title": "Scalability",
+          "descriptions": [
+            "Multitenant SaaS architecture",
+            "Multi-warehouse and global multi-site operations",
+            "Rapid cloud-based expansion"
+          ]
+        }
+      },
+      "functionalities": {
+        "01": {
+          "title": "Inbound Management",
+          "desc": [
+            "Receive ERP inbound instructions",
+            "Planned receipt management",
+            "Pre-receipt posting (quantity pre-applied, location unassigned)",
+            "Inbound inspection"
+          ]
+        },
+        "02": {
+          "title": "Outbound Management",
+          "desc": [
+            "Receive ERP outbound instructions",
+            "Picking & packing",
+            "Outbound verification"
+          ]
+        },
+        "03": {
+          "title": "Inventory Management & Tracking",
+          "desc": [
+            "Location management",
+            "Real-time inventory status",
+            "Lot & Serial tracking",
+            "Cycle count and inventory adjustment"
+          ]
+        },
+        "04": {
+          "title": "Master Data & Synchronization",
+          "desc": ["Item & BOM WMS synchronization (Pull)", "Standard master data management"]
+        },
+        "05": {
+          "title": "Mobile Operations",
+          "desc": [
+            "PDA barcode scan-based field operations",
+            "Mobile support for inbound, picking, and cycle count"
+          ]
+        }
+      },
+      "benefits": {
+        "packageSearch": {
+          "title": "Inventory visibility that drives",
+          "highlight": "higher inventory accuracy",
+          "descriptions": [
+            "Prevent stockouts and overstock with real-time inventory",
+            "Improve book inventory reliability",
+            "Enhance inventory turnover rate"
+          ]
+        },
+        "trendingUp": {
+          "title": "Operational efficiency gains that deliver",
+          "highlight": "lower operating costs",
+          "descriptions": [
+            "Optimize picker travel paths",
+            "Eliminate mis-picks and outbound errors",
+            "Boost throughput with barcode-driven operations"
+          ]
+        },
+        "boxes": {
+          "title": "Supply chain responsiveness for",
+          "highlight": "stronger compliance & agility",
+          "descriptions": [
+            "On-time inbound and outbound with ERP integration",
+            "Traceability-based regulatory compliance",
+            "Standardized operations across global multi-site locations"
+          ]
+        }
+      },
+      "applications": {
+        "items": [
+          "Raw material, finished goods & VMI warehouses",
+          "3PL & distribution centers",
+          "Global multi-site operations",
+          "Integrated manufacturing-logistics environments"
+        ]
+      }
+    },
+    "vx": {
+      "title": "Nexumm VX",
+      "description": "Introducing Nexumm VX by RHISTLE: an integrated monitoring solution that visualizes equipment, environment, and safety data in real time with a digital twin.",
+      "hero": {
+        "code": "VX",
+        "name": "Nexumm VX",
+        "tagline": "Make data visible. Keep operations alive.",
+        "description": "An integrated monitoring solution that tracks equipment, environment, and safety data in real time and visualizes your facility through a digital twin."
+      },
+      "sections": {
+        "overview": {
+          "eyebrow": "Overview",
+          "title": "Unified Real-Time Monitoring & Digital Twin",
+          "description": "Receive data already collected and standardized by CoreCode, visualize your entire facility on a single screen, and detect anomalies before they escalate."
+        },
+        "synergy": {
+          "label": "Synergy with CoreCode",
+          "corecodeSub": "Data collection & standardization",
+          "vxSub": "Monitoring & digital twin",
+          "description": "VX instantly consumes the equipment and sensor data CoreCode gathers — no additional integration development required — delivering real-time monitoring and digital twin visualization."
+        },
+        "keyFeatures": {
+          "eyebrow": "Key Features",
+          "title": "Visible. Connected. Proactive."
+        },
+        "functionalities": {
+          "eyebrow": "Functionalities",
+          "title": "From data collection to analytics — the complete monitoring lifecycle"
+        },
+        "benefits": {
+          "eyebrow": "Business Benefits",
+          "title": "See more, respond faster, operate safer"
+        },
+        "applications": {
+          "eyebrow": "Applications",
+          "title": "Built for Diverse Monitoring Environments"
+        }
+      },
+      "highlights": {
+        "items": [
+          {
+            "title": "Native CoreCode Integration",
+            "detail": "Instantly leverage data collected and standardized via 100+ adaptors"
+          },
+          {
+            "title": "Digital Twin Visualization",
+            "detail": "Reproduce your facility in 3D for intuitive equipment and zone status visibility"
+          },
+          {
+            "title": "Unified Real-Time Dashboard",
+            "detail": "Equipment, environment, safety, and energy data — all on one screen"
+          },
+          {
+            "title": "Intelligent Anomaly Detection",
+            "detail": "Threshold- and pattern-based alarms deliver early warnings before incidents occur"
+          }
+        ]
+      },
+      "features": {
+        "visible": {
+          "title": "Visibility",
+          "descriptions": [
+            "Digital twin 3D visualization",
+            "Single unified dashboard",
+            "Zone- and equipment-level drill-down"
+          ]
+        },
+        "connected": {
+          "title": "Connectivity",
+          "descriptions": [
+            "Instant integration via CoreCode",
+            "Multi-protocol support — OPC, Modbus, and more",
+            "Heterogeneous data unification"
+          ]
+        },
+        "proactive": {
+          "title": "Proactive Response",
+          "descriptions": [
+            "Real-time anomaly detection",
+            "Early alerts and notifications",
+            "Foundation for predictive maintenance"
+          ]
+        }
+      },
+      "functionalities": {
+        "01": {
+          "title": "Data Collection & Integration",
+          "desc": [
+            "CoreCode connectivity",
+            "Standard protocol collection (OPC, Modbus, and more)",
+            "Heterogeneous data unification"
+          ]
+        },
+        "02": {
+          "title": "Real-Time Dashboard",
+          "desc": [
+            "Equipment operation status visualization",
+            "Environmental & safety KPI monitoring",
+            "Customizable dashboards"
+          ]
+        },
+        "03": {
+          "title": "Digital Twin",
+          "desc": ["3D facility model", "Live data mapping", "Zone and equipment drill-down"]
+        },
+        "04": {
+          "title": "Event & Alarm Management",
+          "desc": [
+            "Threshold- and pattern-based alarms",
+            "Anomaly detection",
+            "Alert and response history management"
+          ]
+        },
+        "05": {
+          "title": "Statistics & Analytics",
+          "desc": [
+            "Trend analysis",
+            "Utilization and environmental statistics",
+            "Report generation"
+          ]
+        }
+      },
+      "benefits": {
+        "layoutDashboard": {
+          "title": "Unified visibility to",
+          "highlight": "elevate operational & management capability",
+          "descriptions": [
+            "Single-pane control over distributed data",
+            "Real-time insight for faster decision-making",
+            "Intuitive situational awareness via digital twin"
+          ]
+        },
+        "shieldAlert": {
+          "title": "Proactive crisis response for",
+          "highlight": "stronger safety & operational stability",
+          "descriptions": [
+            "Early detection of fire, gas, and environmental anomalies",
+            "Faster crisis response times",
+            "Incident prevention before issues arise"
+          ]
+        },
+        "trendingUp": {
+          "title": "Data-driven improvements to",
+          "highlight": "drive continuous performance gains",
+          "descriptions": [
+            "Identify issues through statistics and analytics",
+            "Build a foundation for predictive maintenance",
+            "Improve energy efficiency and ESG performance"
+          ]
+        }
+      },
+      "applications": {
+        "items": [
+          "Smart factory equipment monitoring",
+          "Integrated disaster prevention (fire, gas, temperature, CCTV)",
+          "Energy & environmental monitoring",
+          "Safety monitoring"
+        ]
+      }
+    }
   },
   "footer": {
     "name": "RHISTLE Co., Ltd.",
     "ceo": "CEO: Kyungsik Kim",
-    "address": "2F, Hyeonsan Building, 160 Baumae-ro, Seocho-gu, Seoul"
+    "address": "2F, Hyeonsan Building, 160 Baumae-ro, Seocho-gu, Seoul",
+    "certificationAlt": "{name} certification mark"
   }
 }
