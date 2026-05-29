@@ -47,10 +47,7 @@
           "Established a digital warehouse management foundation",
           "Strengthened regulatory compliance and response capabilities"
         ],
-        "benefits": [
-          "Improved warehouse operation efficiency",
-          "Enhanced inventory visibility"
-        ]
+        "benefits": ["Improved warehouse operation efficiency", "Enhanced inventory visibility"]
       },
       "Case 03": {
         "title": "Integrated Disaster Monitoring System",
@@ -121,12 +118,32 @@
   "contact": {
     "title": "Contact Us",
     "description": "If you have inquiries, please reach out using the form below.",
+    "hero": "Contact",
+    "intro": {
+      "description": "We are committed to ensuring RHISTLE's technology delivers meaningful value to your business.",
+      "address": "2F Hyunsan Bldg, 160 Baumoe-ro, Seocho-gu, Seoul, Korea"
+    },
     "form": {
       "name": "Name",
-      "email": "Email",
-      "subject": "Subject",
-      "message": "Message",
-      "submit": "Send"
+      "company": "Company",
+      "email": "Email address",
+      "categoryPlaceholder": "Select inquiry type",
+      "categories": {
+        "solution": "Solution adoption inquiry",
+        "support": "Technical support",
+        "etc": "Other"
+      },
+      "contentPlaceholder": "Please enter your inquiry",
+      "submit": "Send inquiry",
+      "submitting": "Sending...",
+      "errors": {
+        "name": "Name is required.",
+        "company": "Company is required.",
+        "email": "Please enter a valid email address.",
+        "content": "Please enter at least 10 characters."
+      },
+      "success": "Your inquiry has been sent successfully.",
+      "sendFail": "Failed to send your message. Please try again shortly."
     }
   },
   "corecode": {

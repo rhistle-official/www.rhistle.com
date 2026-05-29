@@ -5,12 +5,14 @@ import sanitizeHtml from "sanitize-html";
 import { z } from "zod";
 import type { ContactFormState } from "@/types/contact";
 
+// Messages are returned as i18n keys (relative to the "contact.form" namespace)
+// and translated on the client so feedback follows the viewer's locale.
 const contactSchema = z.object({
-  name: z.string().min(1, "이름은 필수입니다.").max(20),
-  company: z.string().min(1, "회사명은 필수입니다."),
-  email: z.email("올바른 이메일 형식이 아닙니다."),
+  name: z.string().min(1, "errors.name").max(20),
+  company: z.string().min(1, "errors.company"),
+  email: z.email("errors.email"),
   category: z.string(),
-  content: z.string().min(10, "문의 내용을 10자 이상 입력해주세요."),
+  content: z.string().min(10, "errors.content"),
 });
 
 async function sendSlackMessage(payload: {
@@ -58,8 +60,7 @@ async function sendSlackMessage(payload: {
   });
 }
 
-const stripHtml = (str: string) =>
-  sanitizeHtml(str, { allowedTags: [], allowedAttributes: {} });
+const stripHtml = (str: string) => sanitizeHtml(str, { allowedTags: [], allowedAttributes: {} });
 
 export async function submitContact(
   _prevState: ContactFormState,
@@ -121,12 +122,12 @@ export async function submitContact(
       content: cleanContent,
     });
 
-    return { success: true, message: "문의가 성공적으로 전송되었습니다." };
+    return { success: true, message: "success" };
   } catch (error) {
     console.error("Mail send error:", error);
     return {
       success: false,
-      message: "메일 전송에 실패했습니다. 잠시 후 다시 시도해 주세요.",
+      message: "sendFail",
     };
   }
 }

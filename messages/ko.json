@@ -78,10 +78,7 @@
           "Lot 기반 전 공정 품질 추적",
           "설비 추가 및 변경, 라인 변경 및 확대 등의 사업 환경 변화 대응력 강화"
         ],
-        "benefits": [
-          "시스템 장애 Near to Zero 달성",
-          "설비 자동화 구축 시간 34% 단축"
-        ]
+        "benefits": ["시스템 장애 Near to Zero 달성", "설비 자동화 구축 시간 34% 단축"]
       }
     },
     "solutions": {
@@ -115,12 +112,32 @@
   "contact": {
     "title": "문의하기",
     "description": "문의사항이 있으시면 아래 양식을 통해 연락해주세요.",
+    "hero": "문의하기",
+    "intro": {
+      "description": "리슬의 기술력이 귀사의 비즈니스에 이로운 가치를 제공할 수 있도록 최선을 다하겠습니다.",
+      "address": "서울특별시 서초구 바우뫼로 160 현산빌딩 2층"
+    },
     "form": {
-      "name": "이름",
-      "email": "이메일",
-      "subject": "제목",
-      "message": "내용",
-      "submit": "보내기"
+      "name": "성함",
+      "company": "회사명",
+      "email": "이메일 주소",
+      "categoryPlaceholder": "문의 유형 선택",
+      "categories": {
+        "solution": "솔루션 도입 문의",
+        "support": "기술 지원",
+        "etc": "기타"
+      },
+      "contentPlaceholder": "문의 내용을 입력해 주세요",
+      "submit": "문의하기",
+      "submitting": "전송 중...",
+      "errors": {
+        "name": "이름은 필수입니다.",
+        "company": "회사명은 필수입니다.",
+        "email": "올바른 이메일 형식이 아닙니다.",
+        "content": "문의 내용을 10자 이상 입력해주세요."
+      },
+      "success": "문의가 성공적으로 전송되었습니다.",
+      "sendFail": "메일 전송에 실패했습니다. 잠시 후 다시 시도해 주세요."
     }
   },
   "solutions": {
