@@ -42,5 +42,15 @@
         "organizeImports": "on"
       }
     }
-  }
+  },
+  "overrides": [
+    {
+      "includes": ["src/app/globals.css"],
+      "linter": { "enabled": false },
+      "css": {
+        "formatter": { "enabled": true },
+        "parser": { "tailwindDirectives": true }
+      }
+    }
+  ]
 }
