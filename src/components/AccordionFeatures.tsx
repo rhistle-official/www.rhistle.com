@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, m } from "motion/react";
 import { useState } from "react";
 
 type Item = { id: string; title: string; desc: string[] };
@@ -36,18 +36,18 @@ const AccordionFeatures = ({ items }: { items: Item[] }) => {
                 </span>
                 <span className="font-bold text-lg md:text-xl">{item.title}</span>
               </span>
-              <motion.span
+              <m.span
                 animate={{ rotate: isOpen ? 45 : 0 }}
                 transition={{ duration: 0.3 }}
                 className="relative size-6 shrink-0"
               >
                 <span className="absolute inset-0 m-auto h-0.5 w-4 bg-rhistle" />
                 <span className="absolute inset-0 m-auto h-4 w-0.5 bg-rhistle" />
-              </motion.span>
+              </m.span>
             </button>
             <AnimatePresence initial={false}>
               {isOpen && (
-                <motion.div
+                <m.div
                   initial={{ height: 0, opacity: 0 }}
                   animate={{ height: "auto", opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
@@ -62,7 +62,7 @@ const AccordionFeatures = ({ items }: { items: Item[] }) => {
                       </li>
                     ))}
                   </ul>
-                </motion.div>
+                </m.div>
               )}
             </AnimatePresence>
           </div>

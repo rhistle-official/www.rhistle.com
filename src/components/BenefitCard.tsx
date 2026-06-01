@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import type { ReactNode } from "react";
 
 const BenefitCard = ({
@@ -16,7 +16,7 @@ const BenefitCard = ({
   icon: ReactNode;
   index?: number;
 }) => (
-  <motion.div
+  <m.div
     initial={{ opacity: 0, y: 24 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, margin: "-80px" }}
@@ -39,6 +39,6 @@ const BenefitCard = ({
         </li>
       ))}
     </ul>
-  </motion.div>
+  </m.div>
 );
 export default BenefitCard;
