@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useInView } from "react-intersection-observer";
+import Eyebrow from "@/components/ui/Eyebrow";
 
 const yearIds = [
   "2025",
@@ -34,19 +35,20 @@ const CompanyHistory = () => {
   return (
     <section ref={ref} className="grid grid-cols-1 gap-6 py-16 md:grid-cols-2">
       <div className={`${inView && "md:sticky md:top-21.25"} space-y-2 self-start sm:space-y-4`}>
-        <p className="font-medium text-gray-500 text-xl">{t("eyebrow")}</p>
-        <h2 className="break-keep font-bold text-3xl md:text-4xl xl:text-5xl">{t("heading")}</h2>
-        <p className="mt-4 max-w-xs text-gray-600 leading-relaxed">
+        <Eyebrow>{t("eyebrow")}</Eyebrow>
+        <h2 className="break-keep font-bold text-h2 text-ink">{t("heading")}</h2>
+        <p className="mt-4 max-w-xs text-graphite leading-relaxed">
           {t("description1")} {t("description2")}
         </p>
       </div>
 
-      <div className="space-y-12 py-2">
+      <div className="space-y-12 border-line border-l py-2 pl-6">
         {yearIds.map((year) => (
-          <div key={year}>
-            <div className="font-bold text-2xl text-gray-900">{t(`entries.${year}.date`)}</div>
+          <div key={year} className="relative">
+            <span className="absolute top-2 -left-[29px] size-2 rounded-full bg-rhistle" />
+            <div className="font-bold text-2xl text-ink">{t(`entries.${year}.date`)}</div>
 
-            <ul className="space-y-2 text-gray-600">
+            <ul className="space-y-2 text-graphite">
               {t.raw(`entries.${year}.items`).map((item: string) => (
                 <li key={item} className="leading-relaxed">
                   {item}
