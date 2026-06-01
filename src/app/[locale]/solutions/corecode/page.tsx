@@ -58,7 +58,7 @@ const CoreCodePage = () => {
         description={t("hero.description")}
       />
 
-      <section className="mx-auto max-w-7xl space-y-16 px-8 py-20 md:text-lg xl:text-xl">
+      <section className="container-page section space-y-16 md:text-lg xl:text-xl">
         <div className="space-y-6">
           <p className="font-bold text-rhistle">{t("overview.eyebrow")}</p>
           <p>{t("overview.p1")}</p>
@@ -121,7 +121,7 @@ const CoreCodePage = () => {
           </div>
         </div>
 
-        <hr className="text-gray-200" />
+        <hr className="divider" />
 
         <div className="space-y-6">
           <p className="font-bold text-rhistle">{t("keyFeatures.eyebrow")}</p>
@@ -141,7 +141,7 @@ const CoreCodePage = () => {
           </div>
         </div>
 
-        <hr className="text-gray-200" />
+        <hr className="divider" />
 
         <div className="space-y-6">
           <p className="font-bold text-rhistle">{t("benefits.eyebrow")}</p>
@@ -161,7 +161,7 @@ const CoreCodePage = () => {
           </div>
         </div>
 
-        <hr className="text-gray-200" />
+        <hr className="divider" />
 
         <div className="space-y-6">
           <p className="font-bold text-rhistle">{t("functionalities.eyebrow")}</p>
@@ -169,7 +169,7 @@ const CoreCodePage = () => {
           <FeatureAccordion items={functionalities} />
         </div>
 
-        <hr className="text-gray-200" />
+        <hr className="divider" />
 
         <div className="space-y-6">
           <p className="font-bold text-rhistle">{t("applications.eyebrow")}</p>

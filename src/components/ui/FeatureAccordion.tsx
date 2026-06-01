@@ -16,8 +16,8 @@ const FeatureAccordion = ({ items }: { items: Item[] }) => {
         return (
           <div
             key={item.id}
-            className={`overflow-hidden rounded-3xl border transition-colors ${
-              isOpen ? "border-rhistle/30 bg-rhistle/5" : "border-gray-100 bg-white"
+            className={`card overflow-hidden transition-colors ${
+              isOpen ? "border-rhistle bg-brand-50" : ""
             }`}
           >
             <button
@@ -29,7 +29,7 @@ const FeatureAccordion = ({ items }: { items: Item[] }) => {
               <span className="flex items-center gap-6">
                 <span
                   className={`font-black text-2xl tabular-nums transition-colors ${
-                    isOpen ? "text-rhistle" : "text-rhistle/30"
+                    isOpen ? "text-rhistle" : "text-mist"
                   }`}
                 >
                   {item.id}
@@ -56,7 +56,7 @@ const FeatureAccordion = ({ items }: { items: Item[] }) => {
                 >
                   <ul className="grid gap-3 px-6 pb-6 sm:px-8 sm:pb-8 md:grid-cols-2">
                     {item.desc.map((line) => (
-                      <li key={line} className="flex items-center gap-3 text-gray-600">
+                      <li key={line} className="flex items-center gap-3 text-graphite">
                         <span className="size-1.5 shrink-0 rounded-full bg-rhistle" />
                         <span>{line}</span>
                       </li>

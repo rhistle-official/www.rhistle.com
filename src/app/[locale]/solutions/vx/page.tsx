@@ -67,7 +67,7 @@ const NexummVxPage = () => {
         description={t("hero.description")}
       />
 
-      <div className="mx-auto max-w-7xl space-y-28 px-8 py-24">
+      <div className="container-page section space-y-28">
         {/* Overview + Highlights */}
         <section className="space-y-10">
           <Reveal>
@@ -81,9 +81,9 @@ const NexummVxPage = () => {
             {(t.raw("highlights.items") as Array<{ title: string; detail: string }>).map(
               (item, i) => (
                 <Reveal key={item.title} delay={i * 0.08}>
-                  <div className="h-full rounded-3xl border border-gray-100 bg-white p-6 shadow-sm">
+                  <div className="card card-hover h-full p-6">
                     <p className="font-bold text-lg text-rhistle">{item.title}</p>
-                    <p className="mt-3 text-gray-600">{item.detail}</p>
+                    <p className="mt-3 text-graphite">{item.detail}</p>
                   </div>
                 </Reveal>
               ),
@@ -93,7 +93,7 @@ const NexummVxPage = () => {
 
         {/* CoreCode synergy band */}
         <Reveal>
-          <div className="overflow-hidden rounded-3xl bg-linear-to-br from-rhistle to-[#070d3d] p-8 text-white md:p-12">
+          <div className="overflow-hidden rounded-lg bg-linear-to-br from-rhistle to-brand-900 p-8 text-white md:p-12">
             <p className="font-semibold text-sm text-white/70 uppercase tracking-widest">
               {t("sections.synergy.label")}
             </p>
@@ -180,7 +180,7 @@ const NexummVxPage = () => {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {(t.raw("applications.items") as string[]).map((app, i) => (
               <Reveal key={app} delay={i * 0.08}>
-                <div className="flex h-full items-center gap-3 rounded-3xl border border-gray-100 bg-white p-6 shadow-sm">
+                <div className="card card-hover flex h-full items-center gap-3 p-6">
                   <ShieldAlert className="size-6 shrink-0 text-rhistle" />
                   <span className="font-medium">{app}</span>
                 </div>

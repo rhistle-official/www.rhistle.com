@@ -2,13 +2,14 @@
 
 import { m } from "motion/react";
 import Image, { type StaticImageData } from "next/image";
+import GridLines from "@/components/ui/GridLines";
 
 const SolutionHero = ({
   code,
   name,
   tagline,
   description,
-  gradient = "from-[#1428a0] via-[#0f1f7a] to-[#070d3d]",
+  gradient = "from-rhistle via-brand-700 to-brand-900",
   image,
 }: {
   code: string;
@@ -22,19 +23,12 @@ const SolutionHero = ({
     {image ? (
       <>
         <Image src={image} alt="" fill priority sizes="100vw" className="object-cover" />
-        <div className="absolute inset-0 bg-linear-to-br from-[#070d3d]/85 via-[#0f1f7a]/65 to-[#070d3d]/85" />
+        <div className="absolute inset-0 bg-linear-to-br from-brand-900/85 via-brand-700/65 to-brand-900/85" />
       </>
     ) : (
       <div className={`absolute inset-0 bg-linear-to-br ${gradient}`} />
     )}
-    <div
-      className="absolute inset-0 opacity-[0.15]"
-      style={{
-        backgroundImage:
-          "linear-gradient(to right, rgba(255,255,255,0.35) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.35) 1px, transparent 1px)",
-        backgroundSize: "48px 48px",
-      }}
-    />
+    <GridLines tone="onDark" />
     <m.div
       aria-hidden
       initial={{ opacity: 0.15, scale: 0.8 }}
@@ -47,7 +41,7 @@ const SolutionHero = ({
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="font-semibold text-white/70 tracking-widest"
+        className="font-semibold text-white/70 uppercase tracking-[0.18em]"
       >
         {name}
       </m.p>

@@ -67,7 +67,7 @@ const NexummLxPage = () => {
         description={t("hero.description")}
       />
 
-      <div className="mx-auto max-w-7xl space-y-28 px-8 py-24">
+      <div className="container-page section space-y-28">
         {/* Overview + Highlights */}
         <section className="space-y-10">
           <Reveal>
@@ -81,9 +81,9 @@ const NexummLxPage = () => {
             {(t.raw("highlights.items") as Array<{ title: string; detail: string }>).map(
               (item, i) => (
                 <Reveal key={item.title} delay={i * 0.08}>
-                  <div className="h-full rounded-3xl border border-gray-100 bg-white p-6 shadow-sm">
+                  <div className="card card-hover h-full p-6">
                     <p className="font-bold text-lg text-rhistle">{item.title}</p>
-                    <p className="mt-3 text-gray-600">{item.detail}</p>
+                    <p className="mt-3 text-graphite">{item.detail}</p>
                   </div>
                 </Reveal>
               ),
@@ -160,7 +160,7 @@ const NexummLxPage = () => {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {(t.raw("applications.items") as string[]).map((app, i) => (
               <Reveal key={app} delay={i * 0.08}>
-                <div className="flex h-full items-center gap-3 rounded-3xl border border-gray-100 bg-white p-6 shadow-sm">
+                <div className="card card-hover flex h-full items-center gap-3 p-6">
                   <Warehouse className="size-6 shrink-0 text-rhistle" />
                   <span className="font-medium">{app}</span>
                 </div>

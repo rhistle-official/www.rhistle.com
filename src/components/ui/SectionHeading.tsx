@@ -1,3 +1,5 @@
+import Eyebrow from "@/components/ui/Eyebrow";
+
 const SectionHeading = ({
   eyebrow,
   title,
@@ -8,9 +10,9 @@ const SectionHeading = ({
   description?: string;
 }) => (
   <div className="space-y-4">
-    <p className="font-semibold text-rhistle text-sm uppercase tracking-widest">{eyebrow}</p>
-    <h2 className="font-bold text-3xl md:text-4xl xl:text-5xl">{title}</h2>
-    {description && <p className="max-w-3xl text-gray-600 md:text-lg">{description}</p>}
+    <Eyebrow>{eyebrow}</Eyebrow>
+    <h2 className="font-bold text-h2">{title}</h2>
+    {description && <p className="max-w-3xl text-graphite md:text-lg">{description}</p>}
   </div>
 );
 export default SectionHeading;
