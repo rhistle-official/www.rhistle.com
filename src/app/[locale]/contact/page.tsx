@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import ContactForm from "@/components/forms/ContactForm";
 import PageHero from "@/components/sections/PageHero";
+import { buildMetadata } from "@/lib/seo";
 import contactImg from "@/public/image/contact.jpg";
 
 export async function generateMetadata({
@@ -13,10 +14,12 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "contact" });
 
-  return {
+  return buildMetadata({
+    locale,
+    path: "/contact",
     title: t("title"),
     description: t("description"),
-  };
+  });
 }
 
 const ContactPage = () => {

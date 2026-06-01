@@ -17,6 +17,7 @@ import CtaBand from "@/components/sections/CtaBand";
 import SolutionHero from "@/components/sections/SolutionHero";
 import FeatureAccordion from "@/components/ui/FeatureAccordion";
 import SectionHeading from "@/components/ui/SectionHeading";
+import { buildMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -26,10 +27,12 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "nexumm" });
 
-  return {
+  return buildMetadata({
+    locale,
+    path: "/solutions/vx",
     title: t("vx.title"),
     description: t("vx.description"),
-  };
+  });
 }
 
 const features = [

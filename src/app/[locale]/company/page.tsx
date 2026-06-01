@@ -14,6 +14,7 @@ import { getTranslations } from "next-intl/server";
 import CompanyHistory from "@/components/sections/CompanyHistory";
 import CtaBand from "@/components/sections/CtaBand";
 import SolutionHero from "@/components/sections/SolutionHero";
+import { buildMetadata } from "@/lib/seo";
 import companyImg from "@/public/image/company.jpg";
 
 export async function generateMetadata({
@@ -24,10 +25,12 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "company" });
 
-  return {
+  return buildMetadata({
+    locale,
+    path: "/company",
     title: t("title"),
     description: t("description"),
-  };
+  });
 }
 
 const industries = [

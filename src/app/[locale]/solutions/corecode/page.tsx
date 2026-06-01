@@ -8,6 +8,7 @@ import FeatureCard from "@/components/cards/FeatureCard";
 import CtaBand from "@/components/sections/CtaBand";
 import SolutionHero from "@/components/sections/SolutionHero";
 import FeatureAccordion from "@/components/ui/FeatureAccordion";
+import { buildMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -17,10 +18,12 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "corecode" });
 
-  return {
+  return buildMetadata({
+    locale,
+    path: "/solutions/corecode",
     title: t("title"),
     description: t("description"),
-  };
+  });
 }
 
 const features = [{ id: "01" }, { id: "02" }, { id: "03" }, { id: "04" }, { id: "05" }];
