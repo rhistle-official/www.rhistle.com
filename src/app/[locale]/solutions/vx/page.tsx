@@ -90,8 +90,8 @@ const page = () => {
 
         {/* CoreCode synergy band */}
         <Reveal>
-          <div className="overflow-hidden rounded-3xl bg-gradient-to-br from-[#1428a0] to-[#070d3d] p-8 text-white md:p-12">
-            <p className="font-semibold text-white/70 text-sm uppercase tracking-widest">
+          <div className="overflow-hidden rounded-3xl bg-linear-to-br from-rhistle to-[#070d3d] p-8 text-white md:p-12">
+            <p className="font-semibold text-sm text-white/70 uppercase tracking-widest">
               {t("sections.synergy.label")}
             </p>
             <div className="mt-6 flex flex-col items-stretch gap-4 sm:flex-row sm:items-center">

@@ -22,10 +22,10 @@ const SolutionHero = ({
     {image ? (
       <>
         <Image src={image} alt="" fill priority sizes="100vw" className="object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-br from-[#070d3d]/85 via-[#0f1f7a]/65 to-[#070d3d]/85" />
+        <div className="absolute inset-0 bg-linear-to-br from-[#070d3d]/85 via-[#0f1f7a]/65 to-[#070d3d]/85" />
       </>
     ) : (
-      <div className={`absolute inset-0 bg-gradient-to-br ${gradient}`} />
+      <div className={`absolute inset-0 bg-linear-to-br ${gradient}`} />
     )}
     <div
       className="absolute inset-0 opacity-[0.15]"
@@ -40,7 +40,7 @@ const SolutionHero = ({
       initial={{ opacity: 0.15, scale: 0.8 }}
       animate={{ opacity: 0.35, scale: 1 }}
       transition={{ duration: 1.4, ease: "easeOut" }}
-      className="-right-24 -top-24 absolute size-96 rounded-full bg-white/20 blur-3xl"
+      className="absolute -top-24 -right-24 size-96 rounded-full bg-white/20 blur-3xl"
     />
     <div className="relative mx-auto max-w-7xl px-8 pt-40 pb-24 md:pt-48 md:pb-32">
       <motion.p
@@ -55,7 +55,7 @@ const SolutionHero = ({
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.1 }}
-        className="mt-4 font-audiowide text-7xl leading-none md:text-8xl xl:text-9xl"
+        className="mt-4 font-audiowide text-5xl leading-none sm:text-7xl md:text-8xl xl:text-9xl"
       >
         {code}
       </motion.h1>
@@ -63,7 +63,7 @@ const SolutionHero = ({
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.25 }}
-        className="mt-8 max-w-2xl font-bold text-xl md:text-2xl"
+        className="mt-8 font-bold text-xl md:text-2xl"
       >
         {tagline}
       </motion.p>
@@ -72,7 +72,7 @@ const SolutionHero = ({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.35 }}
-          className="mt-4 max-w-2xl text-white/70 md:text-lg"
+          className="mt-4 text-white/70 md:text-lg"
         >
           {description}
         </motion.p>

@@ -90,7 +90,7 @@ const page = () => {
               return (
                 <div
                   key={item.id}
-                  className="grid grid-cols-2 rounded-3xl border border-gray-100 p-10 shadow-sm"
+                  className="grid grid-cols-1 gap-6 rounded-3xl border border-gray-100 p-10 shadow-sm md:grid-cols-2 md:gap-0"
                 >
                   <div className="space-y-4">
                     <div className="flex">

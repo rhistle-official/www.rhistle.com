@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUpRight, ChevronDown } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { Link } from "@/i18n/navigation";
@@ -42,21 +42,16 @@ const Header = () => {
           </h1>
 
           <div className="group relative">
-            <span className="flex cursor-default items-center gap-1">
-              {t("solutions")}
-              <ChevronDown className="size-4" aria-hidden="true" />
-            </span>
-            <div className="invisible absolute top-full left-0 z-40 min-w-44 translate-y-1 rounded-xl border border-gray-200 bg-white py-2 text-base text-gray-800 opacity-0 shadow-lg transition group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
-              <Link href="/solutions/corecode" className="block px-4 py-2 hover:bg-gray-100">
-                CoreCode
-              </Link>
-              <p className="px-4 pt-3 pb-1 font-semibold text-gray-400 text-sm">Nexumm</p>
-              <Link href="/solutions/lx" className="block px-4 py-2 pl-6 hover:bg-gray-100">
-                LX
-              </Link>
-              <Link href="/solutions/vx" className="block px-4 py-2 pl-6 hover:bg-gray-100">
-                VX
-              </Link>
+            <p>{t("solutions")}</p>
+            <div className="invisible absolute top-full left-0 z-40 flex translate-y-1 flex-col gap-2 rounded-xl bg-white p-4 text-base text-gray-800 opacity-0 shadow-lg transition group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+              <Link href="/solutions/corecode">CoreCode</Link>
+              <div className="flex flex-col gap-1">
+                <p className="font-semibold text-gray-400 text-sm">Nexumm</p>
+                <div className="flex flex-col gap-2">
+                  <Link href="/solutions/lx">LX</Link>
+                  <Link href="/solutions/vx">VX</Link>
+                </div>
+              </div>
             </div>
           </div>
           <Link href="/company">{t("company")}</Link>
