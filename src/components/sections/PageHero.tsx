@@ -1,6 +1,6 @@
 import Image, { type StaticImageData } from "next/image";
 
-const Banner = ({ bannerImg, title }: { bannerImg: StaticImageData; title: string }) => {
+const PageHero = ({ bannerImg, title }: { bannerImg: StaticImageData; title: string }) => {
   return (
     <section className="relative h-60 md:h-80 xl:h-100">
       <Image
@@ -18,4 +18,4 @@ const Banner = ({ bannerImg, title }: { bannerImg: StaticImageData; title: strin
     </section>
   );
 };
-export default Banner;
+export default PageHero;

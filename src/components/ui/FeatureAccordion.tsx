@@ -5,7 +5,7 @@ import { useState } from "react";
 
 type Item = { id: string; title: string; desc: string[] };
 
-const AccordionFeatures = ({ items }: { items: Item[] }) => {
+const FeatureAccordion = ({ items }: { items: Item[] }) => {
   const [open, setOpen] = useState<string | null>(items[0]?.id ?? null);
 
   return (
@@ -71,4 +71,4 @@ const AccordionFeatures = ({ items }: { items: Item[] }) => {
     </div>
   );
 };
-export default AccordionFeatures;
+export default FeatureAccordion;

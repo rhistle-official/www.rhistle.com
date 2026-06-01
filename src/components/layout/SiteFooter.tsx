@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import gsImg from "../../public/image/gs.webp";
-import innobizImg from "../../public/image/innobiz.webp";
-import kiboImg from "../../public/image/kibo.webp";
+import gsImg from "../../../public/image/gs.webp";
+import innobizImg from "../../../public/image/innobiz.webp";
+import kiboImg from "../../../public/image/kibo.webp";
 
 const certifications = [
   {
@@ -19,7 +19,7 @@ const certifications = [
   },
 ];
 
-const Footer = () => {
+const SiteFooter = () => {
   const t = useTranslations("footer");
 
   return (
@@ -66,4 +66,4 @@ const Footer = () => {
     </footer>
   );
 };
-export default Footer;
+export default SiteFooter;

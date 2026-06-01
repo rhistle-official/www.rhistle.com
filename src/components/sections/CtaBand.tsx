@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
-const CallToAction = ({ href, name }: { href?: string; name?: string }) => {
+const CtaBand = ({ href, name }: { href?: string; name?: string }) => {
   const t = useTranslations("home.cta");
 
   return (
@@ -29,4 +29,4 @@ const CallToAction = ({ href, name }: { href?: string; name?: string }) => {
     </section>
   );
 };
-export default CallToAction;
+export default CtaBand;

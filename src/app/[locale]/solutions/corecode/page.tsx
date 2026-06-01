@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
-import AccordionFeatures from "@/components/AccordionFeatures";
-import BenefitCard from "@/components/BenefitCard";
-import CallToAction from "@/components/CallToAction";
-import FeatureCard from "@/components/FeatureCard";
-import SolutionHero from "@/components/SolutionHero";
+import BenefitCard from "@/components/cards/BenefitCard";
+import FeatureCard from "@/components/cards/FeatureCard";
+import CtaBand from "@/components/sections/CtaBand";
+import SolutionHero from "@/components/sections/SolutionHero";
+import FeatureAccordion from "@/components/ui/FeatureAccordion";
 
 export async function generateMetadata({
   params,
@@ -37,7 +37,7 @@ const effectData = [
   { id: "trending", icon: <TrendingUp className="size-7" /> },
 ];
 
-const page = () => {
+const CoreCodePage = () => {
   const t = useTranslations("corecode");
 
   const functionalities = features.map((item) => ({
@@ -163,7 +163,7 @@ const page = () => {
         <div className="space-y-6">
           <p className="font-bold text-rhistle">{t("functionalities.eyebrow")}</p>
           <p>{t("functionalities.desc")}</p>
-          <AccordionFeatures items={functionalities} />
+          <FeatureAccordion items={functionalities} />
         </div>
 
         <hr className="text-gray-200" />
@@ -183,8 +183,8 @@ const page = () => {
         </div>
       </section>
 
-      <CallToAction href="/pdf/CoreCode_Brochure.pdf" name="corecode" />
+      <CtaBand href="/pdf/CoreCode_Brochure.pdf" name="corecode" />
     </main>
   );
 };
-export default page;
+export default CoreCodePage;

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
-import Banner from "@/components/Banner";
-import ContactForm from "@/components/ContactForm";
+import ContactForm from "@/components/forms/ContactForm";
+import PageHero from "@/components/sections/PageHero";
 import contactImg from "@/public/image/contact.jpg";
 
 export async function generateMetadata({
@@ -19,12 +19,12 @@ export async function generateMetadata({
   };
 }
 
-const page = () => {
+const ContactPage = () => {
   const t = useTranslations("contact");
 
   return (
     <main>
-      <Banner bannerImg={contactImg} title={t("hero")} />
+      <PageHero bannerImg={contactImg} title={t("hero")} />
 
       <section className="mx-auto grid max-w-7xl gap-16 px-8 py-20 md:grid-cols-2">
         <div className="space-y-6">
@@ -59,4 +59,4 @@ const page = () => {
     </main>
   );
 };
-export default page;
+export default ContactPage;

@@ -25,7 +25,7 @@ const yearIds = [
   "2005",
 ] as const;
 
-const History = () => {
+const CompanyHistory = () => {
   const t = useTranslations("history");
   const { ref, inView } = useInView({
     threshold: 0.1,
@@ -59,4 +59,4 @@ const History = () => {
     </section>
   );
 };
-export default History;
+export default CompanyHistory;

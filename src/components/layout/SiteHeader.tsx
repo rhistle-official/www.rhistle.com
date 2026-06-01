@@ -4,10 +4,10 @@ import { ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { Link } from "@/i18n/navigation";
-import DrawerMenu from "./DrawerMenu";
 import LocaleSwitcher from "./LocaleSwitcher";
+import MobileNav from "./MobileNav";
 
-const Header = () => {
+const SiteHeader = () => {
   const t = useTranslations("header");
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -81,7 +81,7 @@ const Header = () => {
             </Link>
           </h1>
           <div className="flex items-center gap-4">
-            <DrawerMenu />
+            <MobileNav />
             <LocaleSwitcher />
           </div>
         </div>
@@ -89,4 +89,4 @@ const Header = () => {
     </header>
   );
 };
-export default Header;
+export default SiteHeader;

@@ -3,7 +3,7 @@
 import { CircleArrowUp } from "lucide-react";
 import { useEffect, useState } from "react";
 
-const ScrollToTop = () => {
+const ScrollToTopButton = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -36,4 +36,4 @@ const ScrollToTop = () => {
     </button>
   );
 };
-export default ScrollToTop;
+export default ScrollToTopButton;

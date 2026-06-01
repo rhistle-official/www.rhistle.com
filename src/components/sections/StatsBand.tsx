@@ -3,7 +3,7 @@
 import { FolderKanban, Newspaper, Users } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useInView } from "react-intersection-observer";
-import CountUp from "./CountUp";
+import CountUp from "../motion/CountUp";
 
 const StatsItems = [
   { name: "Solutions Deployed", icon: Newspaper, endValue: 400 },
@@ -11,7 +11,7 @@ const StatsItems = [
   { name: "Projects Completed", icon: FolderKanban, endValue: 220 },
 ];
 
-const Stats = () => {
+const StatsBand = () => {
   const t = useTranslations("home");
   const { ref, inView } = useInView({
     threshold: 0.3,
@@ -51,4 +51,4 @@ const Stats = () => {
   );
 };
 
-export default Stats;
+export default StatsBand;

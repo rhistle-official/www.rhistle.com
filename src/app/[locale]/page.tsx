@@ -1,9 +1,9 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import CallToAction from "@/components/CallToAction";
-import ScrollDown from "@/components/ScrollDown";
-import Stats from "@/components/Stats";
+import CtaBand from "@/components/sections/CtaBand";
+import ScrollDown from "@/components/sections/ScrollDown";
+import StatsBand from "@/components/sections/StatsBand";
 import { Link } from "@/i18n/navigation";
 import corecodeImg from "@/public/image/corecode.jpg";
 import hyundaiAutoeverImg from "@/public/image/hyundaiAutoever.png";
@@ -45,7 +45,7 @@ const partners = [
   { name: "pwc", image: pwcImg },
 ];
 
-const page = () => {
+const HomePage = () => {
   const home = useTranslations("home");
 
   return (
@@ -75,7 +75,7 @@ const page = () => {
         </video>
       </section>
 
-      <Stats />
+      <StatsBand />
 
       <section className="mx-auto flex min-h-screen max-w-7xl flex-col justify-center gap-20 px-8 py-20">
         <div className="space-y-2 md:space-y-4">
@@ -206,8 +206,8 @@ const page = () => {
         </div>
       </section>
 
-      <CallToAction href="/pdf/RHISTLE_Brochure.pdf" name="company" />
+      <CtaBand href="/pdf/RHISTLE_Brochure.pdf" name="company" />
     </main>
   );
 };
-export default page;
+export default HomePage;

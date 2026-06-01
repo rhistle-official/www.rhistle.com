@@ -10,13 +10,13 @@ import {
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
-import AccordionFeatures from "@/components/AccordionFeatures";
-import BenefitCard from "@/components/BenefitCard";
-import CallToAction from "@/components/CallToAction";
-import FeatureCard from "@/components/FeatureCard";
-import Reveal from "@/components/Reveal";
-import SectionHeading from "@/components/SectionHeading";
-import SolutionHero from "@/components/SolutionHero";
+import BenefitCard from "@/components/cards/BenefitCard";
+import FeatureCard from "@/components/cards/FeatureCard";
+import Reveal from "@/components/motion/Reveal";
+import CtaBand from "@/components/sections/CtaBand";
+import SolutionHero from "@/components/sections/SolutionHero";
+import FeatureAccordion from "@/components/ui/FeatureAccordion";
+import SectionHeading from "@/components/ui/SectionHeading";
 
 export async function generateMetadata({
   params,
@@ -46,7 +46,7 @@ const benefits = [
   { id: "trendingUp", icon: <TrendingUp className="size-7" /> },
 ];
 
-const page = () => {
+const NexummVxPage = () => {
   const t = useTranslations("nexumm.vx");
 
   const functionalities = functionalityIds.map((id) => ({
@@ -140,7 +140,7 @@ const page = () => {
             />
           </Reveal>
           <Reveal>
-            <AccordionFeatures items={functionalities} />
+            <FeatureAccordion items={functionalities} />
           </Reveal>
         </section>
 
@@ -187,8 +187,8 @@ const page = () => {
         </section>
       </div>
 
-      <CallToAction />
+      <CtaBand />
     </main>
   );
 };
-export default page;
+export default NexummVxPage;

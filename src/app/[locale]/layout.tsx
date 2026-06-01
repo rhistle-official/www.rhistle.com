@@ -4,10 +4,10 @@ import localFont from "next/font/local";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import ScrollToTopButton from "@/components/layout/ScrollToTopButton";
+import SiteFooter from "@/components/layout/SiteFooter";
+import SiteHeader from "@/components/layout/SiteHeader";
 import MotionProvider from "@/components/motion/MotionProvider";
-import ScrollToTop from "@/components/ScrollToTop";
 import { routing } from "@/i18n/routing";
 
 const pretendard = localFont({
@@ -101,12 +101,12 @@ export default async function LocaleLayout({
       <body>
         <NextIntlClientProvider>
           <MotionProvider>
-            <Header />
+            <SiteHeader />
             {children}
-            <Footer />
+            <SiteFooter />
           </MotionProvider>
         </NextIntlClientProvider>
-        <ScrollToTop />
+        <ScrollToTopButton />
       </body>
     </html>
   );

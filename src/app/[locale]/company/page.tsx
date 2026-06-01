@@ -11,9 +11,9 @@ import {
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
-import CallToAction from "@/components/CallToAction";
-import History from "@/components/History";
-import SolutionHero from "@/components/SolutionHero";
+import CompanyHistory from "@/components/sections/CompanyHistory";
+import CtaBand from "@/components/sections/CtaBand";
+import SolutionHero from "@/components/sections/SolutionHero";
 import companyImg from "@/public/image/company.jpg";
 
 export async function generateMetadata({
@@ -46,7 +46,7 @@ const companyValues = [
 
 const coreValueItems = ["expertise", "agility", "humanCentric"] as const;
 
-const page = () => {
+const CompanyPage = () => {
   const t = useTranslations("company");
 
   return (
@@ -193,11 +193,11 @@ const page = () => {
           </div>
         </section>
 
-        <History />
+        <CompanyHistory />
       </div>
 
-      <CallToAction href="/pdf/RHISTLE_Brochure.pdf" name="company" />
+      <CtaBand href="/pdf/RHISTLE_Brochure.pdf" name="company" />
     </main>
   );
 };
-export default page;
+export default CompanyPage;

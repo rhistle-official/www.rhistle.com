@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/drawer";
 import { Link } from "@/i18n/navigation";
 
-const DrawerMenu = () => {
+const MobileNav = () => {
   const t = useTranslations("header");
 
   return (
@@ -107,4 +107,4 @@ const DrawerMenu = () => {
     </Drawer>
   );
 };
-export default DrawerMenu;
+export default MobileNav;
