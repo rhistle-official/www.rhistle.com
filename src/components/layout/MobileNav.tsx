@@ -21,7 +21,7 @@ const MobileNav = () => {
           <Menu />
         </button>
       </DrawerTrigger>
-      <DrawerContent className="bg-black text-gray-800">
+      <DrawerContent className="bg-ink text-surface">
         <DrawerHeader className="flex self-end">
           <DrawerTitle className="sr-only">{t("menu")}</DrawerTitle>
           <DrawerDescription className="sr-only">{t("menuDescription")}</DrawerDescription>
@@ -33,7 +33,7 @@ const MobileNav = () => {
           <ul className="flex flex-col gap-6 font-medium text-lg text-white">
             <li>
               <details className="group">
-                <summary className="flex w-full cursor-pointer list-none items-center justify-center gap-1 py-4 hover:bg-gray-900">
+                <summary className="flex w-full cursor-pointer list-none items-center justify-center gap-1 py-4 hover:bg-graphite/30">
                   {t("solutions")}
                   <ChevronDown
                     className="size-4 transition-transform group-open:rotate-180"
@@ -45,18 +45,18 @@ const MobileNav = () => {
                     <DrawerClose asChild>
                       <Link
                         href="/solutions/corecode"
-                        className="flex w-full items-center justify-center py-3 hover:bg-gray-900"
+                        className="flex w-full items-center justify-center py-3 hover:bg-graphite/30"
                       >
                         CoreCode
                       </Link>
                     </DrawerClose>
                   </li>
-                  <li className="py-2 text-center font-semibold text-gray-400 text-sm">Nexumm</li>
+                  <li className="py-2 text-center font-semibold text-mist text-sm">Nexumm</li>
                   <li>
                     <DrawerClose asChild>
                       <Link
                         href="/solutions/lx"
-                        className="flex w-full items-center justify-center py-3 hover:bg-gray-900"
+                        className="flex w-full items-center justify-center py-3 hover:bg-graphite/30"
                       >
                         LX
                       </Link>
@@ -66,7 +66,7 @@ const MobileNav = () => {
                     <DrawerClose asChild>
                       <Link
                         href="/solutions/vx"
-                        className="flex w-full items-center justify-center py-3 hover:bg-gray-900"
+                        className="flex w-full items-center justify-center py-3 hover:bg-graphite/30"
                       >
                         VX
                       </Link>
@@ -78,7 +78,7 @@ const MobileNav = () => {
             <li>
               <Link
                 href="/company"
-                className="flex w-full items-center justify-center py-4 hover:bg-gray-900"
+                className="flex w-full items-center justify-center py-4 hover:bg-graphite/30"
               >
                 {t("company")}
               </Link>
@@ -87,16 +87,16 @@ const MobileNav = () => {
               <Link
                 href="https://tech.rhistle.com"
                 target="_blank"
-                className="flex w-full items-center justify-center py-4 hover:bg-gray-900"
+                className="flex w-full items-center justify-center py-4 hover:bg-graphite/30"
               >
                 {t("blog")}
-                <ArrowUpRight />
+                <ArrowUpRight aria-hidden="true" />
               </Link>
             </li>
             <li>
               <Link
                 href="/contact"
-                className="flex w-full items-center justify-center py-4 hover:bg-gray-900"
+                className="flex w-full items-center justify-center py-4 hover:bg-graphite/30"
               >
                 {t("contact")}
               </Link>

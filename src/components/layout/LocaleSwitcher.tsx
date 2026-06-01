@@ -36,12 +36,14 @@ const LocaleSwitcher = () => {
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
+        aria-label="Language"
+        aria-expanded={isOpen}
         className="flex cursor-pointer items-center justify-center"
       >
-        <Globe />
+        <Globe aria-hidden="true" />
       </button>
       {isOpen && (
-        <ul className="absolute left-1/2 mt-2 flex -translate-x-1/2 flex-col gap-2 rounded border p-2">
+        <ul className="card absolute left-1/2 mt-2 flex -translate-x-1/2 flex-col gap-2 p-2 shadow-hairline">
           <li>
             <button
               type="button"

@@ -5,7 +5,7 @@ const PageHero = ({ bannerImg, title }: { bannerImg: StaticImageData; title: str
     <section className="relative h-60 md:h-80 xl:h-100">
       <Image
         src={bannerImg}
-        alt="company-banner"
+        alt=""
         fill
         sizes="100vw"
         className="object-cover brightness-70"
