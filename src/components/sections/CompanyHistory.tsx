@@ -34,7 +34,7 @@ const CompanyHistory = () => {
 
   return (
     <section ref={ref} className="grid grid-cols-1 gap-6 py-16 md:grid-cols-2">
-      <div className={`${inView && "md:sticky md:top-21.25"} space-y-2 self-start sm:space-y-4`}>
+      <div className={`${inView && "md:sticky md:top-24"} space-y-2 self-start sm:space-y-4`}>
         <Eyebrow>{t("eyebrow")}</Eyebrow>
         <h2 className="break-keep font-bold text-h2 text-ink">{t("heading")}</h2>
         <p className="mt-4 max-w-xs text-graphite leading-relaxed">
