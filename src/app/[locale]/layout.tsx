@@ -6,6 +6,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import MotionProvider from "@/components/motion/MotionProvider";
 import ScrollToTop from "@/components/ScrollToTop";
 import { routing } from "@/i18n/routing";
 
@@ -99,9 +100,11 @@ export default async function LocaleLayout({
       </head>
       <body>
         <NextIntlClientProvider>
-          <Header />
-          {children}
-          <Footer />
+          <MotionProvider>
+            <Header />
+            {children}
+            <Footer />
+          </MotionProvider>
         </NextIntlClientProvider>
         <ScrollToTop />
       </body>
