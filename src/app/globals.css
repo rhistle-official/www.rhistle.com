@@ -82,3 +82,82 @@
     }
   }
 }
+
+@layer components {
+  /* 섹션 컨테이너 */
+  .section {
+    padding-block: var(--spacing-section);
+  }
+  .container-page {
+    margin-inline: auto;
+    max-width: 80rem; /* max-w-7xl */
+    padding-inline: 2rem;
+  }
+
+  /* eyebrow 라벨 (인더스트리얼 시그니처) */
+  .eyebrow {
+    font-size: var(--text-eyebrow);
+    letter-spacing: var(--text-eyebrow--letter-spacing);
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--color-rhistle);
+  }
+
+  /* 헤어라인 카드 */
+  .card {
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+  }
+  .card-hover {
+    transition:
+      box-shadow 0.3s ease,
+      transform 0.3s ease,
+      border-color 0.3s ease;
+  }
+  .card-hover:hover {
+    border-color: var(--color-brand-300);
+    box-shadow: var(--shadow-raise);
+  }
+
+  /* 디바이더 / 그리드 라인 배경 */
+  .divider {
+    border-top: 1px solid var(--color-line);
+  }
+  .grid-lines {
+    background-image:
+      linear-gradient(to right, var(--color-line) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--color-line) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  /* 버튼 */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: var(--radius-md);
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
+      border-color 0.2s ease;
+  }
+  .btn-primary {
+    background: var(--color-rhistle);
+    color: #fff;
+  }
+  .btn-primary:hover {
+    background: var(--color-brand-700);
+  }
+  .btn-ghost {
+    border: 1px solid var(--color-line);
+    color: var(--color-ink);
+  }
+  .btn-ghost:hover {
+    border-color: var(--color-rhistle);
+    color: var(--color-rhistle);
+  }
+}
