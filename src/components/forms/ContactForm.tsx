@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useActionState } from "react";
 import { submitContact } from "@/actions/contact";
-import { buttonClass } from "@/components/ui/Button";
+import { buttonClass } from "@/components/ui/buttonClass";
 import type { ContactFormState } from "@/types/contact";
 
 const ContactForm = () => {

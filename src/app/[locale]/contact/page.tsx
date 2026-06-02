@@ -28,13 +28,18 @@ const ContactPage = () => {
 
   return (
     <main>
-      <PageHero bannerImg={contactImg} title={t("hero")} />
+      <PageHero
+        code={t("hero.code")}
+        name={t("hero.name")}
+        tagline={t("hero.tagline")}
+        image={contactImg}
+      />
 
       <section className="container-page section grid gap-16 md:grid-cols-2">
         <div className="space-y-6">
-          <h1 className="font-extrabold text-h1 text-ink tracking-tight">
+          <h2 className="font-extrabold text-h1 text-ink tracking-tight">
             Contact <span className="text-rhistle">RHISTLE</span>
-          </h1>
+          </h2>
           <p className="text-graphite text-lg leading-relaxed">{t("intro.description")}</p>
 
           <ul className="divide-y divide-line">

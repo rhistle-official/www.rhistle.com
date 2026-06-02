@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { buttonClass } from "@/components/ui/Button";
+import { buttonClass } from "@/components/ui/buttonClass";
 import { Link } from "@/i18n/navigation";
 
 const CtaBand = ({ href, name }: { href?: string; name?: string }) => {

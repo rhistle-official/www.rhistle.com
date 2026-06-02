@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Reveal from "@/components/motion/Reveal";
-import { buttonClass } from "@/components/ui/Button";
+import { buttonClass } from "@/components/ui/buttonClass";
 import Eyebrow from "@/components/ui/Eyebrow";
 import { Link } from "@/i18n/navigation";
 import corecodeImg from "@/public/image/corecode.jpg";

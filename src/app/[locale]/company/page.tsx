@@ -16,7 +16,7 @@ import ValueCard from "@/components/cards/ValueCard";
 import { Stagger, StaggerItem } from "@/components/motion/Stagger";
 import CompanyHistory from "@/components/sections/CompanyHistory";
 import CtaBand from "@/components/sections/CtaBand";
-import SolutionHero from "@/components/sections/SolutionHero";
+import PageHero from "@/components/sections/PageHero";
 import Eyebrow from "@/components/ui/Eyebrow";
 import { buildMetadata } from "@/lib/seo";
 import companyImg from "@/public/image/company.jpg";
@@ -58,7 +58,7 @@ const CompanyPage = () => {
 
   return (
     <main>
-      <SolutionHero
+      <PageHero
         code={t("hero.code")}
         name={t("hero.name")}
         tagline={t("hero.tagline")}

@@ -6,7 +6,7 @@ import { getTranslations } from "next-intl/server";
 import BenefitCard from "@/components/cards/BenefitCard";
 import FeatureCard from "@/components/cards/FeatureCard";
 import CtaBand from "@/components/sections/CtaBand";
-import SolutionHero from "@/components/sections/SolutionHero";
+import PageHero from "@/components/sections/PageHero";
 import FeatureAccordion from "@/components/ui/FeatureAccordion";
 import { buildMetadata } from "@/lib/seo";
 
@@ -51,7 +51,7 @@ const CoreCodePage = () => {
 
   return (
     <main>
-      <SolutionHero
+      <PageHero
         code={t("hero.code")}
         name={t("hero.name")}
         tagline={t("hero.tagline")}
@@ -69,6 +69,7 @@ const CoreCodePage = () => {
               alt="corecode_overview_1"
               width={2525}
               height={1128}
+              loading="eager"
               className="h-auto w-full"
             />
           </div>

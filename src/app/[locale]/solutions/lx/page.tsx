@@ -14,7 +14,7 @@ import BenefitCard from "@/components/cards/BenefitCard";
 import FeatureCard from "@/components/cards/FeatureCard";
 import Reveal from "@/components/motion/Reveal";
 import CtaBand from "@/components/sections/CtaBand";
-import SolutionHero from "@/components/sections/SolutionHero";
+import PageHero from "@/components/sections/PageHero";
 import FeatureAccordion from "@/components/ui/FeatureAccordion";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { buildMetadata } from "@/lib/seo";
@@ -60,7 +60,7 @@ const NexummLxPage = () => {
 
   return (
     <main>
-      <SolutionHero
+      <PageHero
         code={t("hero.code")}
         name={t("hero.name")}
         tagline={t("hero.tagline")}

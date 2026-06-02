@@ -331,7 +331,11 @@
   "contact": {
     "title": "Contact Us",
     "description": "If you have inquiries, please reach out using the form below.",
-    "hero": "Contact",
+    "hero": {
+      "code": "Contact",
+      "name": "Get in Touch",
+      "tagline": "Start your digital transformation with RHISTLE"
+    },
     "intro": {
       "description": "We are committed to ensuring RHISTLE's technology delivers meaningful value to your business.",
       "address": "2F Hyunsan Bldg, 160 Baumoe-ro, Seocho-gu, Seoul, Korea"

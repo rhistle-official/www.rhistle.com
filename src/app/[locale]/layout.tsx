@@ -53,7 +53,11 @@ export default async function LocaleLayout({
   if (!hasLocale(routing.locales, locale)) notFound();
 
   return (
-    <html lang={locale} className={`${pretendard.variable} ${audiowide.variable} antialiased`}>
+    <html
+      lang={locale}
+      data-scroll-behavior="smooth"
+      className={`${pretendard.variable} ${audiowide.variable} antialiased`}
+    >
       <body>
         <NextIntlClientProvider>
           <MotionProvider>
