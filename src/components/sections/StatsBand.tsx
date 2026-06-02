@@ -3,7 +3,7 @@
 import { FolderKanban, Newspaper, Users } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useInView } from "react-intersection-observer";
-import CountUp from "./CountUp";
+import CountUp from "../motion/CountUp";
 
 const StatsItems = [
   { name: "Solutions Deployed", icon: Newspaper, endValue: 400 },
@@ -11,7 +11,7 @@ const StatsItems = [
   { name: "Projects Completed", icon: FolderKanban, endValue: 220 },
 ];
 
-const Stats = () => {
+const StatsBand = () => {
   const t = useTranslations("home");
   const { ref, inView } = useInView({
     threshold: 0.3,
@@ -22,8 +22,10 @@ const Stats = () => {
     <section className="bg-linear-to-b from-black to-rhistle text-white">
       <div className="mx-auto flex min-h-screen max-w-7xl flex-col justify-center gap-20 px-8 py-20">
         <div className="space-y-2 md:space-y-4">
-          <p className="text-blue-400 md:text-lg xl:text-xl">Since 2005</p>
-          <p className="font-bold text-3xl leading-tight md:text-4xl xl:text-5xl">
+          <p className="font-semibold text-brand-300 text-eyebrow uppercase tracking-[0.18em]">
+            Since 2005
+          </p>
+          <p className="font-bold text-h1 leading-tight">
             {t("stats.first")}
             <br />
             {t("stats.second")}
@@ -37,10 +39,10 @@ const Stats = () => {
         >
           {StatsItems.map(({ name, icon: Icon, endValue }) => (
             <li key={name} className="flex flex-col gap-5">
-              <Icon className="text-blue-400" size={32} aria-hidden />
+              <Icon className="text-brand-300" size={32} aria-hidden />
               <div className="flex font-bold">
                 {inView && <CountUp end={endValue} duration={1000} />}
-                <p className="text-3xl text-blue-400 md:text-4xl xl:text-5xl">+</p>
+                <p className="text-3xl text-brand-300 md:text-4xl xl:text-5xl">+</p>
               </div>
               <p className="font-semibold md:text-lg xl:text-xl">{name}</p>
             </li>
@@ -51,4 +53,4 @@ const Stats = () => {
   );
 };
 
-export default Stats;
+export default StatsBand;

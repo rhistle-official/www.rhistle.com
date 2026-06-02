@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useActionState } from "react";
 import { submitContact } from "@/actions/contact";
+import { buttonClass } from "@/components/ui/buttonClass";
 import type { ContactFormState } from "@/types/contact";
 
 const ContactForm = () => {
@@ -12,21 +13,23 @@ const ContactForm = () => {
     message: "",
   });
   return (
-    <form action={action} className="space-y-6 rounded-3xl border border-gray-100 p-8 shadow-sm">
+    <form action={action} className="card space-y-6 p-8">
       <div className="grid grid-cols-2 gap-4">
         <input
           type="text"
           name="name"
           required
+          aria-label={t("name")}
           placeholder={t("name")}
-          className="w-full rounded-xl border-none bg-gray-100 p-4 outline-none transition-all placeholder:text-rhistle/50 focus:ring-2 focus:ring-rhistle"
+          className="w-full rounded-md border border-line bg-surface-2 p-4 outline-none transition placeholder:text-mist focus:ring-2 focus:ring-rhistle"
         />
         <input
           type="text"
           name="company"
           required
+          aria-label={t("company")}
           placeholder={t("company")}
-          className="w-full rounded-xl border-none bg-gray-100 p-4 outline-none transition-all placeholder:text-rhistle/50 focus:ring-2 focus:ring-rhistle"
+          className="w-full rounded-md border border-line bg-surface-2 p-4 outline-none transition placeholder:text-mist focus:ring-2 focus:ring-rhistle"
         />
       </div>
 
@@ -34,15 +37,17 @@ const ContactForm = () => {
         type="email"
         name="email"
         required
+        aria-label={t("email")}
         placeholder={t("email")}
-        className="w-full rounded-xl border-none bg-gray-100 p-4 outline-none transition-all placeholder:text-rhistle/50 focus:ring-2 focus:ring-rhistle"
+        className="w-full rounded-md border border-line bg-surface-2 p-4 outline-none transition placeholder:text-mist focus:ring-2 focus:ring-rhistle"
       />
 
       <select
         name="category"
         required
         defaultValue=""
-        className="w-full rounded-xl border-none bg-gray-100 p-4 text-rhistle/50 outline-none transition-all valid:text-black focus:ring-2 focus:ring-rhistle"
+        aria-label={t("categoryPlaceholder")}
+        className="w-full rounded-md border border-line bg-surface-2 p-4 text-mist outline-none transition valid:text-ink focus:ring-2 focus:ring-rhistle"
       >
         <option value="" disabled hidden>
           {t("categoryPlaceholder")}
@@ -56,18 +61,23 @@ const ContactForm = () => {
       <textarea
         name="content"
         required
+        aria-label={t("contentPlaceholder")}
         placeholder={t("contentPlaceholder")}
-        className="h-45 w-full resize-none rounded-xl border-none bg-gray-100 p-4 outline-none transition-all placeholder:text-rhistle/50 focus:ring-2 focus:ring-rhistle"
+        className="h-45 w-full resize-none rounded-md border border-line bg-surface-2 p-4 outline-none transition placeholder:text-mist focus:ring-2 focus:ring-rhistle"
       />
       <button
         type="submit"
         disabled={pending}
-        className={`w-full rounded-xl py-4 font-bold ${pending ? "cursor-not-allowed bg-gray-100" : "cursor-pointer bg-rhistle text-white hover:bg-rhistle/90"}`}
+        className={buttonClass("primary", "w-full disabled:cursor-not-allowed disabled:opacity-60")}
       >
         {pending ? t("submitting") : t("submit")}
       </button>
       {state?.message && (
-        <p className={` ${state.success ? "text-green-600" : "text-red-500"}`}>
+        <p
+          role="status"
+          aria-live="polite"
+          className={` ${state.success ? "text-green-600" : "text-red-500"}`}
+        >
           {t(state.message)}
         </p>
       )}

@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import gsImg from "../../public/image/gs.webp";
-import innobizImg from "../../public/image/innobiz.webp";
-import kiboImg from "../../public/image/kibo.webp";
+import gsImg from "../../../public/image/gs.webp";
+import innobizImg from "../../../public/image/innobiz.webp";
+import kiboImg from "../../../public/image/kibo.webp";
 
 const certifications = [
   {
@@ -19,11 +19,11 @@ const certifications = [
   },
 ];
 
-const Footer = () => {
+const SiteFooter = () => {
   const t = useTranslations("footer");
 
   return (
-    <footer className="border-gray-200 border-t py-10 md:py-15 xl:py-20">
+    <footer className="border-line border-t py-10 md:py-15 xl:py-20">
       <div className="mx-auto flex max-w-7xl flex-col gap-8 px-8 md:text-lg xl:text-xl">
         <div className="flex flex-col gap-8">
           <strong className="font-audiowide text-3xl text-rhistle">RHISTLE</strong>
@@ -41,7 +41,7 @@ const Footer = () => {
           </address>
         </div>
 
-        <hr className="border-gray-200" />
+        <hr className="border-line" />
 
         <div className="flex items-center justify-between">
           <small>© {new Date().getFullYear()} RHISTLE. All rights reserved.</small>
@@ -66,4 +66,4 @@ const Footer = () => {
     </footer>
   );
 };
-export default Footer;
+export default SiteFooter;

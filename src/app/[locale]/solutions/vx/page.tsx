@@ -10,13 +10,14 @@ import {
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
-import AccordionFeatures from "@/components/AccordionFeatures";
-import BenefitCard from "@/components/BenefitCard";
-import CallToAction from "@/components/CallToAction";
-import FeatureCard from "@/components/FeatureCard";
-import Reveal from "@/components/Reveal";
-import SectionHeading from "@/components/SectionHeading";
-import SolutionHero from "@/components/SolutionHero";
+import BenefitCard from "@/components/cards/BenefitCard";
+import FeatureCard from "@/components/cards/FeatureCard";
+import Reveal from "@/components/motion/Reveal";
+import CtaBand from "@/components/sections/CtaBand";
+import PageHero from "@/components/sections/PageHero";
+import FeatureAccordion from "@/components/ui/FeatureAccordion";
+import SectionHeading from "@/components/ui/SectionHeading";
+import { buildMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -26,10 +27,12 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "nexumm" });
 
-  return {
+  return buildMetadata({
+    locale,
+    path: "/solutions/vx",
     title: t("vx.title"),
     description: t("vx.description"),
-  };
+  });
 }
 
 const features = [
@@ -46,7 +49,7 @@ const benefits = [
   { id: "trendingUp", icon: <TrendingUp className="size-7" /> },
 ];
 
-const page = () => {
+const NexummVxPage = () => {
   const t = useTranslations("nexumm.vx");
 
   const functionalities = functionalityIds.map((id) => ({
@@ -57,14 +60,14 @@ const page = () => {
 
   return (
     <main>
-      <SolutionHero
+      <PageHero
         code={t("hero.code")}
         name={t("hero.name")}
         tagline={t("hero.tagline")}
         description={t("hero.description")}
       />
 
-      <div className="mx-auto max-w-7xl space-y-28 px-8 py-24">
+      <div className="container-page section space-y-28">
         {/* Overview + Highlights */}
         <section className="space-y-10">
           <Reveal>
@@ -78,9 +81,9 @@ const page = () => {
             {(t.raw("highlights.items") as Array<{ title: string; detail: string }>).map(
               (item, i) => (
                 <Reveal key={item.title} delay={i * 0.08}>
-                  <div className="h-full rounded-3xl border border-gray-100 bg-white p-6 shadow-sm">
+                  <div className="card card-hover h-full p-6">
                     <p className="font-bold text-lg text-rhistle">{item.title}</p>
-                    <p className="mt-3 text-gray-600">{item.detail}</p>
+                    <p className="mt-3 text-graphite">{item.detail}</p>
                   </div>
                 </Reveal>
               ),
@@ -90,8 +93,8 @@ const page = () => {
 
         {/* CoreCode synergy band */}
         <Reveal>
-          <div className="overflow-hidden rounded-3xl bg-gradient-to-br from-[#1428a0] to-[#070d3d] p-8 text-white md:p-12">
-            <p className="font-semibold text-white/70 text-sm uppercase tracking-widest">
+          <div className="overflow-hidden rounded-lg bg-linear-to-br from-rhistle to-brand-900 p-8 text-white md:p-12">
+            <p className="font-semibold text-sm text-white/70 uppercase tracking-widest">
               {t("sections.synergy.label")}
             </p>
             <div className="mt-6 flex flex-col items-stretch gap-4 sm:flex-row sm:items-center">
@@ -140,7 +143,7 @@ const page = () => {
             />
           </Reveal>
           <Reveal>
-            <AccordionFeatures items={functionalities} />
+            <FeatureAccordion items={functionalities} />
           </Reveal>
         </section>
 
@@ -177,7 +180,7 @@ const page = () => {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {(t.raw("applications.items") as string[]).map((app, i) => (
               <Reveal key={app} delay={i * 0.08}>
-                <div className="flex h-full items-center gap-3 rounded-3xl border border-gray-100 bg-white p-6 shadow-sm">
+                <div className="card card-hover flex h-full items-center gap-3 p-6">
                   <ShieldAlert className="size-6 shrink-0 text-rhistle" />
                   <span className="font-medium">{app}</span>
                 </div>
@@ -187,8 +190,8 @@ const page = () => {
         </section>
       </div>
 
-      <CallToAction />
+      <CtaBand />
     </main>
   );
 };
-export default page;
+export default NexummVxPage;

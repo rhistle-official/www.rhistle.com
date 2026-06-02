@@ -3,7 +3,7 @@
 import { CircleArrowUp } from "lucide-react";
 import { useEffect, useState } from "react";
 
-const ScrollToTop = () => {
+const ScrollToTopButton = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -27,13 +27,21 @@ const ScrollToTop = () => {
   };
 
   return (
-    <button type="button" onClick={handleClick} className="fixed right-8 bottom-10 z-30">
+    <button
+      type="button"
+      onClick={handleClick}
+      aria-label="Scroll to top"
+      className="fixed right-8 bottom-10 z-30"
+    >
       <div
-        className={`flex ${!isScrolled && "hidden"} h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-black opacity-85 md:h-12 md:w-12 xl:h-15 xl:w-15`}
+        className={`flex ${!isScrolled && "hidden"} h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-ink opacity-85 md:h-12 md:w-12 xl:h-15 xl:w-15`}
       >
-        <CircleArrowUp className="scale-105 text-white md:scale-125 xl:scale-150" />
+        <CircleArrowUp
+          className="scale-105 text-white md:scale-125 xl:scale-150"
+          aria-hidden="true"
+        />
       </div>
     </button>
   );
 };
-export default ScrollToTop;
+export default ScrollToTopButton;

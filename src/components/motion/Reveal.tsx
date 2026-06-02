@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import type { ReactNode } from "react";
 
 const Reveal = ({
@@ -12,7 +12,7 @@ const Reveal = ({
   delay?: number;
   className?: string;
 }) => (
-  <motion.div
+  <m.div
     className={className}
     initial={{ opacity: 0, y: 24 }}
     whileInView={{ opacity: 1, y: 0 }}
@@ -20,6 +20,6 @@ const Reveal = ({
     transition={{ duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }}
   >
     {children}
-  </motion.div>
+  </m.div>
 );
 export default Reveal;

@@ -36,17 +36,19 @@ const LocaleSwitcher = () => {
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
+        aria-label="Language"
+        aria-expanded={isOpen}
         className="flex cursor-pointer items-center justify-center"
       >
-        <Globe />
+        <Globe aria-hidden="true" />
       </button>
       {isOpen && (
-        <ul className="absolute left-1/2 mt-2 flex -translate-x-1/2 flex-col gap-2 rounded border p-2">
+        <ul className="card absolute left-1/2 z-50 mt-2 flex min-w-24 -translate-x-1/2 flex-col p-1 text-base text-graphite shadow-raise">
           <li>
             <button
               type="button"
               onClick={() => handleLocaleChange("ko")}
-              className="cursor-pointer"
+              className="w-full cursor-pointer rounded-sm px-4 py-2 text-center hover:bg-surface-2 hover:text-rhistle"
             >
               KOR
             </button>
@@ -55,7 +57,7 @@ const LocaleSwitcher = () => {
             <button
               type="button"
               onClick={() => handleLocaleChange("en")}
-              className="cursor-pointer"
+              className="w-full cursor-pointer rounded-sm px-4 py-2 text-center hover:bg-surface-2 hover:text-rhistle"
             >
               ENG
             </button>
