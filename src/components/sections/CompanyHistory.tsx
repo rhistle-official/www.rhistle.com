@@ -9,6 +9,7 @@ const yearIds = [
   "2024",
   "2023",
   "2022",
+  "2021",
   "2020",
   "2018",
   "2017",
@@ -45,7 +46,7 @@ const CompanyHistory = () => {
       <div className="space-y-12 border-line border-l py-2 pl-6">
         {yearIds.map((year) => (
           <div key={year} className="relative">
-            <span className="absolute top-2 -left-[29px] size-2 rounded-full bg-rhistle" />
+            <span className="absolute top-2 -left-7.25 size-2 rounded-full bg-rhistle" />
             <div className="font-bold text-2xl text-ink">{t(`entries.${year}.date`)}</div>
 
             <ul className="space-y-2 text-graphite">

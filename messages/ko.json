@@ -222,7 +222,7 @@
       },
       "2024": {
         "date": "2024년",
-        "items": ["CoreCode Suite V5 출시", "스마트팩토리 사업 확대 (컨설팅, 시스템 구축)"]
+        "items": ["스마트팩토리 사업 확대 (컨설팅, 시스템 구축)"]
       },
       "2023": {
         "date": "2023년",
@@ -232,9 +232,17 @@
         "date": "2022년",
         "items": ["LGCNS 협력업체 선정"]
       },
+      "2021": {
+        "date": "2021년",
+        "items": ["원익IPS CoreCode Suite 공급"]
+      },
       "2020": {
         "date": "2020년",
-        "items": ["SK 하이닉스 CoreCode Suite 공급", "셀트리온 CoreCode Suite 공급"]
+        "items": [
+          "CoreCode Suite V5 출시",
+          "SK 하이닉스 CoreCode Suite 공급",
+          "셀트리온 CoreCode Suite 공급"
+        ]
       },
       "2018": {
         "date": "2018년",
@@ -266,7 +274,7 @@
       },
       "2011": {
         "date": "2011년",
-        "items": ["포스크DX 협력업체 선정", "삼성전자 CoreCode 공급"]
+        "items": ["포스크DX 협력업체 선정", "삼성전자 CoreCode Suite 공급"]
       },
       "2010": {
         "date": "2010년",
@@ -286,14 +294,14 @@
       },
       "2007": {
         "date": "2007년",
-        "items": ["통합 인터페이스 장치 특허 출원", "CoreCode Suite V4 (인터페이스 미들웨어) 출시"]
+        "items": ["통합 인터페이스 장치 특허 출원", "CoreCode Suite V4 출시"]
       },
       "2006": {
         "date": "2006년",
         "items": [
           "CoreCode XSTORE (XML 문서관리 소프트웨어)' 출시",
           "SK 하이닉스 중국 우시 CoreCode Suite 공급",
-          "CoreCode Suite (인터페이스 미들웨어 )' 출시",
+          "CoreCode Suite (설비 인터페이스 미들웨어) 출시",
           "기업부설연구소 설립",
           "우량기술기업 선정"
         ]

@@ -244,9 +244,17 @@
         "date": "2022",
         "items": ["Selected as LGCNS partner vendor"]
       },
+      "2021": {
+        "date": "2021년",
+        "items": ["CoreCode Suite supplied to WONIK IPS"]
+      },
       "2020": {
         "date": "2020",
-        "items": ["CoreCode Suite supplied to SK Hynix", "CoreCode Suite supplied to Celltrion"]
+        "items": [
+          "CoreCode Suite V5 released",
+          "CoreCode Suite supplied to SK Hynix",
+          "CoreCode Suite supplied to Celltrion"
+        ]
       },
       "2018": {
         "date": "2018",
@@ -307,17 +315,14 @@
       },
       "2007": {
         "date": "2007",
-        "items": [
-          "Patent filed for integrated interface device",
-          "CoreCode Suite V4 (interface middleware) released"
-        ]
+        "items": ["Patent filed for integrated interface device", "CoreCode Suite V4 released"]
       },
       "2006": {
         "date": "2006",
         "items": [
           "CoreCode XSTORE (XML document management software) released",
           "CoreCode Suite supplied to SK Hynix Wuxi, China",
-          "CoreCode Suite (interface middleware) released",
+          "CoreCode Suite (Equipment interface middleware) released",
           "In-house R&D center established",
           "Recognized as an excellent technology company"
         ]
