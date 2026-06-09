@@ -1,7 +1,7 @@
 allowBuilds:
-  '@parcel/watcher': set this to true or false
-  '@swc/core': set this to true or false
-  sharp: set this to true or false
+  '@parcel/watcher': false
+  '@swc/core': false
+  sharp: false
 minimumReleaseAgeExclude:
   - postcss@8.5.10
 overrides:
