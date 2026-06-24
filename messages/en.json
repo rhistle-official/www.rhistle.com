@@ -8,7 +8,6 @@
     "menuDescription": "Site navigation menu."
   },
   "home": {
-    "title": "RHISTLE",
     "description": "RHISTLE, an IT expert dedicated to enriching customer value through smart and impactful technology.",
     "hero": {
       "title": "RHISTLE delivers exceptional value to customers through premier IT services",
@@ -114,7 +113,6 @@
     }
   },
   "company": {
-    "title": "About Us",
     "description": "Official introduction to RHISTLE's innovative solutions and corporate values.",
     "hero": {
       "code": "About Us",
@@ -334,7 +332,6 @@
     }
   },
   "contact": {
-    "title": "Contact Us",
     "description": "If you have inquiries, please reach out using the form below.",
     "hero": {
       "code": "Contact",
@@ -369,7 +366,6 @@
     }
   },
   "corecode": {
-    "title": "CoreCode",
     "description": "Introducing CoreCode by RHISTLE: A powerful interface solution bridging the gap between facilities and systems. Experience seamless real-time data acquisition and stable equipment control.",
     "hero": {
       "code": "CoreCode",
@@ -528,9 +524,7 @@
     }
   },
   "nexumm": {
-    "title": "Nexumm",
     "lx": {
-      "title": "Nexumm LX",
       "description": "Introducing Nexumm LX by RHISTLE: a next-generation warehouse management system (WMS) that tracks and visualizes the entire logistics flow from inbound to outbound in real time.",
       "hero": {
         "code": "LX",
@@ -686,7 +680,6 @@
       }
     },
     "vx": {
-      "title": "Nexumm VX",
       "description": "Introducing Nexumm VX by RHISTLE: an integrated monitoring solution that visualizes equipment, environment, and safety data in real time with a digital twin.",
       "hero": {
         "code": "VX",

@@ -9,7 +9,7 @@ import SiteFooter from "@/components/layout/SiteFooter";
 import SiteHeader from "@/components/layout/SiteHeader";
 import MotionProvider from "@/components/motion/MotionProvider";
 import { routing } from "@/i18n/routing";
-import { buildMetadata } from "@/lib/seo";
+import { buildMetadata, organizationJsonLd } from "@/lib/seo";
 
 const pretendard = localFont({
   src: "../fonts/PretendardVariable.woff2",
@@ -34,11 +34,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "home" });
-  const base = buildMetadata({ locale, title: t("title"), description: t("description") });
-  return {
-    ...base,
-    title: { default: t("title"), template: `%s | ${t("title")}` },
-  };
+  return buildMetadata({ locale, description: t("description") });
 }
 
 export default async function LocaleLayout({
@@ -59,6 +55,11 @@ export default async function LocaleLayout({
       className={`${pretendard.variable} ${audiowide.variable} antialiased`}
     >
       <body>
+        <script
+          type="application/ld+json"
+          // biome-ignore lint/security/noDangerouslySetInnerHtml: 정적 JSON-LD 구조화 데이터
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd(locale)) }}
+        />
         <NextIntlClientProvider>
           <MotionProvider>
             <SiteHeader />

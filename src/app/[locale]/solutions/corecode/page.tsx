@@ -21,7 +21,6 @@ export async function generateMetadata({
   return buildMetadata({
     locale,
     path: "/solutions/corecode",
-    title: t("title"),
     description: t("description"),
   });
 }

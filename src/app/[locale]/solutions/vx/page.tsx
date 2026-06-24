@@ -30,7 +30,6 @@ export async function generateMetadata({
   return buildMetadata({
     locale,
     path: "/solutions/vx",
-    title: t("vx.title"),
     description: t("vx.description"),
   });
 }
