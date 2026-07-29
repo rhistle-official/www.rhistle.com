@@ -93,9 +93,10 @@ export async function submitContact(
 
   try {
     await transporter.sendMail({
-      from: `"${cleanName}" <${process.env.MAIL_USER}>`,
-      to: "junsik.choi@rhistle.com",
+      from: `"${cleanName}" <noreply@rhistle.com>`,
+      to: process.env.MAIL_USER,
       subject: `[문의] ${cleanCategory} - ${cleanCompany}`,
+      replyTo: email,
       html: `
         <div>
           <h2>새로운 문의가 접수되었습니다.</h2>
@@ -103,7 +104,6 @@ export async function submitContact(
           <div style="font-size:16px">
             <p><strong>이름:</strong> ${cleanName}</p>
             <p><strong>회사:</strong> ${cleanCompany}</p>
-            <p><strong>이메일:</strong> ${email}</p>
             <p><strong>카테고리:</strong> ${cleanCategory}</p>
             <p><strong>내용:</strong></p>
             <p>
