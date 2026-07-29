@@ -4,7 +4,7 @@
   "private": true,
   "packageManager": "pnpm@11.17.0",
   "scripts": {
-    "dev": "infisical run --env=dev next dev",
+    "dev": "infisical run next dev",
     "build": "next build",
     "start": "next start",
     "check": "biome check --write ./src"
