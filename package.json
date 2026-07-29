@@ -2,18 +2,19 @@
   "name": "www.rhistle.com",
   "version": "2.0.4",
   "private": true,
-  "scripts": {
-    "dev": "infisical run --env=dev next dev",
-    "build": "next build",
-    "start": "next start",
-    "check": "biome check --write ./src"
-  },
+  "packageManager": "pnpm@11.17.0",
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
       "version": "11.17.0",
       "onFail": "download"
     }
+  },
+  "scripts": {
+    "dev": "infisical run --env=dev next dev",
+    "build": "next build",
+    "start": "next start",
+    "check": "biome check --write ./src"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.23",
