@@ -1,21 +1,161 @@
 @import "tailwindcss";
-
-::-webkit-scrollbar {
-  display: none;
-}
+@import "tw-animate-css";
 
 @theme {
-  --animate-fade-in-up: fade-in-up 1s forwards;
+  /* Brand (불변 앵커) */
+  --color-rhistle: #1428a0;
+  --color-brand-50: #eef1fb;
+  --color-brand-100: #d6ddf5;
+  --color-brand-300: #8a9be0;
+  --color-brand-500: #1428a0;
+  --color-brand-700: #0f1f7a;
+  --color-brand-900: #070d3d;
 
-  @keyframes fade-in-up {
-    0% {
-      opacity: 0;
-      transform: translateY(100%);
+  /* Industrial neutrals */
+  --color-ink: #0b0d12;
+  --color-graphite: #3a3f4a;
+  --color-steel: #6b7280;
+  --color-mist: #9aa1ad;
+  --color-line: #e6e8ec;
+  --color-surface: #ffffff;
+  --color-surface-2: #f7f8fa;
+
+  /* Fonts (유지) */
+  --font-audiowide: var(--font-audiowide), sans-serif;
+  --font-sans: var(--font-pretendard), sans-serif;
+  --font-heading: var(--font-pretendard), sans-serif;
+
+  /* Type scale (반응형 clamp) */
+  --text-display: clamp(2.5rem, 6vw, 5.5rem);
+  --text-display--line-height: 1.02;
+  --text-h1: clamp(2rem, 4.5vw, 3.5rem);
+  --text-h1--line-height: 1.08;
+  --text-h2: clamp(1.625rem, 3vw, 2.5rem);
+  --text-h2--line-height: 1.12;
+  --text-h3: clamp(1.25rem, 2vw, 1.625rem);
+  --text-h3--line-height: 1.2;
+  --text-eyebrow: 0.8125rem;
+  --text-eyebrow--line-height: 1.4;
+  --text-eyebrow--letter-spacing: 0.18em;
+
+  /* Radius (각진 인더스트리얼) */
+  --radius: 0.5rem;
+  --radius-sm: calc(var(--radius) * 0.5);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) * 1.5);
+
+  /* Section rhythm */
+  --spacing-section: clamp(4rem, 9vw, 8rem);
+
+  /* Elevation (절제) */
+  --shadow-hairline: 0 1px 2px rgb(11 13 18 / 0.04);
+  --shadow-raise: 0 12px 32px -12px rgb(11 13 18 / 0.18);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-line);
+  }
+  html {
+    @apply font-sans;
+    scroll-behavior: smooth;
+  }
+  body {
+    background: var(--color-surface);
+    color: var(--color-ink);
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
     }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
     }
   }
 }
 
+@layer components {
+  /* 섹션 컨테이너 */
+  .section {
+    padding-block: var(--spacing-section);
+  }
+  .container-page {
+    margin-inline: auto;
+    max-width: 80rem; /* max-w-7xl */
+    padding-inline: 2rem;
+  }
+
+  /* eyebrow 라벨 (인더스트리얼 시그니처) */
+  .eyebrow {
+    font-size: var(--text-eyebrow);
+    letter-spacing: var(--text-eyebrow--letter-spacing);
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--color-rhistle);
+  }
+
+  /* 헤어라인 카드 */
+  .card {
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+  }
+  .card-hover {
+    transition:
+      box-shadow 0.3s ease,
+      border-color 0.3s ease;
+  }
+  .card-hover:hover {
+    border-color: var(--color-brand-300);
+    box-shadow: var(--shadow-raise);
+  }
+
+  /* 디바이더 / 그리드 라인 배경 */
+  .divider {
+    border-top: 1px solid var(--color-line);
+  }
+  .grid-lines {
+    background-image:
+      linear-gradient(to right, var(--color-line) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--color-line) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  /* 버튼 */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: var(--radius-md);
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
+      border-color 0.2s ease;
+  }
+  .btn-primary {
+    background: var(--color-rhistle);
+    color: #fff;
+  }
+  .btn-primary:hover {
+    background: var(--color-brand-700);
+  }
+  .btn-ghost {
+    border: 1px solid var(--color-line);
+    color: var(--color-ink);
+  }
+  .btn-ghost:hover {
+    border-color: var(--color-rhistle);
+    color: var(--color-rhistle);
+  }
+}

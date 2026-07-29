@@ -3,25 +3,771 @@
     "solutions": "솔루션",
     "company": "회사소개",
     "contact": "문의하기",
-    "blog": "블로그"
+    "blog": "블로그",
+    "menu": "전체 메뉴",
+    "menuDescription": "사이트 메뉴 목록입니다."
   },
   "home": {
+    "description": "이롭고 슬기로운 기술로 고객의 가치를 더하는 IT 전문 기업, 리슬(RHISTLE)입니다.",
     "hero": {
-      "title": "Challenge Limits, Benefit All.",
-      "subtitle": "최고의 IT서비스를 통해 고객에게 차별화된 가치를 제공합니다."
+      "title": "리슬은 최고의 IT서비스를 통해 고객에게 차별화된 가치를 제공합니다.",
+      "subtitle": "Challenge Limits, Benefit All."
     },
     "stats": {
       "first": "우리가 걸어온 길을",
       "second": "숫자로 증명합니다."
     },
+    "business": {
+      "title": "디지털 전환 성공 사례",
+      "Case 01": {
+        "title": "스마트팩토리 컨설팅",
+        "subtitle": "A 제조사 스마트팩토리 로드맵 수립",
+        "challenge": "시스템 기반 운영 경험 부재 및 데이터 관리 추진 방향 설정 필요",
+        "solutions": [
+          "OT/IT/AT 통합 컨설팅 서비스 제공",
+          "현장 진단을 통한 데이터 수집/분석/활용 스마트팩토리 로드맵 수립"
+        ],
+        "results": [
+          "생산성 30%, 품질 44% 향상 목표 수립",
+          "스마트팩토리 방향 설정 혁신 과제 수립",
+          "혁신 과제 추진 로드맵 및 추진 전략 수립"
+        ],
+        "benefits": ["스마트팩토리 전환 기반 마련"]
+      },
+      "Case 02": {
+        "title": "WMS(창고관리시스템) 구축",
+        "subtitle": "원자재/완제품/VMI 창고 통합 관리",
+        "challenge": "실시간 재고 추적 및 위치 관리 미흡, 규제 대응력 강화 필요",
+        "solutions": [
+          "창고 운영 프로세스 및 기준정보 표준화",
+          "Value Added Service(조립/소진 등) 기능 개발",
+          "Cloud 기반의 글로벌 확산형 WMS 구축"
+        ],
+        "results": [
+          "공급망 대응 및 운영 효율 제고",
+          "디지털 창고 관리 기반 확보",
+          "규제 준수 및 대응력 강화"
+        ],
+        "benefits": ["창고 업무 효율 제고", "재고 가시성 강화"]
+      },
+      "Case 03": {
+        "title": "통합 방재 모니터링 시스템",
+        "subtitle": "A 제조사 선진 방재 시스템 구축",
+        "challenge": "유관 시스템 간 연계 부재로 위기 대응 속도 저하 및 비용 증가",
+        "solutions": [
+          "화재/가스/온도 센서 및 CCTV 통합 방재 모니터링 시스템 구축",
+          "실시간 모니터링 및 통계 분석을 통한 조기 대응 및 사전 예방 체계 구축",
+          "위험 감지 및 적기 안내를 통한 전사 위기 관리 시스템 구축"
+        ],
+        "results": [
+          "실시간 재해 요인 감지 및 통합 모니터링 시스템 운영",
+          "통합 데이터 모니터링 및 분석을 통한 방지 운영 효율 향상"
+        ],
+        "benefits": ["운영 비용 연간 76억 절감", "운영 효율화 50% 향상"]
+      },
+      "Case 04": {
+        "title": "스마트팩토리 설비 자동화",
+        "subtitle": "양방향 실시간 데이터 연동 체계",
+        "challenge": "대량 데이터의 실시간 처리 및 제조 환경 변화에 대한 유연한 대응",
+        "solutions": [
+          "Plant Floor 데이터 수집 표준 체계 구축",
+          "모델링 기반의 설비별 표준 Adaptor 적용",
+          "신제조시스템(MES/품질관리) 양방향 실시간 연계"
+        ],
+        "results": [
+          "24x7 생산시스템의 안정적 운영",
+          "Lot 기반 전 공정 품질 추적",
+          "설비 추가 및 변경, 라인 변경 및 확대 등의 사업 환경 변화 대응력 강화"
+        ],
+        "benefits": ["시스템 장애 Near to Zero 달성", "설비 자동화 구축 시간 34% 단축"]
+      }
+    },
     "solutions": {
+      "title": "디지털 혁신을 위한 솔루션",
       "corecode": "기업 내 산재된 데이터를 실시간으로 연결하고 최적화하는 통합 데이터 인터페이스 솔루션입니다. 복잡한 시스템 간의 데이터 흐름을 표준화하여 끊김 없는 업무 환경을 구축하며, 강력한 보안과 유연한 확장성으로 비즈니스 데이터 자산을 효율적으로 관리해 드립니다.",
-      "nexumm": "효율적인 창고 운영과 정밀한 재고 관리를 실현하는 차세대 창고 관리 시스템(WMS)입니다. 입고부터 출고까지 물류의 전 과정을 실시간으로 가시화하여 오피킹을 방지하고 작업 동선을 최적화함으로써, 귀사의 물류 센터 운영 비용 절감과 서비스 품질 향상을 보장합니다."
+      "nexumm": "효율적인 창고 운영과 정밀한 재고 관리를 실현하는 차세대 창고 관리 시스템(WMS)입니다. 입고부터 출고까지 물류의 전 과정을g 실시간으로 가시화하여 오피킹을 방지하고 작업 동선을 최적화함으로써, 귀사의 물류 센터 운영 비용 절감과 서비스 품질 향상을 보장합니다.",
+      "goto": "바로가기"
+    },
+    "partners": "리슬의 혁신 파트너",
+    "cta": {
+      "message": "성공적인 DX 전환, 리슬이 함께하겠습니다.",
+      "name": {
+        "company": "회사 소개서",
+        "corecode": "CoreCode 소개서",
+        "nexummLx": "Nexumm LX 소개서",
+        "nexummVx": "Nexumm VX 소개서"
+      },
+      "download": {
+        "company": "회사 소개서_(주)리슬.pdf",
+        "corecode": "CoreCode 소개서_(주)리슬.pdf",
+        "nexummLx": "Nexumm LX 소개서_(주)리슬.pdf",
+        "nexummVx": "Nexumm VX 소개서_(주)리슬.pdf"
+      },
+      "contact": "문의하기"
+    }
+  },
+  "company": {
+    "description": "IT 솔루션 전문 기업 리슬(RHISTLE)의 비전 및 주요 사업 영역을 소개합니다.",
+    "hero": {
+      "code": "회사소개",
+      "name": "Company",
+      "tagline": "데이터와 기술로 디지털 혁신을 선도합니다"
+    },
+    "intro": {
+      "line1": "은 데이터 기술 역량을 바탕으로",
+      "line2": "제조 현장부터 통합 물류,",
+      "line3": "고객 접점 및 업무 효율까지 가치를 선도하는",
+      "line4": "디지털 전환(DX) 전문기업",
+      "line5": "입니다.",
+      "sub": "품질이 검증된 솔루션과 고도의 기술력을 기반으로",
+      "sub2": "최고의 IT 서비스를 약속합니다."
+    },
+    "industry": {
+      "eyebrow": "Industry Served",
+      "heading1": "다양한 제조 산업의",
+      "heading2": "디지털 전환을 함께합니다",
+      "keyFocus": "Key Focus",
+      "serviceScope": "Service Scope",
+      "semiconductor": {
+        "title": "반도체 및 디스플레이",
+        "engTitle": "Semiconductor & Display",
+        "focus": "High volume, variety, velocity 데이터 처리 및 안전/환경 관리",
+        "projects": [
+          "스마트팩토리 설비 자동화",
+          "설비 엔지니어링 데이터 연계",
+          "환경/안전 통합방재 모니터링"
+        ]
+      },
+      "battery": {
+        "title": "2차 전지",
+        "engTitle": "Secondary Battery",
+        "focus": "대규모 설비 중심의 자본 집약적 공정 및 데이터 분석 강화",
+        "projects": [
+          "제조 IoT Platform 구축",
+          "설비 연계 시스템 구축",
+          "Gas Leak 및 Utility 통합 모니터링"
+        ]
+      },
+      "bio": {
+        "title": "바이오 제약 및 식품",
+        "engTitle": "Bio & Food",
+        "focus": "GMP, CSV 준수 및 배치 생산 공정 최적화",
+        "projects": [
+          "스마트팩토리 설비 자동화",
+          "WMS(창고관리시스템) 구축",
+          "통합 폐수처리 시스템 구축"
+        ]
+      },
+      "automotive": {
+        "title": "자동차 / 철강",
+        "engTitle": "Automotive & Steel",
+        "focus": "단순 조립, 협력사 협업 생산 및 다양한 인터페이스 방식 대응",
+        "projects": [
+          "글로벌 전장 검사 시스템 구축",
+          "협력사 부품 품질 데이터 연계 구축",
+          "설비 연계 시스템 구축"
+        ]
+      },
+      "general": {
+        "title": "일반 제조 및 공공",
+        "engTitle": "General Mfg & Public",
+        "focus": "안전/환경 시스템 고도화 및 전사 통합 시스템 구축",
+        "projects": [
+          "스마트팩토리 구축 컨설팅",
+          "FEMS/ERP 데이터 연동 시스템 구축",
+          "전사 통합 시스템 고도화"
+        ]
+      }
+    },
+    "values": {
+      "eyebrow": "Company Values",
+      "heading": "리슬이 지향하는 미래",
+      "vision": {
+        "text": "\"데이터와 기술로 진화하는 디지털 혁신의 리더\""
+      },
+      "mission": {
+        "text": "\"데이터 통합과 지능형 시스템 구축을 통해 고객과 산업, 세상에 이로운 변화를 만든다.\""
+      },
+      "coreValues": {
+        "expertise": {
+          "subtitle": "Expertise",
+          "description": "검증된 솔루션과 고도화된 기술 역량으로 최상의 IT 서비스를 제공합니다."
+        },
+        "agility": {
+          "subtitle": "Agility",
+          "description": "변화하는 환경에 민첩하게 대응하며 실행력 중심의 혁신을 선도합니다."
+        },
+        "humanCentric": {
+          "subtitle": "Human-Centric",
+          "description": "'리(利)롭게 슬기롭게'의 가치 아래 사람을 위한 기술을 추구합니다."
+        }
+      }
+    }
+  },
+  "history": {
+    "eyebrow": "Company History",
+    "heading": "리슬이 걸어온 길",
+    "description1": "2005년 설립 이후 리슬은 데이터 기술을 기반으로 제조 현장과 기업 시스템을 연결하며 성장해왔습니다.",
+    "description2": "다양한 산업 현장에서 축적된 경험을 바탕으로 디지털 혁신의 여정을 이어가고 있습니다.",
+    "entries": {
+      "2025": {
+        "date": "2025년",
+        "items": [
+          "회사의 상호를 ㈜리슬 (RHISTLE)로 변경; 리(利)롭게, 슬기롭게",
+          "Nexumm (Next Momentum & Matrix) Platform 출시",
+          "셀트리온제약, 이녹스리튬 대상 CoreCode Suite 공급"
+        ]
+      },
+      "2024": {
+        "date": "2024년",
+        "items": ["스마트팩토리 사업 확대 (컨설팅, 시스템 구축)"]
+      },
+      "2023": {
+        "date": "2023년",
+        "items": ["LG전자 CoreCode Suite 공급", "LS티라유텍 전략적 제휴 체결"]
+      },
+      "2022": {
+        "date": "2022년",
+        "items": ["LGCNS 협력업체 선정"]
+      },
+      "2021": {
+        "date": "2021년",
+        "items": ["원익IPS CoreCode Suite 공급"]
+      },
+      "2020": {
+        "date": "2020년",
+        "items": [
+          "CoreCode Suite V5 출시",
+          "SK 하이닉스 CoreCode Suite 공급",
+          "셀트리온 CoreCode Suite 공급"
+        ]
+      },
+      "2018": {
+        "date": "2018년",
+        "items": ["기아자동차 CoreCode Suite 공급", "현대제철 CoreCode Suite 공급"]
+      },
+      "2017": {
+        "date": "2017년",
+        "items": ["현대자동차 CoreCode Suite 공급"]
+      },
+      "2016": {
+        "date": "2016년",
+        "items": ["현대오토에버 협력업체 선정", "한화오션 CoreCode 공급"]
+      },
+      "2015": {
+        "date": "2015년",
+        "items": ["SK AX 협력업체 선정"]
+      },
+      "2014": {
+        "date": "2014년",
+        "items": ["CoreCode Suite GS 인증"]
+      },
+      "2013": {
+        "date": "2013년",
+        "items": ["CoreCode XSTORE GS 인증"]
+      },
+      "2012": {
+        "date": "2012년",
+        "items": ["포스코, 포스하이메탈 CoreCode Suite 공급", "대법원 CoreCode XSTORE 공급"]
+      },
+      "2011": {
+        "date": "2011년",
+        "items": ["포스크DX 협력업체 선정", "삼성전자 CoreCode Suite 공급"]
+      },
+      "2010": {
+        "date": "2010년",
+        "items": [
+          "삼성SDI CoreCode Suite 공급",
+          "코닝정밀소재 CoreCode Suite 공급",
+          "삼성디스플레이 CoreCode Suite 공급"
+        ]
+      },
+      "2009": {
+        "date": "2009년",
+        "items": ["삼성 SDS 협력업체 선정"]
+      },
+      "2008": {
+        "date": "2008년",
+        "items": ["기술혁신형 중소기업(INNO-BIZ) 인증 (중소벤처기업부)"]
+      },
+      "2007": {
+        "date": "2007년",
+        "items": ["통합 인터페이스 장치 특허 출원", "CoreCode Suite V4 출시"]
+      },
+      "2006": {
+        "date": "2006년",
+        "items": [
+          "CoreCode XSTORE (XML 문서관리 소프트웨어)' 출시",
+          "SK 하이닉스 중국 우시 CoreCode Suite 공급",
+          "CoreCode Suite (설비 인터페이스 미들웨어) 출시",
+          "기업부설연구소 설립",
+          "우량기술기업 선정"
+        ]
+      },
+      "2005": {
+        "date": "2005년",
+        "items": ["(주)나무아이앤씨 설립"]
+      }
+    }
+  },
+  "contact": {
+    "description": "문의사항이 있으시면 아래 양식을 통해 연락해주세요.",
+    "hero": {
+      "code": "문의하기",
+      "name": "Get in Touch",
+      "tagline": "리슬과 함께 디지털 혁신을 시작하세요"
+    },
+    "intro": {
+      "description": "리슬의 기술력이 귀사의 비즈니스에 이로운 가치를 제공할 수 있도록 최선을 다하겠습니다.",
+      "address": "서울특별시 서초구 바우뫼로 160 현산빌딩 2층"
+    },
+    "form": {
+      "name": "성함",
+      "company": "회사명",
+      "email": "이메일 주소",
+      "categoryPlaceholder": "문의 유형 선택",
+      "categories": {
+        "solution": "솔루션 도입 문의",
+        "support": "기술 지원",
+        "etc": "기타"
+      },
+      "contentPlaceholder": "문의 내용을 입력해 주세요",
+      "submit": "문의하기",
+      "submitting": "전송 중...",
+      "errors": {
+        "name": "이름은 필수입니다.",
+        "company": "회사명은 필수입니다.",
+        "email": "올바른 이메일 형식이 아닙니다.",
+        "content": "문의 내용을 10자 이상 입력해주세요."
+      },
+      "success": "문의가 성공적으로 전송되었습니다.",
+      "sendFail": "메일 전송에 실패했습니다. 잠시 후 다시 시도해 주세요."
+    }
+  },
+  "corecode": {
+    "description": "설비와 시스템을 잇는 강력한 인터페이스 솔루션, 리슬(RHISTLE)의 CoreCode를 소개합니다. 실시간 데이터 수집과 안정적인 설비 제어를 경험하세요.",
+    "hero": {
+      "code": "CoreCode",
+      "name": "Data Interface Solution",
+      "tagline": "흩어진 데이터를 하나로 잇다",
+      "description": "다양한 설비·시스템의 데이터를 실시간으로 수집·연계하는 로우코드(Low-Code) 기반 통합 데이터 인터페이스 솔루션입니다."
+    },
+    "overview": {
+      "eyebrow": "Overview",
+      "p1": "Industry 4.0시대, 데이터는 기업의 핵심 자산이며 데이터 수집과 관리는 주요 성공 요소입니다. 그러나 지속적인 혁신을 위한 제조 현장의 데이터 수집 및 관리에는 많은 제약이 있습니다.",
+      "p2": "로우 코드(Low-Code) 기반의 IoT 데이터 연계 및 저장을 쉽고 빠르게 개발, 변경, 운영할 수 있는 통합 환경을 제공합니다."
+    },
+    "highlights": {
+      "eyebrow": "Highlights",
+      "items": [
+        {
+          "title": "표준 체계 지원",
+          "details": [
+            "표준 통신 프로토콜 지원 (OPC, Modbus, Ethernet/IP 등)",
+            "산업별 표준 데이터 체계 지원"
+          ]
+        },
+        {
+          "title": "다양한 데이터 연계/통합 자산",
+          "details": [
+            "100여종 이상의 Adaptors (PLC, Sensors, Files, DB 등)",
+            "연계 기술 및 노하우 탑재"
+          ]
+        },
+        {
+          "title": "개발/운영 고효율 및 고성능",
+          "details": [
+            "로우 코드 기반 개발 및 시각적 디버깅",
+            "고성능 3V (Volume, Variety, Velocity) 데이터 처리"
+          ]
+        }
+      ]
+    },
+    "functionalityBadge": "Functionality",
+    "functionalityItems": [
+      "설비 연계 및 데이터 인티그레이션",
+      "모델링 기반 개발 및 시각적 디버깅",
+      "시스템 가동 현황 모니터링 및 이상 추적",
+      "시스템 운영 관리"
+    ],
+    "keyFeatures": {
+      "eyebrow": "Key Features",
+      "desc": "모델링 (Modeling, Low-Code) 기반의 개발 방법으로 개발 생산성이 높으며, 대용량 데이터를 빠르고 안정적으로 처리하고, 데이터 연계 환경 변화에 유연하게 대응할 수 있습니다."
+    },
+    "performance": {
+      "speedy": {
+        "title": "개발 생산성 ↑",
+        "descriptions": [
+          "모델링(Low-Code) 기반 개발 도구와 Visual Debugger 등 직관적 개발 환경",
+          "현장에서 검증된 인터페이스 및 Built-In 컴포넌트 제공",
+          "Custom 컴포넌트 개발을 위한 API 제공"
+        ]
+      },
+      "stable": {
+        "title": "운영 안정성 ↑",
+        "descriptions": [
+          "대용량 데이터 초고속 처리 Throughput 보장",
+          "Up-time 100% 검증 및 솔루션 이중화 기반 고가용성",
+          "System Monitoring 및 운영 Utility 제공"
+        ]
+      },
+      "flexible": {
+        "title": "유연성 ↑",
+        "descriptions": [
+          "다양한 설비 및 센서 연계를 위한 아키텍처 구성",
+          "설비/센서 벤더와 독립적인 시스템 구축",
+          "신규 설비 추가 및 변경에 빠르게 대응"
+        ]
+      }
+    },
+    "benefits": {
+      "eyebrow": "Business Benefits",
+      "desc": "CoreCode 솔루션 도입을 통해 제조의 가치를 제고하고, 제조 운영 및 관리 역량을 강화하여 지속적으로 성과를 개선할 수 있습니다."
+    },
+    "effectData": {
+      "factory": {
+        "title": "제조 가시성 확보 및 경쟁력 강화로",
+        "highlight": "제조 가치 제고",
+        "descriptions": [
+          "제조 현장의 실시간 파악을 통한 제조 경쟁력 강화",
+          "검사/계측 설비 데이터 관리를 통한 제품 품질 향상",
+          "제조 환경 및 안전 관련 데이터 관리를 통한 ESG 성과 개선"
+        ]
+      },
+      "database": {
+        "title": "실시간 데이터 기반 의사결정 및 분석을 통한",
+        "highlight": "운영/관리 역량 제고",
+        "descriptions": [
+          "실시간 데이터 기반으로 적기, 정확한 의사 결정",
+          "설비, 센서 증가에 대한 체계적 연결 및 데이터 관리",
+          "연계 시스템 구축 및 관리 비용 절감"
+        ]
+      },
+      "trending": {
+        "title": "설비, IoT 디바이스에 대한 운영 관리로",
+        "highlight": "지속적 성과 개선",
+        "descriptions": [
+          "현장 설비 및 현장 활동의 주요 특성 파악",
+          "데이터 분석을 통한 문제점 식별 및 지속적 개선"
+        ]
+      }
+    },
+    "functionalities": {
+      "eyebrow": "Functionalities",
+      "desc": "개발, 테스트, 배포, 운영 및 모니터링 등 시스템 개발 전체 단계를 지원할 수 있는 기능으로 구성되어 있습니다."
+    },
+    "features": {
+      "01": {
+        "title": "산업용 표준 Adaptor",
+        "desc": ["다양한 설비, PLC, DCS 대응", "표준 인터페이스로 능동적 변화 대응"]
+      },
+      "02": {
+        "title": "통합 개발 환경",
+        "desc": [
+          "모델링 기반 개발 및 테스트",
+          "Adaptor Modeler / Visual Debugger",
+          "Tag Manager 지원"
+        ]
+      },
+      "03": {
+        "title": "프로세싱 엔진",
+        "desc": [
+          "Run-Time 시스템 자원 관리",
+          "메시지 Routing 및 전달 보증",
+          "표준 통신 프로토콜 지원"
+        ]
+      },
+      "04": {
+        "title": "시스템 운영 관리",
+        "desc": ["실시간 자원 모니터링", "데이터 통계 및 분석", "원격 프로그램 변경/관리"]
+      },
+      "05": {
+        "title": "원격 에이전트",
+        "desc": ["소형 미들웨어 엔진 기능", "서버 인터페이스 연동", "원격 유지관리 및 Logging"]
+      }
+    },
+    "applications": {
+      "eyebrow": "Applications",
+      "desc": "데이터 연계 솔루션으로 비즈니스 요구에 따라 스마트팩토리 구축, 환경/안전 관제, IoT Platform 구성 등 다양하게 활용할 수 있습니다."
+    }
+  },
+  "nexumm": {
+    "lx": {
+      "description": "입고부터 출고까지 물류 전 과정을 실시간으로 추적·가시화하는 차세대 창고 관리 시스템(WMS), 리슬(RHISTLE)의 Nexumm LX를 소개합니다.",
+      "hero": {
+        "code": "LX",
+        "name": "Nexumm LX",
+        "tagline": "재고의 모든 순간을 추적하다",
+        "description": "입고부터 출고까지 물류 전 과정을 실시간으로 추적·가시화하는 차세대 창고 관리 시스템(WMS)입니다."
+      },
+      "sections": {
+        "overview": {
+          "eyebrow": "Overview",
+          "title": "실시간 재고 가시성 기반 WMS",
+          "description": "멀티테넌트·다중 창고 환경에서 재고의 위치·수량·상태를 단일 화면에서 관리하고, ERP와 양방향으로 연계합니다."
+        },
+        "keyFeatures": {
+          "eyebrow": "Key Features",
+          "title": "정확하고, 추적 가능하며, 확장된다"
+        },
+        "functionalities": {
+          "eyebrow": "Functionalities",
+          "title": "입고부터 출고까지, 재고 추적의 전 과정",
+          "description": "재고 관리·추적을 중심으로 입고·출고·동기화·모바일 작업까지 창고 운영 전 단계를 지원합니다."
+        },
+        "benefits": {
+          "eyebrow": "Business Benefits",
+          "title": "재고를 보이게 하면, 비용이 줄어든다"
+        },
+        "applications": {
+          "eyebrow": "Applications",
+          "title": "다양한 창고 운영 환경에 적용"
+        }
+      },
+      "highlights": {
+        "items": [
+          {
+            "title": "실시간 재고 가시성",
+            "detail": "로케이션 단위로 수량·상태를 실시간 동기화"
+          },
+          {
+            "title": "End-to-End 추적성",
+            "detail": "Lot·Serial 기반으로 입고부터 출고까지 전 이력 추적"
+          },
+          {
+            "title": "ERP 자동 연계",
+            "detail": "파일 어댑터와 API 폴링 어댑터로 입·출고 지시 자동 수신"
+          },
+          {
+            "title": "멀티테넌트 클라우드",
+            "detail": "회사·창고별 격리 운영, 글로벌 다거점 확산형"
+          }
+        ]
+      },
+      "features": {
+        "accurate": {
+          "title": "재고 정확도",
+          "descriptions": [
+            "바코드 스캔 기반 무오류 현장 작업",
+            "실시간 동기화로 장부-실물 재고 일치",
+            "가입고로 입고 지연 없이 수량 선반영"
+          ]
+        },
+        "traceable": {
+          "title": "추적성",
+          "descriptions": [
+            "Lot·Serial 단위 전 이력 관리",
+            "입고→보관→출고 전 과정 추적",
+            "규제 대응을 위한 이력 추적성 확보"
+          ]
+        },
+        "scalable": {
+          "title": "확장성",
+          "descriptions": [
+            "멀티테넌트 SaaS 아키텍처",
+            "다중 창고·글로벌 다거점 운영",
+            "클라우드 기반 빠른 확산"
+          ]
+        }
+      },
+      "functionalities": {
+        "01": {
+          "title": "입고 관리",
+          "desc": [
+            "ERP 입고 지시 수신",
+            "입고 예정 관리",
+            "가입고(수량 선반영·로케이션 미배정)",
+            "입고 검수"
+          ]
+        },
+        "02": {
+          "title": "출고 관리",
+          "desc": ["ERP 출고 지시 수신", "피킹·패킹", "출고 검증"]
+        },
+        "03": {
+          "title": "재고 관리·추적",
+          "desc": [
+            "로케이션 관리",
+            "실시간 재고 현황",
+            "Lot·Serial 추적",
+            "재고 실사(Cycle Count) 및 조정"
+          ]
+        },
+        "04": {
+          "title": "기준정보·동기화",
+          "desc": ["품목·BOM WMS 동기화(Pull)", "표준 기준정보 관리"]
+        },
+        "05": {
+          "title": "모바일 작업",
+          "desc": ["PDA 바코드 스캔 기반 현장 작업", "입고·피킹·실사 모바일 지원"]
+        }
+      },
+      "benefits": {
+        "packageSearch": {
+          "title": "재고 가시성 확보로",
+          "highlight": "재고 정확도 향상",
+          "descriptions": [
+            "실시간 재고로 결품·과재고 방지",
+            "장부 재고 신뢰도 제고",
+            "재고 회전율 개선"
+          ]
+        },
+        "trendingUp": {
+          "title": "작업 효율 제고로",
+          "highlight": "운영비 절감",
+          "descriptions": ["작업 동선 최적화", "오피킹(오출고) 방지", "바코드 작업으로 처리량 향상"]
+        },
+        "boxes": {
+          "title": "공급망 대응으로",
+          "highlight": "규제 준수·대응력 강화",
+          "descriptions": [
+            "ERP 연계로 적기 입·출고",
+            "이력 추적성 기반 규제 준수",
+            "글로벌 다거점 표준 운영"
+          ]
+        }
+      },
+      "applications": {
+        "items": [
+          "원자재·완제품·VMI 창고",
+          "3PL·물류센터",
+          "글로벌 다거점 운영",
+          "제조-물류 통합 환경"
+        ]
+      }
+    },
+    "vx": {
+      "description": "설비·환경·안전 데이터를 실시간으로 모니터링하고 디지털 트윈으로 시각화하는 통합 관제 솔루션, 리슬(RHISTLE)의 Nexumm VX를 소개합니다.",
+      "hero": {
+        "code": "VX",
+        "name": "Nexumm VX",
+        "tagline": "데이터를 보이게, 현장을 살아있게",
+        "description": "설비·환경·안전 데이터를 실시간으로 모니터링하고 디지털 트윈으로 시각화하는 통합 관제 솔루션입니다."
+      },
+      "sections": {
+        "overview": {
+          "eyebrow": "Overview",
+          "title": "실시간 통합 관제 & 디지털 트윈",
+          "description": "CoreCode가 수집·표준화한 데이터를 그대로 받아 한 화면에서 현장을 가시화하고 이상을 조기에 감지합니다."
+        },
+        "synergy": {
+          "label": "Synergy with CoreCode",
+          "corecodeSub": "데이터 수집·표준화",
+          "vxSub": "관제·디지털 트윈",
+          "description": "CoreCode가 모은 설비·센서 데이터를 별도 연계 개발 없이 즉시 받아, VX가 실시간 관제와 디지털 트윈으로 시각화합니다."
+        },
+        "keyFeatures": {
+          "eyebrow": "Key Features",
+          "title": "보이고, 연결되고, 앞서 대응한다"
+        },
+        "functionalities": {
+          "eyebrow": "Functionalities",
+          "title": "수집부터 분석까지, 통합 관제의 전 과정"
+        },
+        "benefits": {
+          "eyebrow": "Business Benefits",
+          "title": "보이면 빨라지고, 빨라지면 안전해진다"
+        },
+        "applications": {
+          "eyebrow": "Applications",
+          "title": "다양한 관제 환경에 적용"
+        }
+      },
+      "highlights": {
+        "items": [
+          {
+            "title": "CoreCode 네이티브 연계",
+            "detail": "100여 종 어댑터로 수집·표준화된 데이터를 즉시 활용"
+          },
+          {
+            "title": "디지털 트윈 시각화",
+            "detail": "현장을 3D로 재현해 설비·구역 상태를 직관적으로 표현"
+          },
+          {
+            "title": "실시간 통합 대시보드",
+            "detail": "설비·환경·안전·에너지 데이터를 단일 화면에서"
+          },
+          {
+            "title": "지능형 이상 감지",
+            "detail": "임계치·패턴 기반 알람으로 조기 경보"
+          }
+        ]
+      },
+      "features": {
+        "visible": {
+          "title": "가시성",
+          "descriptions": ["디지털 트윈 3D 시각화", "단일 통합 대시보드", "구역·설비 단위 드릴다운"]
+        },
+        "connected": {
+          "title": "연계성",
+          "descriptions": [
+            "CoreCode 기반 즉시 연계",
+            "OPC·Modbus 등 멀티 프로토콜",
+            "이기종 데이터 통합"
+          ]
+        },
+        "proactive": {
+          "title": "선제 대응",
+          "descriptions": ["실시간 이상 감지", "조기 경보 및 알림", "예지보전 기반 마련"]
+        }
+      },
+      "functionalities": {
+        "01": {
+          "title": "데이터 수집·연계",
+          "desc": ["CoreCode 연동", "표준 프로토콜(OPC·Modbus 등) 수집", "이기종 데이터 통합"]
+        },
+        "02": {
+          "title": "실시간 대시보드",
+          "desc": ["설비 가동 현황 시각화", "환경·안전 KPI 모니터링", "사용자 정의 대시보드"]
+        },
+        "03": {
+          "title": "디지털 트윈",
+          "desc": ["3D 현장 모델", "실데이터 매핑", "구역·설비 드릴다운"]
+        },
+        "04": {
+          "title": "이벤트·알람 관리",
+          "desc": ["임계치·패턴 기반 알람", "이상 감지", "알림 및 대응 이력 관리"]
+        },
+        "05": {
+          "title": "통계·분석",
+          "desc": ["추세 분석", "가동률·환경 통계", "리포트 생성"]
+        }
+      },
+      "benefits": {
+        "layoutDashboard": {
+          "title": "통합 가시성으로",
+          "highlight": "운영·관리 역량 제고",
+          "descriptions": [
+            "분산 데이터의 단일 관제",
+            "실시간 기반 의사결정",
+            "디지털 트윈으로 직관적 파악"
+          ]
+        },
+        "shieldAlert": {
+          "title": "선제적 위기 대응으로",
+          "highlight": "안전·안정성 강화",
+          "descriptions": ["화재·가스·환경 이상 조기 감지", "위기 대응 속도 향상", "사고 사전 예방"]
+        },
+        "trendingUp": {
+          "title": "데이터 기반 개선으로",
+          "highlight": "지속적 성과 제고",
+          "descriptions": ["통계·분석으로 문제 식별", "예지보전 기반 마련", "에너지·ESG 성과 개선"]
+        }
+      },
+      "applications": {
+        "items": [
+          "스마트팩토리 설비 관제",
+          "통합 방재(화재·가스·온도·CCTV)",
+          "에너지·환경 모니터링",
+          "안전 관제"
+        ]
+      }
     }
   },
   "footer": {
     "name": "주식회사 리슬",
     "ceo": "대표: 김경식",
-    "address": "서울특별시 서초구 바우뫼로 160 (양재동 108-7, 현산빌딩) 2층"
+    "address": "서울특별시 서초구 바우뫼로 160 (양재동 108-7, 현산빌딩) 2층",
+    "certificationAlt": "{name} 인증 마크"
   }
 }
