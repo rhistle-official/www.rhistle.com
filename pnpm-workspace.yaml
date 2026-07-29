@@ -4,5 +4,7 @@ allowBuilds:
   sharp: false
 minimumReleaseAgeExclude:
   - postcss@8.5.10
+  - sharp@0.35.0
 overrides:
   postcss@<8.5.10: ^8.5.10
+  sharp@<0.35.0: ^0.35.0
