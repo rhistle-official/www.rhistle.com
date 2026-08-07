@@ -54,6 +54,13 @@ export default async function LocaleLayout({
       data-scroll-behavior="smooth"
       className={`${pretendard.variable} ${audiowide.variable} antialiased`}
     >
+      <head>
+        <meta name="naver-site-verification" content="847a27e4d83591c1e484375799ab1b5d844f3bc0" />
+        <meta
+          name="google-site-verification"
+          content="f7UhvR4VHwm6tdM7q6TxMUSHnTZSvf20ZfwDzIgHvFs"
+        />
+      </head>
       <body>
         <script
           type="application/ld+json"
